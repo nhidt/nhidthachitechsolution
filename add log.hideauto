@@ -1,7 +1,5 @@
 {
-  "id": "f5ea2899-dcdb-4e5b-bc42-feeb04497312",
-  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\f5ea2899-dcdb-4e5b-bc42-feeb04497312.hideflow",
-  "updatedAt": "2026-08-01T01:01:31.663Z",
+  "schemaVersion": 1,
   "data": {
     "nodes": [
       {
@@ -14,13 +12,7 @@
         "data": {
           "code": "start",
           "label": "Start"
-        },
-        "measured": {
-          "width": 96,
-          "height": 44
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-open-connect",
@@ -32,13 +24,7 @@
         "data": {
           "code": "openConnect",
           "label": "Open & Connect"
-        },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-53441222-b48a-4c63-ad47-25fdbc5d68ab",
@@ -56,13 +42,7 @@
           "isDone": false,
           "isDimmed": false,
           "lastConfiguredAt": "2026-07-21T02:36:25.724Z"
-        },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57",
@@ -90,13 +70,7 @@
           "isDone": false,
           "isDimmed": false,
           "lastConfiguredAt": "2026-07-21T02:41:02.900Z"
-        },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-20723ee8-2c4a-4e72-b580-4f739db19211",
@@ -114,13 +88,7 @@
           "isDone": false,
           "isDimmed": false,
           "lastConfiguredAt": "2026-07-21T03:29:17.867Z"
-        },
-        "measured": {
-          "width": 140,
-          "height": 84
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6f",
@@ -135,13 +103,19 @@
           "addLogMessage": "",
           "addLogLevel": "info",
           "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-c8a2381e-c146-463a-b0e6-c24e348a419e",
+        "type": "basic",
+        "position": {
+          "x": 683.1995451229702,
+          "y": 436.1616613653526
         },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+        "data": {
+          "code": "reload",
+          "label": "Reload page"
+        }
       }
     ],
     "edges": [
@@ -163,8 +137,7 @@
         "sourceHandle": "success",
         "target": "n-53441222-b48a-4c63-ad47-25fdbc5d68ab",
         "targetHandle": "in",
-        "id": "xy-edge__n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57success-n-53441222-b48a-4c63-ad47-25fdbc5d68abin",
-        "selected": false
+        "id": "xy-edge__n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57success-n-53441222-b48a-4c63-ad47-25fdbc5d68abin"
       },
       {
         "source": "n-53441222-b48a-4c63-ad47-25fdbc5d68ab",
@@ -179,12 +152,19 @@
         "target": "n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6f",
         "targetHandle": "in",
         "id": "xy-edge__n-20723ee8-2c4a-4e72-b580-4f739db19211success-n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6fin"
+      },
+      {
+        "source": "n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6f",
+        "sourceHandle": "success",
+        "target": "n-c8a2381e-c146-463a-b0e6-c24e348a419e",
+        "targetHandle": "in",
+        "id": "xy-edge__n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6fsuccess-n-c8a2381e-c146-463a-b0e6-c24e348a419ein"
       }
     ],
     "viewport": {
-      "x": 371.65314050624846,
-      "y": 126.66301011014718,
-      "zoom": 0.8000000000000003
+      "x": -587.772409436536,
+      "y": -376.60819171019784,
+      "zoom": 1.6
     },
     "variables": [
       {
