@@ -1,0 +1,209 @@
+{
+  "id": "4e8c2179-f7f9-40aa-9a0c-a8b2a7f8f84c",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\4e8c2179-f7f9-40aa-9a0c-a8b2a7f8f84c.hideflow",
+  "updatedAt": "2026-08-06T08:26:17.694Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-30fb2613-dd51-44e1-9a11-b8382ccdadfb",
+        "type": "basic",
+        "position": {
+          "x": 297.5,
+          "y": 366.875
+        },
+        "data": {
+          "code": "setVariables",
+          "label": "Set variables",
+          "setVariableAssignments": [
+            {
+              "variableKey": "bientam1",
+              "operator": "set",
+              "value": "2"
+            },
+            {
+              "variableKey": "bientam2",
+              "operator": "set",
+              "value": "3"
+            },
+            {
+              "variableKey": "bientam3",
+              "operator": "set",
+              "value": "4"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T08:19:05.938Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-a0da1913-7d52-4ee3-863c-3a629ed3e947",
+        "type": "basic",
+        "position": {
+          "x": 597.5,
+          "y": 366.875
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com/itm/353971117912?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20250416182756%26meid%3D23c3b96207534088b5d3c175188ef9bf%26pid%3D102690%26rk%3D1%26rkt%3D15%26itm%3D353971117912%26pmt%3D0%26noa%3D1%26pg%3D4375194%26algv%3DFeaturedDealsV2%26tu%3D01KZB105ZYDVCM8B6AHZ6DN9CN",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T07:53:47.992Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-23b99894-a4ca-43a4-9263-9eee1ccfa5c5",
+        "type": "basic",
+        "position": {
+          "x": 842.4999999999999,
+          "y": 371.875
+        },
+        "data": {
+          "code": "getHtml",
+          "label": "Get HTML",
+          "getHtmlSelector": "#mainContent > div > div.vim.x-item-title > h1",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T08:07:19.409Z",
+          "getHtmlSaveTo": "bien1"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-30fb2613-dd51-44e1-9a11-b8382ccdadfb",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-30fb2613-dd51-44e1-9a11-b8382ccdadfbin"
+      },
+      {
+        "source": "n-30fb2613-dd51-44e1-9a11-b8382ccdadfb",
+        "sourceHandle": "success",
+        "target": "n-a0da1913-7d52-4ee3-863c-3a629ed3e947",
+        "targetHandle": "in",
+        "id": "xy-edge__n-30fb2613-dd51-44e1-9a11-b8382ccdadfbsuccess-n-a0da1913-7d52-4ee3-863c-3a629ed3e947in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-a0da1913-7d52-4ee3-863c-3a629ed3e947",
+        "sourceHandle": "success",
+        "target": "n-23b99894-a4ca-43a4-9263-9eee1ccfa5c5",
+        "targetHandle": "in",
+        "id": "xy-edge__n-a0da1913-7d52-4ee3-863c-3a629ed3e947success-n-23b99894-a4ca-43a4-9263-9eee1ccfa5c5in"
+      }
+    ],
+    "viewport": {
+      "x": 222.8652398441826,
+      "y": 267.79152709957174,
+      "zoom": 0.7999999999999999
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "23520ff1-c1e9-4a5f-9394-53b3d1a656e0",
+        "key": "bien1",
+        "value": "<span class=\"ux-textspans ux-textspans--BOLD\">Nike Men's T-Shirt Athletic Logo Swoosh Printed Active Short Sleeve Tee</span>"
+      },
+      {
+        "id": "d26d1662-0787-4871-aabe-5586292070bb",
+        "key": "bientam1",
+        "value": ""
+      },
+      {
+        "id": "48723100-fc5e-483b-90ab-5854a8c7f1e1",
+        "key": "bientam2",
+        "value": ""
+      },
+      {
+        "id": "83b9d141-3709-4081-89a7-e338f041be52",
+        "key": "bientam3",
+        "value": ""
+      }
+    ]
+  }
+}

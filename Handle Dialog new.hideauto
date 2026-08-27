@@ -1,0 +1,394 @@
+{
+  "id": "89fef334-21f4-4684-9f4b-20847b30fe5f",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\89fef334-21f4-4684-9f4b-20847b30fe5f.hideflow",
+  "updatedAt": "2026-08-05T07:05:51.496Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -456.40899699531195,
+          "y": 43.05007982786383
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -313.42767714593106,
+          "y": 35.683937124413944
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-3f1217f4-964b-43a9-b50b-bc1eed600a69",
+        "type": "basic",
+        "position": {
+          "x": 583.3746426584441,
+          "y": 229.53388073509876
+        },
+        "data": {
+          "code": "handleDialog",
+          "label": "Handle Dialog",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "handleDialogSaveMessageTo": "nd",
+          "handleDialogSaveTypeTo": "a",
+          "handleDialogSaveDefaultValueTo": "b",
+          "lastConfiguredAt": "2026-08-01T03:08:36.608Z",
+          "handleDialogAction": "accept",
+          "handleDialogPromptText": "423463468932",
+          "handleDialogSaveAnswerTo": "c"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-bb770edc-b920-4a74-859a-2a59c3b74139",
+        "type": "basic",
+        "position": {
+          "x": -62.894413276440126,
+          "y": 34.28160436870358
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://testpages.eviltester.com/pages/basics/alerts-javascript/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T01:34:17.509Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-a9116d02-ffe6-4240-94dc-25ca78d41522",
+        "type": "basic",
+        "position": {
+          "x": 582.4503848914969,
+          "y": 311.0802691002587
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#promptexample",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-23T03:17:12.243Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      },
+      {
+        "id": "n-a90ef341-fc7c-4192-8fa2-01597ad49349",
+        "type": "basic",
+        "position": {
+          "x": 182.81338819251886,
+          "y": 382.42792702486423
+        },
+        "data": {
+          "code": "handleDialog",
+          "label": "Handle Dialog",
+          "handleDialogSaveMessageTo": "a",
+          "handleDialogSaveTypeTo": "b",
+          "handleDialogSaveDefaultValueTo": "c",
+          "lastConfiguredAt": "2026-07-23T03:21:22.916Z",
+          "handleDialogAction": "accept",
+          "handleDialogPromptText": "423463468932",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      },
+      {
+        "id": "n-2ad8fa42-1ed8-4cd7-b1cb-40b5afabb30d",
+        "type": "basic",
+        "position": {
+          "x": 143.97315117569002,
+          "y": 470.52895245328114
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#alertexamples",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-21T01:34:48.524Z"
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      },
+      {
+        "id": "n-86836d34-a8c1-45b6-b332-14b6f95041ad",
+        "type": "basic",
+        "position": {
+          "x": 192.6169311111389,
+          "y": 33.47114816526581
+        },
+        "data": {
+          "code": "handleDialog",
+          "label": "Handle Dialog",
+          "handleDialogSaveMessageTo": "1",
+          "handleDialogSaveTypeTo": "2",
+          "handleDialogSaveDefaultValueTo": "3",
+          "lastConfiguredAt": "2026-08-05T06:59:58.016Z",
+          "handleDialogAction": "accept",
+          "handleDialogPromptText": "423463468932",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "handleDialogSaveAnswerTo": "4"
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      },
+      {
+        "id": "n-e7ab5aee-8ed6-4dee-99cd-75722a160e44",
+        "type": "basic",
+        "position": {
+          "x": 469.6833931260447,
+          "y": 35.40508528967982
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#promptexample",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-23T03:17:12.243Z"
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-3f1217f4-964b-43a9-b50b-bc1eed600a69",
+        "sourceHandle": "success",
+        "target": "n-a9116d02-ffe6-4240-94dc-25ca78d41522",
+        "targetHandle": "in",
+        "id": "xy-edge__n-3f1217f4-964b-43a9-b50b-bc1eed600a69success-n-a9116d02-ffe6-4240-94dc-25ca78d41522in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-86836d34-a8c1-45b6-b332-14b6f95041ad",
+        "sourceHandle": "success",
+        "target": "n-e7ab5aee-8ed6-4dee-99cd-75722a160e44",
+        "targetHandle": "in",
+        "id": "xy-edge__n-86836d34-a8c1-45b6-b332-14b6f95041adsuccess-n-e7ab5aee-8ed6-4dee-99cd-75722a160e44in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-bb770edc-b920-4a74-859a-2a59c3b74139",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-bb770edc-b920-4a74-859a-2a59c3b74139in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-a90ef341-fc7c-4192-8fa2-01597ad49349",
+        "sourceHandle": "success",
+        "target": "n-2ad8fa42-1ed8-4cd7-b1cb-40b5afabb30d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-a90ef341-fc7c-4192-8fa2-01597ad49349success-n-2ad8fa42-1ed8-4cd7-b1cb-40b5afabb30din"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-bb770edc-b920-4a74-859a-2a59c3b74139",
+        "sourceHandle": "success",
+        "target": "n-86836d34-a8c1-45b6-b332-14b6f95041ad",
+        "targetHandle": "in",
+        "id": "xy-edge__n-bb770edc-b920-4a74-859a-2a59c3b74139success-n-86836d34-a8c1-45b6-b332-14b6f95041adin"
+      }
+    ],
+    "viewport": {
+      "x": 454.3584349191741,
+      "y": 392.7930323599807,
+      "zoom": 0.7999999999999999
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "4c9dad3c-4d11-461b-a825-dcf81e83d0f0",
+        "key": "dgdf",
+        "value": ""
+      },
+      {
+        "id": "5b686cd2-22b4-4d43-b1d2-8b064a9dbf9c",
+        "key": "sdfsdf",
+        "value": ""
+      },
+      {
+        "id": "cc58a52e-7885-45dd-adac-b3ca732a070f",
+        "key": "dsfds",
+        "value": ""
+      },
+      {
+        "id": "dbe6558a-195b-4c8d-8143-d97857407d3f",
+        "key": "alertmes",
+        "value": ""
+      },
+      {
+        "id": "826f80b6-7768-42e6-a0b7-c2924cc718aa",
+        "key": "alerttype",
+        "value": ""
+      },
+      {
+        "id": "dd190665-7c77-435d-bdd2-e7ee9285a3a2",
+        "key": "alertdfvalue",
+        "value": ""
+      },
+      {
+        "id": "1988af06-042c-443a-8d38-087cd2405de3",
+        "key": "conghieu120githubio",
+        "value": ""
+      },
+      {
+        "id": "8f1cbe11-c588-489f-826f-15ac936a9840",
+        "key": "Alert",
+        "value": ""
+      },
+      {
+        "id": "8a90292b-4990-4858-a1e9-cdb80aa1d28f",
+        "key": "OK",
+        "value": ""
+      },
+      {
+        "id": "38919eed-8299-47c8-8246-213ba1de0b80",
+        "key": "type",
+        "value": ""
+      },
+      {
+        "id": "b56f35a1-e880-47db-89ee-675f8192c17b",
+        "key": "mes",
+        "value": ""
+      },
+      {
+        "id": "184dcb11-064f-4f5f-93dc-cd0d7b001285",
+        "key": "a",
+        "value": ""
+      },
+      {
+        "id": "71d95f73-fadb-4f3a-9179-e596c99ef5c7",
+        "key": "b",
+        "value": ""
+      },
+      {
+        "id": "5ce35a60-b49a-497f-a0b5-6b685ea01587",
+        "key": "c",
+        "value": ""
+      },
+      {
+        "id": "c23d614e-7b27-4258-89a5-60f85fbb8988",
+        "key": "nd",
+        "value": ""
+      },
+      {
+        "id": "109149e0-dc31-42a4-bac1-15380db8ff23",
+        "key": "1",
+        "value": "I prompt you"
+      },
+      {
+        "id": "ea1d7aa3-efd1-4f2e-86c2-b49d0eeb7224",
+        "key": "2",
+        "value": "prompt"
+      },
+      {
+        "id": "1364a74f-c207-4298-bfbb-1f872ccf6b98",
+        "key": "3",
+        "value": "change me"
+      },
+      {
+        "id": "188e56f4-8de3-43cc-9bc1-e988ae6c43dc",
+        "key": "4",
+        "value": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "id": "c94d91e6-ce80-4ea1-92e9-c41901947a6d",
+  "filePath": "C:\\Users\\hachitech solution\\.hideauto\\workflows\\c94d91e6-ce80-4ea1-92e9-c41901947a6d.hideauto",
+  "updatedAt": "2026-08-18T03:13:56.416Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 60,
+          "y": 175
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 223.7806336893858,
+          "y": 165.79881491585525
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectMode": "newProfile",
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintWebview": true,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintNoiseFonts": false,
+          "openConnectFingerprintDisableImage": true,
+          "openConnectFingerprintNoiseClientRects": "off",
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintSwiftShader": false,
+          "openConnectFingerprintWebgl2": true,
+          "openConnectFingerprintRestoreSession": false,
+          "openConnectFingerprintDisableAutofill": false,
+          "openConnectFingerprintHideProfileName": false,
+          "openConnectFingerprintAkamaiBypassDns": false,
+          "openConnectFingerprintDisableCssAnimation": false,
+          "openConnectFingerprintDisableTrackingProtection": false,
+          "openConnectFingerprintDisableAiMode": false,
+          "openConnectFingerprintDisableAvatar": false,
+          "openConnectFingerprintDisablePasskey": true,
+          "openConnectFingerprintTranslate": false,
+          "openConnectFingerprintAutoAcceptExt": false,
+          "openConnectFingerprintDisableWindowHello": false,
+          "openConnectFingerprintAllowPopups": false,
+          "openConnectFingerprintDisableMachineId": false,
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintWebrtcFillByIp": true,
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintSecureDnsProvider": "cloudflare",
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintNetworkSaveData": false,
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "lastConfiguredAt": "2026-08-18T02:09:40.443Z",
+          "openConnectFingerprintCoreVersions": [
+            "148.0.0.0"
+          ],
+          "openConnectFingerprintIncognito": false,
+          "openConnectChromiumExtraArgs": "--hidemium-autosavepassword=on"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-b2837fc8-7640-4004-9fc5-b311967e3d0d",
+        "type": "basic",
+        "position": {
+          "x": 513.3600822946269,
+          "y": 171.4827520402692
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://arielsalminen.com/filetest/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-18T01:46:43.856Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-a535cf0e-8ae2-44c0-b540-4275fbf2c5ab",
+        "type": "basic",
+        "position": {
+          "x": 817.1333906631805,
+          "y": 173.84889474371914
+        },
+        "data": {
+          "code": "fileChooseEvent",
+          "label": "File Choose event",
+          "fileChooseSelector": "body > form > fieldset > input[type=file]:nth-child(1)",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "fileChoosePaths": "C:\\Users\\hachitech solution\\Downloads\\file.xlsx\nC:\\Users\\hachitech solution\\Downloads\\danh_sach_100_tai_khoan_test - Copy.csv\nD:\\ảnh\\Screenshot_1.png",
+          "lastConfiguredAt": "2026-08-18T02:39:18.798Z",
+          "fileChooseSourceType": "networkUrl",
+          "fileChooseFolderPath": "C:\\Users\\Hachitech\\Documents\\folder ramdom",
+          "fileChooseFolderExtensions": "txt",
+          "fileChooseNetworkUrl": "https://pdfobject.com/pdf/sample.pdf"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-b2837fc8-7640-4004-9fc5-b311967e3d0d",
+        "sourceHandle": "success",
+        "target": "n-a535cf0e-8ae2-44c0-b540-4275fbf2c5ab",
+        "targetHandle": "in",
+        "id": "xy-edge__n-b2837fc8-7640-4004-9fc5-b311967e3d0dsuccess-n-a535cf0e-8ae2-44c0-b540-4275fbf2c5abin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-b2837fc8-7640-4004-9fc5-b311967e3d0d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-b2837fc8-7640-4004-9fc5-b311967e3d0din"
+      }
+    ],
+    "viewport": {
+      "x": 48.09744615180874,
+      "y": 321.06507057143955,
+      "zoom": 0.7999999999999999
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "3016c2d0-92cd-4aa3-a859-b0e26a8db118"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\hachitech solution\\.hideauto\\profiles\\3016c2d0-92cd-4aa3-a859-b0e26a8db118"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "3016c2d0-92cd-4aa3-a859-b0e26a8db118"
+      }
+    ]
+  }
+}

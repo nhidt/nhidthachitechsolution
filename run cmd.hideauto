@@ -1,0 +1,225 @@
+{
+  "id": "97c8efcc-60b1-4947-974d-7b7088021c3c",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\97c8efcc-60b1-4947-974d-7b7088021c3c.hideflow",
+  "updatedAt": "2026-07-24T02:10:45.697Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -101.875,
+          "y": 363.12500000000006
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 50.625,
+          "y": 355
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-be8e5644-4e7e-47bf-adfd-f922380e6644",
+        "type": "basic",
+        "position": {
+          "x": 338.74999999999994,
+          "y": 360.625
+        },
+        "data": {
+          "code": "runCommand",
+          "label": "Run Command",
+          "runCommandLine": "start \"\" \"{{bien}}\"",
+          "runCommandCwd": "",
+          "runCommandSaveTo": "command_result",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-24T02:07:09.921Z",
+          "delayFromSeconds": 5,
+          "delayToSeconds": 9,
+          "nodeTimeoutSeconds": 30
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-465030d5-229c-4490-a7b2-6529f9921220",
+        "type": "basic",
+        "position": {
+          "x": 167.50000000000006,
+          "y": 235.62499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "facebook.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T01:44:51.300Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-a13efdf5-af28-4d49-8620-9438458b8cb0",
+        "type": "basic",
+        "position": {
+          "x": 566.25,
+          "y": 463.125
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "facebook.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T01:51:30.108Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-c0d23920-c249-4b46-9d10-da8d04a81666",
+        "type": "basic",
+        "position": {
+          "x": 467.50000000000006,
+          "y": 235.62499999999994
+        },
+        "data": {
+          "code": "setVariables",
+          "label": "Set variables",
+          "setVariableAssignments": [
+            {
+              "variableKey": "bien",
+              "operator": "set",
+              "value": "C:\\Users\\hachitech solution\\Downloads\\danh_sach_100_tai_khoan_test.xlsx"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-24T02:08:05.425Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect",
+        "selected": false
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-465030d5-229c-4490-a7b2-6529f9921220",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-465030d5-229c-4490-a7b2-6529f9921220in",
+        "selected": false
+      },
+      {
+        "source": "n-be8e5644-4e7e-47bf-adfd-f922380e6644",
+        "sourceHandle": "success",
+        "target": "n-a13efdf5-af28-4d49-8620-9438458b8cb0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-be8e5644-4e7e-47bf-adfd-f922380e6644success-n-a13efdf5-af28-4d49-8620-9438458b8cb0in",
+        "selected": false
+      },
+      {
+        "source": "n-465030d5-229c-4490-a7b2-6529f9921220",
+        "sourceHandle": "success",
+        "target": "n-c0d23920-c249-4b46-9d10-da8d04a81666",
+        "targetHandle": "in",
+        "id": "xy-edge__n-465030d5-229c-4490-a7b2-6529f9921220success-n-c0d23920-c249-4b46-9d10-da8d04a81666in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-c0d23920-c249-4b46-9d10-da8d04a81666",
+        "sourceHandle": "success",
+        "target": "n-be8e5644-4e7e-47bf-adfd-f922380e6644",
+        "targetHandle": "in",
+        "id": "xy-edge__n-c0d23920-c249-4b46-9d10-da8d04a81666success-n-be8e5644-4e7e-47bf-adfd-f922380e6644in",
+        "selected": false
+      }
+    ],
+    "viewport": {
+      "x": 101.82575506941134,
+      "y": 47.08646550107778,
+      "zoom": 1.0556063286183153
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "98fffd3a-5687-4c0c-ac89-d608e992722d",
+        "key": "command_result",
+        "value": ""
+      }
+    ]
+  }
+}

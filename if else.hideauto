@@ -1,0 +1,307 @@
+{
+  "id": "47d2a7d2-f767-4c07-b88d-b6f5f9b6797f",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\47d2a7d2-f767-4c07-b88d-b6f5f9b6797f.hideflow",
+  "updatedAt": "2026-08-03T08:42:08.456Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 141.90465771224828,
+          "y": 14.061830058114047
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 96.35654665398354,
+          "y": 196.53712626492208
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectMode": "defaultProfile",
+          "lastConfiguredAt": "2026-08-03T08:10:29.714Z",
+          "openConnectCloseWhenDone": true
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-339891b7-a33d-4f93-9e91-61e70d838e5d",
+        "type": "basic",
+        "position": {
+          "x": 95.34380450891695,
+          "y": 333.4360720076098
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "facebook.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T07:18:14.094Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9d",
+        "type": "ifElse",
+        "position": {
+          "x": 419.0537122806175,
+          "y": 415.0806239866827
+        },
+        "data": {
+          "code": "ifElse",
+          "label": "If / Else",
+          "ifElseConditions": [
+            {
+              "id": "2bb58df7-dcda-4fb5-9c9a-958ef9839d20",
+              "leftValue": "{{ramdom}}",
+              "operator": "equals",
+              "rightValue": "1"
+            },
+            {
+              "id": "ab9277a0-d46b-4323-8e5a-700719f6e7bc",
+              "leftValue": "{{ramdom}}",
+              "operator": "equals",
+              "rightValue": "2"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T08:03:18.329Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 160
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d754bc98-a752-4aeb-9e0f-496aca1536de",
+        "type": "basic",
+        "position": {
+          "x": 100.92860191771484,
+          "y": 469.5103253060646
+        },
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "randomAssignments": [
+            {
+              "randomType": "number",
+              "variableKey": "ramdom",
+              "randomLength": 8,
+              "randomNumberFrom": 1,
+              "randomNumberTo": 3
+            }
+          ],
+          "lastConfiguredAt": "2026-08-03T08:08:52.217Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-bc5827aa-759c-469c-a38f-e62f77eb5ec1",
+        "type": "basic",
+        "position": {
+          "x": 723.1771745017827,
+          "y": 382.9176186615934
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "test1@mailforspam.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T08:08:01.691Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d251df67-07af-4a8d-a0a1-33afeebb17cd",
+        "type": "basic",
+        "position": {
+          "x": 728.125329167181,
+          "y": 476.7348417845421
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "facebook.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T08:08:23.306Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-8b95e8f0-b60f-4674-8e0e-26b69a09a903",
+        "type": "basic",
+        "position": {
+          "x": 743.7944856076092,
+          "y": 633.2286906692033
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 100,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T08:08:38.025Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-339891b7-a33d-4f93-9e91-61e70d838e5d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-339891b7-a33d-4f93-9e91-61e70d838e5din",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-start",
+        "sourceHandle": "out",
+        "target": "n-open-connect",
+        "targetHandle": "in",
+        "id": "xy-edge__n-startout-n-open-connectin"
+      },
+      {
+        "source": "n-339891b7-a33d-4f93-9e91-61e70d838e5d",
+        "sourceHandle": "success",
+        "target": "n-d754bc98-a752-4aeb-9e0f-496aca1536de",
+        "targetHandle": "in",
+        "id": "xy-edge__n-339891b7-a33d-4f93-9e91-61e70d838e5dsuccess-n-d754bc98-a752-4aeb-9e0f-496aca1536dein"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-d754bc98-a752-4aeb-9e0f-496aca1536de",
+        "sourceHandle": "success",
+        "target": "n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-d754bc98-a752-4aeb-9e0f-496aca1536desuccess-n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9din"
+      },
+      {
+        "source": "n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9d",
+        "sourceHandle": "success-2bb58df7-dcda-4fb5-9c9a-958ef9839d20",
+        "target": "n-bc5827aa-759c-469c-a38f-e62f77eb5ec1",
+        "targetHandle": "in",
+        "id": "xy-edge__n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9dsuccess-2bb58df7-dcda-4fb5-9c9a-958ef9839d20-n-bc5827aa-759c-469c-a38f-e62f77eb5ec1in"
+      },
+      {
+        "source": "n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9d",
+        "sourceHandle": "success-ab9277a0-d46b-4323-8e5a-700719f6e7bc",
+        "target": "n-d251df67-07af-4a8d-a0a1-33afeebb17cd",
+        "targetHandle": "in",
+        "id": "xy-edge__n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9dsuccess-ab9277a0-d46b-4323-8e5a-700719f6e7bc-n-d251df67-07af-4a8d-a0a1-33afeebb17cdin"
+      },
+      {
+        "source": "n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9d",
+        "sourceHandle": "error",
+        "target": "n-8b95e8f0-b60f-4674-8e0e-26b69a09a903",
+        "targetHandle": "in",
+        "id": "xy-edge__n-28c39ba8-f15f-4126-8bf5-10e1abfc0c9derror-n-8b95e8f0-b60f-4674-8e0e-26b69a09a903in"
+      }
+    ],
+    "viewport": {
+      "x": -56.86103933716975,
+      "y": -127.94095002539694,
+      "zoom": 1.2125732532083184
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "d557cff9-3f01-4a6f-a797-6017ebd21ecd",
+        "key": "",
+        "value": ""
+      },
+      {
+        "id": "b3c79849-2cbe-40d8-9d02-1a3ae6271cf6",
+        "key": "ramdom",
+        "value": ""
+      }
+    ]
+  }
+}

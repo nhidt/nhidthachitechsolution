@@ -1,0 +1,164 @@
+{
+  "id": "6bdfe4fd-85ac-4c45-8230-58133d0bd013",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\6bdfe4fd-85ac-4c45-8230-58133d0bd013.hideflow",
+  "updatedAt": "2026-07-20T08:31:02.085Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 183.309802897103,
+          "y": 36.321257511720134
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectMode": "defaultProfile",
+          "lastConfiguredAt": "2026-07-15T03:22:43.141Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-29e104b3-8db2-49ba-9ff2-fce3a5f79797",
+        "type": "basic",
+        "position": {
+          "x": 550.5697255360019,
+          "y": 150.94732285406894
+        },
+        "data": {
+          "code": "mouseMove",
+          "label": "Mouse Move",
+          "mouseMoveX": 500,
+          "mouseMoveY": 600,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T08:29:40.135Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": true
+      },
+      {
+        "id": "n-16badbe1-4077-4ccb-85b7-7fddc72f48e0",
+        "type": "basic",
+        "position": {
+          "x": 491.835708583724,
+          "y": -120.93433626373357
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T08:29:33.447Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-16badbe1-4077-4ccb-85b7-7fddc72f48e0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-16badbe1-4077-4ccb-85b7-7fddc72f48e0in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-16badbe1-4077-4ccb-85b7-7fddc72f48e0",
+        "sourceHandle": "success",
+        "target": "n-29e104b3-8db2-49ba-9ff2-fce3a5f79797",
+        "targetHandle": "in",
+        "id": "xy-edge__n-16badbe1-4077-4ccb-85b7-7fddc72f48e0success-n-29e104b3-8db2-49ba-9ff2-fce3a5f79797in"
+      }
+    ],
+    "viewport": {
+      "x": -16.96785341510372,
+      "y": 380.2079731651396,
+      "zoom": 1.055606328618316
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\hachitech solution\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "0aebb81c-a0a2-4d31-948b-e305611a4ae3",
+        "key": "otp",
+        "value": "\n2cdkokkbgjah2z56rlpcqukb4aowzw77|058167"
+      },
+      {
+        "id": "11b3f239-126b-40b9-ab82-600149c5b63c",
+        "key": "attr_value",
+        "value": ""
+      },
+      {
+        "id": "179126e1-4d7f-41e7-bc37-0b8af513d8f3",
+        "key": "img",
+        "value": ""
+      }
+    ]
+  }
+}

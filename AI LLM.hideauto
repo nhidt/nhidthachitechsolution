@@ -1,0 +1,189 @@
+{
+  "id": "676bce92-5cfb-42ee-8781-8e6783582d69",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\676bce92-5cfb-42ee-8781-8e6783582d69.hideflow",
+  "updatedAt": "2026-08-01T06:54:07.448Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-af37cb04-7726-4220-9363-f7aac6d91f61",
+        "type": "basic",
+        "position": {
+          "x": 340,
+          "y": 360
+        },
+        "data": {
+          "code": "aiLlm",
+          "label": "AI LLM",
+          "aiLlmProvider": "gemini",
+          "aiLlmModel": "gemini-2.5-flash",
+          "aiLlmPrompt": "gen cho tôi danh sách user có đuôi @hotmail.com pass 8 ký tự dạng json vào các biến",
+          "aiLlmOutputMode": "json",
+          "aiLlmSaveResponseTo": "ai_response",
+          "aiLlmJsonMappings": [
+            {
+              "jsonPath": "",
+              "variableKey": ""
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "aiLlmOpenaiApiKey": "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",
+          "lastConfiguredAt": "2026-07-20T07:10:07.736Z",
+          "aiLlmBaseUrl": "",
+          "aiLlmGeminiApiKey": "AIzaSyDE_xEi1yJTV91S5DMe18phVzPbkveU4ls"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-fd870a2a-0ebb-4334-8308-d5f90e36ea76",
+        "type": "basic",
+        "position": {
+          "x": 640,
+          "y": 360
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "{{ai_response}}",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T08:51:36.035Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-23853383-ec3c-405c-b041-6efa100bc1f9",
+        "type": "basic",
+        "position": {
+          "x": 940,
+          "y": 360
+        },
+        "data": {
+          "code": "aiLlm",
+          "label": "AI LLM",
+          "aiLlmProvider": "openai",
+          "aiLlmModel": "gpt-4o-mini",
+          "aiLlmPrompt": "",
+          "aiLlmTemperature": 0.3,
+          "aiLlmMaxTokens": 4096,
+          "aiLlmOutputMode": "text",
+          "aiLlmSaveResponseTo": ""
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-af37cb04-7726-4220-9363-f7aac6d91f61",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-af37cb04-7726-4220-9363-f7aac6d91f61in"
+      },
+      {
+        "source": "n-af37cb04-7726-4220-9363-f7aac6d91f61",
+        "sourceHandle": "success",
+        "target": "n-fd870a2a-0ebb-4334-8308-d5f90e36ea76",
+        "targetHandle": "in",
+        "id": "xy-edge__n-af37cb04-7726-4220-9363-f7aac6d91f61success-n-fd870a2a-0ebb-4334-8308-d5f90e36ea76in"
+      },
+      {
+        "source": "n-fd870a2a-0ebb-4334-8308-d5f90e36ea76",
+        "sourceHandle": "success",
+        "target": "n-23853383-ec3c-405c-b041-6efa100bc1f9",
+        "targetHandle": "in",
+        "id": "xy-edge__n-fd870a2a-0ebb-4334-8308-d5f90e36ea76success-n-23853383-ec3c-405c-b041-6efa100bc1f9in"
+      }
+    ],
+    "viewport": {
+      "x": 10.117599253211893,
+      "y": 110.53943885686914,
+      "zoom": 0.6964404506368992
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "06e20693-0720-4380-8403-2d8d095d71cb",
+        "key": "ai_response",
+        "value": ""
+      }
+    ]
+  }
+}

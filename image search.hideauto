@@ -1,0 +1,230 @@
+{
+  "id": "421440a8-3173-45e0-a5c4-97c2cf3ee830",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\421440a8-3173-45e0-a5c4-97c2cf3ee830.hideflow",
+  "updatedAt": "2026-08-05T03:08:40.268Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -25.624999999999993,
+          "y": 269.37499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-4da14960-b38b-4a74-9269-e6d0444a9e60",
+        "type": "basic",
+        "position": {
+          "x": 278.74999999999994,
+          "y": 313.12499999999994
+        },
+        "data": {
+          "code": "imageSearch",
+          "label": "Image Search",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "imageSearchImageBase64": "data:image/png;base64,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",
+          "imageSearchThreshold": "0.5",
+          "imageSearchSaveXTo": "x",
+          "imageSearchSaveYTo": "y",
+          "imageSearchClick": true,
+          "lastConfiguredAt": "2026-08-05T03:03:30.389Z",
+          "imageSearchViewportOnly": true
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-ddb41c45-d5c4-40e0-a917-38456a86ea90",
+        "type": "basic",
+        "position": {
+          "x": 248.125,
+          "y": 111.24999999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T04:00:34.508Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-258f7f39-f2db-4304-8fab-598358432986",
+        "type": "basic",
+        "position": {
+          "x": 379.5312499999999,
+          "y": 417.49999999999994
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 1
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-317127f1-b451-409f-b428-af258163a9cc",
+        "type": "basic",
+        "position": {
+          "x": 311.25000000000006,
+          "y": 208.74999999999994
+        },
+        "data": {
+          "code": "scroll",
+          "label": "Scroll",
+          "scrollMode": "by",
+          "scrollX": 100,
+          "scrollY": 3000,
+          "scrollStepFrom": 400,
+          "scrollStepTo": 1000,
+          "scrollStepDelayFrom": 500,
+          "scrollStepDelayTo": 1000,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-01T04:10:10.342Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-ddb41c45-d5c4-40e0-a917-38456a86ea90",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-ddb41c45-d5c4-40e0-a917-38456a86ea90in"
+      },
+      {
+        "source": "n-4da14960-b38b-4a74-9269-e6d0444a9e60",
+        "sourceHandle": "error",
+        "target": "n-258f7f39-f2db-4304-8fab-598358432986",
+        "targetHandle": "in",
+        "id": "xy-edge__n-4da14960-b38b-4a74-9269-e6d0444a9e60error-n-258f7f39-f2db-4304-8fab-598358432986in",
+        "selected": false
+      },
+      {
+        "source": "n-ddb41c45-d5c4-40e0-a917-38456a86ea90",
+        "sourceHandle": "success",
+        "target": "n-317127f1-b451-409f-b428-af258163a9cc",
+        "targetHandle": "in",
+        "id": "xy-edge__n-ddb41c45-d5c4-40e0-a917-38456a86ea90success-n-317127f1-b451-409f-b428-af258163a9ccin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-317127f1-b451-409f-b428-af258163a9cc",
+        "sourceHandle": "success",
+        "target": "n-4da14960-b38b-4a74-9269-e6d0444a9e60",
+        "targetHandle": "in",
+        "id": "xy-edge__n-317127f1-b451-409f-b428-af258163a9ccsuccess-n-4da14960-b38b-4a74-9269-e6d0444a9e60in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-4da14960-b38b-4a74-9269-e6d0444a9e60",
+        "sourceHandle": "success",
+        "target": "n-258f7f39-f2db-4304-8fab-598358432986",
+        "targetHandle": "in",
+        "id": "xy-edge__n-4da14960-b38b-4a74-9269-e6d0444a9e60success-n-258f7f39-f2db-4304-8fab-598358432986in"
+      }
+    ],
+    "viewport": {
+      "x": 246.2005230418886,
+      "y": 246.82074512262025,
+      "zoom": 0.9242821701248295
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "2f2b7b78-2537-49fe-abfc-d169d7307d5c",
+        "key": "x",
+        "value": "1601"
+      },
+      {
+        "id": "3e100ddf-5490-4a8a-843d-e04102559d5b",
+        "key": "y",
+        "value": "3145"
+      }
+    ]
+  }
+}

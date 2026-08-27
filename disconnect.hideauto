@@ -1,0 +1,236 @@
+{
+  "id": "39fcd9d0-4a4d-4bb6-b887-0f32ce67130b",
+  "filePath": "C:\\Users\\hachitech solution\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\workflows\\39fcd9d0-4a4d-4bb6-b887-0f32ce67130b.hideauto",
+  "updatedAt": "2026-08-24T07:01:24.225Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 8.125,
+          "y": 190
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 98,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 45.625,
+          "y": 259.99999999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectMode": "defaultProfile",
+          "lastConfiguredAt": "2026-08-24T03:57:03.134Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-ee14922b-8e65-4eb4-b0d0-26e0ef6cabba",
+        "type": "basic",
+        "position": {
+          "x": 372.18750000000006,
+          "y": 290.625
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "random",
+          "pauseSeconds": 100,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T05:05:05.651Z",
+          "pauseRandomFromSeconds": 9,
+          "pauseRandomToSeconds": 20
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-8d88e453-a7a7-461c-9ad5-ba07556866a9",
+        "type": "basic",
+        "position": {
+          "x": 250,
+          "y": 192.49999999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Goto url",
+          "gotoUrl": "https://translate.google.com.vn/?sl=en&tl=vi&op=translate",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T04:58:16.306Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-7e7263a0-e755-4ffa-9b6b-a7f47d09bdf0",
+        "type": "basic",
+        "position": {
+          "x": 403.78196399619503,
+          "y": 554.3229489118911
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "https://docs.hidemium.io/automation-user-manual/data/writesheet",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T05:00:30.026Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-12835242-56e6-448b-ba25-54e3ade4ca43",
+        "type": "basic",
+        "position": {
+          "x": 461.0662342763369,
+          "y": 426.6992532984547
+        },
+        "data": {
+          "code": "disconnect",
+          "label": "Disconnect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-97f5a309-9431-4102-9dbf-02da241f49d1",
+        "type": "basic",
+        "position": {
+          "x": 756.1522847755103,
+          "y": 424.8446374225579
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "defaultProfile",
+          "openConnectCloseWhenDone": false
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-8d88e453-a7a7-461c-9ad5-ba07556866a9",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-8d88e453-a7a7-461c-9ad5-ba07556866a9in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-8d88e453-a7a7-461c-9ad5-ba07556866a9",
+        "sourceHandle": "success",
+        "target": "n-ee14922b-8e65-4eb4-b0d0-26e0ef6cabba",
+        "targetHandle": "in",
+        "id": "xy-edge__n-8d88e453-a7a7-461c-9ad5-ba07556866a9success-n-ee14922b-8e65-4eb4-b0d0-26e0ef6cabbain"
+      },
+      {
+        "source": "n-ee14922b-8e65-4eb4-b0d0-26e0ef6cabba",
+        "sourceHandle": "success",
+        "target": "n-12835242-56e6-448b-ba25-54e3ade4ca43",
+        "targetHandle": "in",
+        "id": "xy-edge__n-ee14922b-8e65-4eb4-b0d0-26e0ef6cabbasuccess-n-12835242-56e6-448b-ba25-54e3ade4ca43in"
+      },
+      {
+        "source": "n-12835242-56e6-448b-ba25-54e3ade4ca43",
+        "sourceHandle": "success",
+        "target": "n-97f5a309-9431-4102-9dbf-02da241f49d1",
+        "targetHandle": "in",
+        "id": "xy-edge__n-12835242-56e6-448b-ba25-54e3ade4ca43success-n-97f5a309-9431-4102-9dbf-02da241f49d1in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-97f5a309-9431-4102-9dbf-02da241f49d1",
+        "sourceHandle": "success",
+        "target": "n-7e7263a0-e755-4ffa-9b6b-a7f47d09bdf0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-97f5a309-9431-4102-9dbf-02da241f49d1success-n-7e7263a0-e755-4ffa-9b6b-a7f47d09bdf0in"
+      }
+    ],
+    "viewport": {
+      "x": 123.15414610504408,
+      "y": 121.32782351451029,
+      "zoom": 0.6062866266041598
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      }
+    ]
+  }
+}

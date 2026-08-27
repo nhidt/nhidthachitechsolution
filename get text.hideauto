@@ -1,0 +1,259 @@
+{
+  "id": "2fcf6ad3-a85d-48ef-b0a8-9434e952ad93",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\2fcf6ad3-a85d-48ef-b0a8-9434e952ad93.hideflow",
+  "updatedAt": "2026-07-22T02:46:15.362Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -320,
+          "y": 33.75000000000002
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -193.75,
+          "y": 93.12499999999996
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-e7740fbd-6fd1-48df-86ae-2dff1d321980",
+        "type": "basic",
+        "position": {
+          "x": 35.625000000000085,
+          "y": 166.87499999999983
+        },
+        "data": {
+          "code": "getText",
+          "label": "Get text",
+          "getTextSelector": "//*[@id=\"vl-flyout-nav\"]/ul/li[11]/a/span",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "elementOrderTo": 11,
+          "getTextSaveTo": "gettext",
+          "lastConfiguredAt": "2026-07-22T02:40:43.718Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": true,
+        "dragging": false
+      },
+      {
+        "id": "n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5",
+        "type": "loop",
+        "position": {
+          "x": 261.875,
+          "y": 81.87499999999994
+        },
+        "data": {
+          "code": "loop",
+          "label": "Loop",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "loopTimes": 11,
+          "lastConfiguredAt": "2026-07-22T02:30:58.606Z"
+        },
+        "measured": {
+          "width": 120,
+          "height": 120
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-4d9acab8-7414-428a-8102-7951e16661f3",
+        "type": "basic",
+        "position": {
+          "x": 446.87500000000006,
+          "y": 48.12499999999994
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "đúng",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-22T02:32:19.503Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-63900f48-7401-491c-b44f-712cb87b9d63",
+        "type": "basic",
+        "position": {
+          "x": 443.12500000000006,
+          "y": 146.87499999999994
+        },
+        "data": {
+          "code": "stopLoop",
+          "label": "Stop loop"
+        },
+        "measured": {
+          "width": 216,
+          "height": 60
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-cb976f72-db93-41db-979e-54371a3a72e2",
+        "type": "basic",
+        "position": {
+          "x": -6.25,
+          "y": 19.99999999999998
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "https://www.ebay.com/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-22T02:34:33.791Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5",
+        "sourceHandle": "body",
+        "target": "n-e7740fbd-6fd1-48df-86ae-2dff1d321980",
+        "targetHandle": "in",
+        "id": "xy-edge__n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5body-n-e7740fbd-6fd1-48df-86ae-2dff1d321980in"
+      },
+      {
+        "source": "n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5",
+        "sourceHandle": "success",
+        "target": "n-4d9acab8-7414-428a-8102-7951e16661f3",
+        "targetHandle": "in",
+        "id": "xy-edge__n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5success-n-4d9acab8-7414-428a-8102-7951e16661f3in"
+      },
+      {
+        "source": "n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5",
+        "sourceHandle": "error",
+        "target": "n-63900f48-7401-491c-b44f-712cb87b9d63",
+        "targetHandle": "in",
+        "id": "xy-edge__n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5error-n-63900f48-7401-491c-b44f-712cb87b9d63in"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-cb976f72-db93-41db-979e-54371a3a72e2",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-cb976f72-db93-41db-979e-54371a3a72e2in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-cb976f72-db93-41db-979e-54371a3a72e2",
+        "sourceHandle": "success",
+        "target": "n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5",
+        "targetHandle": "in",
+        "id": "xy-edge__n-cb976f72-db93-41db-979e-54371a3a72e2success-n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-e7740fbd-6fd1-48df-86ae-2dff1d321980",
+        "sourceHandle": "success",
+        "target": "n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5",
+        "targetHandle": "loop-in",
+        "id": "xy-edge__n-e7740fbd-6fd1-48df-86ae-2dff1d321980success-n-24cf69ff-041d-4b7a-ab2d-309b7cfec3d5loop-in"
+      }
+    ],
+    "viewport": {
+      "x": -53.424999999999955,
+      "y": 22.099999999999966,
+      "zoom": 1.6
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "469e099d-d50f-4665-b539-ac2f7d5f39cc",
+        "key": "bien",
+        "value": ""
+      },
+      {
+        "id": "c5281871-2998-476c-82cf-868fff18a11f",
+        "key": "inputvalue",
+        "value": ""
+      },
+      {
+        "id": "cf88cd3b-ec52-4ac1-aeba-da26650fe886",
+        "key": "gettext",
+        "value": ""
+      }
+    ]
+  }
+}

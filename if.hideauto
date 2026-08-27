@@ -1,0 +1,255 @@
+{
+  "id": "17b88c9a-013b-485b-a943-161589ab794b",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\17b88c9a-013b-485b-a943-161589ab794b.hideflow",
+  "updatedAt": "2026-07-18T07:29:02.704Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -109.375,
+          "y": 361.87500000000006
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-2a7e924f-41aa-4df1-b165-2418f38f2b84",
+        "type": "basic",
+        "position": {
+          "x": 340,
+          "y": 360
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T07:20:44.941Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-e95d2dce-9721-4899-b55b-99bbe7415bac",
+        "type": "if",
+        "position": {
+          "x": 632.9387188322944,
+          "y": 489.89039928761247
+        },
+        "data": {
+          "code": "if",
+          "label": "IF",
+          "ifConditions": [
+            {
+              "id": "9d761de1-5884-4560-901b-fa1ed7928649",
+              "leftValue": "{{url}}",
+              "operator": "contains",
+              "rightValue": "ebay.com"
+            },
+            {
+              "id": "b4fc105f-5a43-43d3-8adb-7a977bed0625",
+              "logicalOperator": "OR",
+              "leftValue": "{{url}}",
+              "operator": "contains",
+              "rightValue": "Electronics"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T07:23:41.851Z"
+        },
+        "measured": {
+          "width": 120,
+          "height": 120
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-9d721531-a27f-4057-975b-679bb0cad2d0",
+        "type": "basic",
+        "position": {
+          "x": 640,
+          "y": 360
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "getUrlSaveTo": "url",
+          "lastConfiguredAt": "2026-07-18T04:48:25.920Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-b1cba0f6-34db-444a-913b-47222de52f6f",
+        "type": "basic",
+        "position": {
+          "x": 802.2742809513818,
+          "y": 523.6334134656504
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "đúng",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T04:51:57.791Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-96c5cb69-1fb4-4fa3-b819-15ba75baf650",
+        "type": "basic",
+        "position": {
+          "x": 345.861575326011,
+          "y": 510.71055697193367
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "sai",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T04:52:05.359Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect",
+        "selected": false
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-2a7e924f-41aa-4df1-b165-2418f38f2b84",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-2a7e924f-41aa-4df1-b165-2418f38f2b84in"
+      },
+      {
+        "source": "n-2a7e924f-41aa-4df1-b165-2418f38f2b84",
+        "sourceHandle": "success",
+        "target": "n-9d721531-a27f-4057-975b-679bb0cad2d0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-2a7e924f-41aa-4df1-b165-2418f38f2b84success-n-9d721531-a27f-4057-975b-679bb0cad2d0in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-9d721531-a27f-4057-975b-679bb0cad2d0",
+        "sourceHandle": "success",
+        "target": "n-e95d2dce-9721-4899-b55b-99bbe7415bac",
+        "targetHandle": "in",
+        "id": "xy-edge__n-9d721531-a27f-4057-975b-679bb0cad2d0success-n-e95d2dce-9721-4899-b55b-99bbe7415bacin"
+      },
+      {
+        "source": "n-e95d2dce-9721-4899-b55b-99bbe7415bac",
+        "sourceHandle": "success",
+        "target": "n-b1cba0f6-34db-444a-913b-47222de52f6f",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e95d2dce-9721-4899-b55b-99bbe7415bacsuccess-n-b1cba0f6-34db-444a-913b-47222de52f6fin"
+      },
+      {
+        "source": "n-e95d2dce-9721-4899-b55b-99bbe7415bac",
+        "sourceHandle": "error",
+        "target": "n-96c5cb69-1fb4-4fa3-b819-15ba75baf650",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e95d2dce-9721-4899-b55b-99bbe7415bacerror-n-96c5cb69-1fb4-4fa3-b819-15ba75baf650in"
+      }
+    ],
+    "viewport": {
+      "x": -556.4832531382103,
+      "y": -313.54648088511124,
+      "zoom": 1.3928809012737995
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "4fcf7f40-e3a8-4875-baff-a7cb270a5a1e",
+        "key": "url",
+        "value": ""
+      }
+    ]
+  }
+}

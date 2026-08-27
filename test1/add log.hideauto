@@ -1,0 +1,242 @@
+{
+  "id": "f5ea2899-dcdb-4e5b-bc42-feeb04497312",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\f5ea2899-dcdb-4e5b-bc42-feeb04497312.hideflow",
+  "updatedAt": "2026-08-01T01:01:31.663Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -250.625,
+          "y": 316.25000000000006
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -92.55111060622406,
+          "y": 301.60547532495553
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-53441222-b48a-4c63-ad47-25fdbc5d68ab",
+        "type": "basic",
+        "position": {
+          "x": 294.3192024904267,
+          "y": 281.50325411250736
+        },
+        "data": {
+          "code": "convertJson",
+          "label": "Convert JSON",
+          "convertJsonFrom": "2",
+          "convertJsonSaveTo": "json1",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T02:36:25.724Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57",
+        "type": "basic",
+        "position": {
+          "x": 65.92007997815654,
+          "y": 203.60126601855356
+        },
+        "data": {
+          "code": "setVariables",
+          "label": "Set variables",
+          "setVariableAssignments": [
+            {
+              "variableKey": "1",
+              "operator": "set",
+              "value": "\"{\\\"email\\\":\\\"abc@gmail.com\\\",\\\"password\\\":\\\"123\\\"}\""
+            },
+            {
+              "variableKey": "2",
+              "operator": "set",
+              "value": "{\"full\": {\"audio/aac\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"audio/mp3\": {\"mediaSource\": \"false\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"audio/mp4\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"maybe\"}, \"audio/ogg\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"maybe\"}, \"audio/wav\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"maybe\"}, \"video/mp4\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"maybe\"}, \"video/ogg\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"maybe\"}, \"audio/flac\": {\"mediaSource\": \"false\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"audio/mpeg\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"audio/opus\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"\"}, \"audio/webm\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"maybe\"}, \"video/webm\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"maybe\"}, \"audio/x-flac\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"\"}, \"video/x-matroska\": {\"mediaSource\": \"false\", \"audioPlayType\": \"maybe\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"maybe\"}, \"audio/wav; codecs=\\\"1\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"audio/aac; codecs=\\\"aac\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"\"}, \"audio/ogg; codecs=\\\"opus\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"video/webm; codecs=\\\"av1\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"\"}, \"video/webm; codecs=\\\"vp8\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/webm; codecs=\\\"vp9\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"audio/webm; codecs=\\\"opus\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/webm; codecs=\\\"opus\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"audio/ogg; codecs=\\\"vorbis\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"video/ogg; codecs=\\\"theora\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"\"}, \"audio/webm; codecs=\\\"vorbis\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"audio/mp4; codecs=\\\"mp4a.40.2\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"audio/mp4; codecs=\\\"mp4a.40.5\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"mp4v.20.8\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"\"}, \"video/webm; codecs=\\\"av1, opus\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"\"}, \"video/webm; codecs=\\\"vp8, opus\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/webm; codecs=\\\"vp9, opus\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"avc1.42E01E\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"avc1.4D401E\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"avc1.640028\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"av01.0.05M.08\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"av01.0.08M.08\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"av01.0.12M.10\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/ogg; codecs=\\\"theora, vorbis\\\"\": {\"mediaSource\": \"false\", \"audioPlayType\": \"\", \"mediaRecorder\": \"false\", \"videoPlayType\": \"\"}, \"video/mp4; codecs=\\\"hev1.1.6.L93.B0\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}, \"video/mp4; codecs=\\\"hvc1.1.6.L93.B0\\\"\": {\"mediaSource\": \"true\", \"audioPlayType\": \"probably\", \"mediaRecorder\": \"true\", \"videoPlayType\": \"probably\"}}, \"creepJs\": {\"audio/aac\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"true\", \"mediaRecorder\": \"false\"}, \"audio/mpeg\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"true\", \"mediaRecorder\": \"false\"}, \"audio/x-m4a\": {\"audio\": \"maybe\", \"video\": \"maybe\", \"mediaSource\": \"false\", \"mediaRecorder\": \"false\"}, \"audio/mpegurl\": {\"audio\": \"maybe\", \"video\": \"maybe\", \"mediaSource\": \"false\", \"mediaRecorder\": \"false\"}, \"video/quicktime\": {\"audio\": \"\", \"video\": \"\", \"mediaSource\": \"false\", \"mediaRecorder\": \"false\"}, \"video/x-matroska\": {\"audio\": \"maybe\", \"video\": \"maybe\", \"mediaSource\": \"false\", \"mediaRecorder\": \"true\"}, \"audio/wav; codecs=\\\"1\\\"\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"false\", \"mediaRecorder\": \"false\"}, \"video/webm; codecs=\\\"vp8\\\"\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"true\", \"mediaRecorder\": \"true\"}, \"video/webm; codecs=\\\"vp9\\\"\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"true\", \"mediaRecorder\": \"true\"}, \"audio/ogg; codecs=\\\"vorbis\\\"\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"false\", \"mediaRecorder\": \"false\"}, \"video/ogg; codecs=\\\"theora\\\"\": {\"audio\": \"\", \"video\": \"\", \"mediaSource\": \"false\", \"mediaRecorder\": \"false\"}, \"video/mp4; codecs=\\\"avc1.42E01E\\\"\": {\"audio\": \"probably\", \"video\": \"probably\", \"mediaSource\": \"true\", \"mediaRecorder\": \"true\"}}}"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T02:41:02.900Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-20723ee8-2c4a-4e72-b580-4f739db19211",
+        "type": "basic",
+        "position": {
+          "x": 150.6995451229702,
+          "y": 402.4116613653526
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 100,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T03:29:17.867Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6f",
+        "type": "basic",
+        "position": {
+          "x": 383.1995451229703,
+          "y": 436.1616613653526
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57",
+        "sourceHandle": "success",
+        "target": "n-53441222-b48a-4c63-ad47-25fdbc5d68ab",
+        "targetHandle": "in",
+        "id": "xy-edge__n-d98f8b54-f7bd-4daa-b3fd-7277ac868e57success-n-53441222-b48a-4c63-ad47-25fdbc5d68abin",
+        "selected": false
+      },
+      {
+        "source": "n-53441222-b48a-4c63-ad47-25fdbc5d68ab",
+        "sourceHandle": "success",
+        "target": "n-20723ee8-2c4a-4e72-b580-4f739db19211",
+        "targetHandle": "in",
+        "id": "xy-edge__n-53441222-b48a-4c63-ad47-25fdbc5d68absuccess-n-20723ee8-2c4a-4e72-b580-4f739db19211in"
+      },
+      {
+        "source": "n-20723ee8-2c4a-4e72-b580-4f739db19211",
+        "sourceHandle": "success",
+        "target": "n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6f",
+        "targetHandle": "in",
+        "id": "xy-edge__n-20723ee8-2c4a-4e72-b580-4f739db19211success-n-eb76ec81-f7f0-42c3-9004-9e2310a3ad6fin"
+      }
+    ],
+    "viewport": {
+      "x": 371.65314050624846,
+      "y": 126.66301011014718,
+      "zoom": 0.8000000000000003
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "baa597c6-57d1-41c7-b92c-7f665dc0c450",
+        "key": "chisoloop",
+        "value": ""
+      },
+      {
+        "id": "30597eef-b9ed-40ef-8ce7-01422981330d",
+        "key": "json_result",
+        "value": ""
+      },
+      {
+        "id": "4be6dc46-242e-47b6-b247-1b2b3bd8aec9",
+        "key": "1",
+        "value": ""
+      },
+      {
+        "id": "17f2469c-68a7-40df-8a51-2e56e02d404b",
+        "key": "2",
+        "value": ""
+      },
+      {
+        "id": "4dd9cb55-0e91-42c3-8e0f-c2ab0998ec55",
+        "key": "json1",
+        "value": ""
+      }
+    ]
+  }
+}

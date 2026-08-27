@@ -1,0 +1,183 @@
+{
+  "id": "c51abb04-05d0-48f3-89e8-979a0715ea11",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\c51abb04-05d0-48f3-89e8-979a0715ea11.hideflow",
+  "updatedAt": "2026-08-06T03:12:01.114Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -142.5,
+          "y": 185.625
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 16.875,
+          "y": 159.37499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-b83916b1-9513-482a-ab47-76908d2844cf",
+        "type": "basic",
+        "position": {
+          "x": 286.25,
+          "y": 173.12499999999994
+        },
+        "data": {
+          "code": "sendHotmailOauth",
+          "label": "Send Hotmail OAuth",
+          "hotmailSendCredentialSource": "fields",
+          "hotmailSendAccountLine": "",
+          "hotmailSendIsHtml": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "hotmailSendTo": "nhidthachitech@gmail.com",
+          "hotmailSendFrom": "test",
+          "hotmailSendCc": "nhidt1399@gmail.com",
+          "hotmailSendBcc": "nhicoii1399@gmail.com",
+          "hotmailSendSubject": "User Verification",
+          "hotmailSendBody": "<!DOCTYPE html>\n<html lang=\"vi\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Email Thông Báo</title>\n    <style>\n        /* Reset CSS cơ bản cho email */\n        body, table, td, a {\n            -webkit-text-size-adjust: 100%;\n            -ms-text-size-adjust: 100%;\n        }\n        table, td {\n            mso-table-lspace: 0pt;\n            mso-table-rspace: 0pt;\n        }\n        img {\n            -ms-interpolation-mode: bicubic;\n            border: 0;\n            height: auto;\n            line-height: 100%;\n            outline: none;\n            text-decoration: none;\n        }\n        body {\n            height: 100% !important;\n            margin: 0 !important;\n            padding: 0 !important;\n            width: 100% !important;\n            background-color: #f4f6f9;\n            font-family: Arial, Helvetica, sans-serif;\n        }\n\n        /* Responsive Style */\n        @media screen and (max-width: 600px) {\n            .email-container {\n                width: 100% !important;\n                padding: 10px !important;\n            }\n            .content-cell {\n                padding: 20px !important;\n            }\n            .button {\n                width: 100% !important;\n                text-align: center !important;\n            }\n        }\n    </style>\n</head>\n<body style=\"margin: 0; padding: 0; background-color: #f4f6f9;\">\n\n    <!-- Wrapper chính -->\n    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n        <tr>\n            <td align=\"center\" style=\"padding: 20px 0;\">\n                \n                <!-- Email Container (Rộng tối đa 600px) -->\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" class=\"email-container\" style=\"background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);\">\n                    \n                    <!-- Header / Logo -->\n                    <tr>\n                        <td align=\"center\" style=\"background-color: #4F46E5; padding: 30px 20px;\">\n                            <h1 style=\"color: #ffffff; margin: 0; font-size: 24px; font-weight: bold; letter-spacing: 1px;\">\n                                THƯƠNG HIỆU CỦA BẠN\n                            </h1>\n                        </td>\n                    </tr>\n\n                    <!-- Nội dung chính -->\n                    <tr>\n                        <td class=\"content-cell\" style=\"padding: 40px 30px; color: #333333; font-size: 16px; line-height: 1.6;\">\n                            \n                            <h2 style=\"color: #111827; font-size: 20px; margin-top: 0; margin-bottom: 16px;\">\n                                Xin chào, [Tên Khách Hàng]!\n                            </h2>\n                            \n                            <p style=\"margin-top: 0; margin-bottom: 20px;\">\n                                Cảm ơn bạn đã đồng hành cùng chúng tôi. Chúng tôi rất vui được thông báo rằng tài khoản/đơn hàng của bạn đã được cập nhật thành công.\n                            </p>\n\n                            <p style=\"margin-top: 0; margin-bottom: 24px;\">\n                                Dưới đây là thông tin chi tiết hoặc hành động tiếp theo bạn cần thực hiện:\n                            </p>\n\n                            <!-- Hộp thông tin nổi bật -->\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F3F4F6; border-left: 4px solid #4F46E5; border-radius: 4px; margin-bottom: 24px;\">\n                                <tr>\n                                    <td style=\"padding: 15px; font-size: 14px; color: #4B5563;\">\n                                        <strong>Lưu ý quan trọng:</strong> Ưu đãi đặc biệt dành cho bạn sẽ hết hạn vào ngày <strong>31/12/2026</strong>. Đừng bỏ lỡ!\n                                    </td>\n                                </tr>\n                            </table>\n\n                            <!-- Nút kêu gọi hành động (Call to Action - CTA) -->\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n                                <tr>\n                                    <td align=\"center\" style=\"padding: 10px 0 20px 0;\">\n                                        <a href=\"https://example.com\" target=\"_blank\" class=\"button\" style=\"background-color: #4F46E5; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: bold; display: inline-block; font-size: 16px;\">\n                                            Khám Phá Ngay\n                                        </a>\n                                    </td>\n                                </tr>\n                            </table>\n\n                            <p style=\"margin-top: 20px; margin-bottom: 0;\">\n                                Trân trọng,<br>\n                                <strong>Đội ngũ Hỗ trợ Khách hàng</strong>\n                            </p>\n\n                        </td>\n                    </tr>\n\n                    <!-- Footer -->\n                    <tr>\n                        <td style=\"background-color: #F9FAFB; padding: 20px 30px; text-align: center; border-top: 1px solid #E5E7EB; font-size: 12px; color: #9CA3AF;\">\n                            <p style=\"margin: 0 0 10px 0;\">\n                                Bạn nhận được email này vì đã đăng ký tài khoản tại Website của chúng tôi.\n                            </p>\n                            <p style=\"margin: 0 0 10px 0;\">\n                                Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh\n                            </p>\n                            <p style=\"margin: 0;\">\n                                <a href=\"#\" style=\"color: #6B7280; text-decoration: underline;\">Hủy đăng ký nhận thư</a> | \n                                <a href=\"#\" style=\"color: #6B7280; text-decoration: underline;\">Chính sách bảo mật</a>\n                            </p>\n                        </td>\n                    </tr>\n\n                </table>\n                <!-- End Email Container -->\n\n            </td>\n        </tr>\n    </table>\n\n</body>\n</html>",
+          "hotmailSendAttachments": "C:\\Users\\Hachitech\\Desktop\\get cookie.hideflow",
+          "hotmailSendSaveTo": "bien",
+          "lastConfiguredAt": "2026-08-06T03:05:35.286Z",
+          "hotmailSendEmail": "BroersmaEric7346@outlook.com",
+          "hotmailSendRefreshToken": "M.C520_BAY.0.U.MsaArtifacts.-Cqy3FX*jSnk5qsHQ50Ny!not2b6cHvfWiwxc!DUxZxXpjDPH4p5AdWau8Wv6DpSgHUDWWYf9m0z1clbZGIXeLKxQji8k7JTWr8uvynGcWZtjryxr6cWwh2NoM4kG1wLS4T6oCVwEL8FpeBSZTa7zW7hyqowSavd28*NyajI1LnSm46fYYtxrYTD04PSRDxOK!!PhpZu!zofCNv7rpmvxrUyrFuf8ImrUnwpWN07CjTHr8QvosGKO89RgjQKvM7anZbAZHxVqkPzXBSxA!BaQo86vPfKCwD7hge8u3pjom!gpL5f9yjZeBXMcrK3E9qXbh!7Qb7CKqU6FX9zt*Fi5ageWzuMuX2kgebG0xuLaIpgzJtfQ99QZ4JdHIsX1h*JzE2LfSZa3VkcqGI4UW7nl4vY$",
+          "hotmailSendClientId": "9e5f94bc-e8a4-4e73-b8be-63364c29d753"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-1d923608-9dcf-4753-a7e6-9f6a3bed091b",
+        "type": "basic",
+        "position": {
+          "x": 305.00000000000006,
+          "y": 301.25
+        },
+        "data": {
+          "code": "readHotmailAuth",
+          "label": "Read Hotmail Auth",
+          "hotmailMode": "filter",
+          "hotmailCredentialSource": "line",
+          "hotmailAccountLine": "BroersmaEric7346@outlook.com|KP5t1FkCbx6j|M.C520_BAY.0.U.MsaArtifacts.-Cqy3FX*jSnk5qsHQ50Ny!not2b6cHvfWiwxc!DUxZxXpjDPH4p5AdWau8Wv6DpSgHUDWWYf9m0z1clbZGIXeLKxQji8k7JTWr8uvynGcWZtjryxr6cWwh2NoM4kG1wLS4T6oCVwEL8FpeBSZTa7zW7hyqowSavd28*NyajI1LnSm46fYYtxrYTD04PSRDxOK!!PhpZu!zofCNv7rpmvxrUyrFuf8ImrUnwpWN07CjTHr8QvosGKO89RgjQKvM7anZbAZHxVqkPzXBSxA!BaQo86vPfKCwD7hge8u3pjom!gpL5f9yjZeBXMcrK3E9qXbh!7Qb7CKqU6FX9zt*Fi5ageWzuMuX2kgebG0xuLaIpgzJtfQ99QZ4JdHIsX1h*JzE2LfSZa3VkcqGI4UW7nl4vY$|9e5f94bc-e8a4-4e73-b8be-63364c29d753|broersmaeric7346ozl@fviainboxes.com",
+          "hotmailFolder": "INBOX",
+          "hotmailIncludeJunk": true,
+          "hotmailOnlyUnread": false,
+          "hotmailWithinMinutes": 0,
+          "hotmailWaitSeconds": 60,
+          "hotmailCodePattern": "",
+          "hotmailMarkSeen": true,
+          "hotmailMaxMails": 10,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "hotmailSubjectFilter": "tesst email",
+          "hotmailFromFilter": "",
+          "hotmailSaveCodeTo": "",
+          "lastConfiguredAt": "2026-08-06T01:40:39.246Z",
+          "hotmailSaveBodyTo": "email"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-b83916b1-9513-482a-ab47-76908d2844cf",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-b83916b1-9513-482a-ab47-76908d2844cfin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-b83916b1-9513-482a-ab47-76908d2844cf",
+        "sourceHandle": "success",
+        "target": "n-1d923608-9dcf-4753-a7e6-9f6a3bed091b",
+        "targetHandle": "in",
+        "id": "xy-edge__n-b83916b1-9513-482a-ab47-76908d2844cfsuccess-n-1d923608-9dcf-4753-a7e6-9f6a3bed091bin"
+      }
+    ],
+    "viewport": {
+      "x": 106.71289886314315,
+      "y": -6.309869214415244,
+      "zoom": 1.6
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "9bd8b4b6-afd5-491e-9ebf-5972ade9ae64",
+        "key": "bien",
+        "value": "<79035943-6d75-bfee-41ae-341500992170@outlook.com>"
+      },
+      {
+        "id": "1ab919f3-3a0d-4dc7-b07c-7132901df504",
+        "key": "email",
+        "value": ""
+      }
+    ]
+  }
+}

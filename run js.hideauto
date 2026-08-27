@@ -1,0 +1,122 @@
+{
+  "id": "9650a8d9-4041-4d68-80fa-cad947c36e9c",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\9650a8d9-4041-4d68-80fa-cad947c36e9c.hideflow",
+  "updatedAt": "2026-07-18T02:02:54.536Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -267.3999886400413,
+          "y": 240.92467781538227
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": true
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -76.875,
+          "y": 231.87499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-6e7fec44-a0ce-450f-a972-91751c33e7f7",
+        "type": "basic",
+        "position": {
+          "x": 202.26301645002962,
+          "y": 233.31087294374623
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "const w = window.open(\"https://www.ebay.com\", \"_blank\");\n\nconst timer = setInterval(() => {\n    try {\n        if (w.document.readyState === \"complete\") {\n            clearInterval(timer);\n\n            setTimeout(() => {\n                const el = w.document.querySelector(\"#vl-flyout-nav > ul > li:nth-child(6) > a\");\n                if (el) el.click();\n            }, 5000);\n        }\n    } catch (e) {\n        // Chờ trang tải xong\n    }\n}, 500);",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-17T08:19:57.695Z",
+          "runJsSaveResultTo": "1"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect",
+        "selected": true
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-6e7fec44-a0ce-450f-a972-91751c33e7f7",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-6e7fec44-a0ce-450f-a972-91751c33e7f7in"
+      }
+    ],
+    "viewport": {
+      "x": 402.5492777679459,
+      "y": 19.44759350103908,
+      "zoom": 1.392880901273799
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "9a8c8ce0-485c-48a9-8bcf-0665b6e57d38",
+        "key": "1",
+        "value": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "id": "ede504cf-d4b3-4441-b626-b5d609781e1a",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\ede504cf-d4b3-4441-b626-b5d609781e1a.hideflow",
+  "updatedAt": "2026-07-20T07:55:49.888Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 13.75,
+          "y": 256.24999999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-e2e7e2a1-badd-42f5-b567-c8cb3c2114c5",
+        "type": "basic",
+        "position": {
+          "x": 348.57202253184494,
+          "y": -26.678933071240312
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T07:39:04.196Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-bab7de43-440e-42e0-be9a-c0f30cb6d281",
+        "type": "basic",
+        "position": {
+          "x": 664.0331318745077,
+          "y": -81.83258449441864
+        },
+        "data": {
+          "code": "hover",
+          "label": "Hover",
+          "hoverSelector": "#s0-0-1-1-0-2-9-4-13-2-0-3-0-1-3-\\@homepage-0-0-7\\[0\\]-\\@row_xc_homepage_general_dweb_so-1-0-15\\[6\\]-\\@102690-featured-deals-2-7-6-1-11-1-0-4-3-0-6-1-0-list > li:nth-child(1) > article > div.dp-item-tile-image-zones.\\@container.relative.rounded-100.media-scrim-rgba\\(0\\,0\\,0\\,0\\.05\\) > a > div",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:14:54.008Z",
+          "nodeTimeoutSeconds": 120
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-82482241-ac89-4f88-88b5-90b4c3b465b7",
+        "type": "basic",
+        "position": {
+          "x": 304.14613650730655,
+          "y": 413.6288349944998
+        },
+        "data": {
+          "code": "focus",
+          "label": "Focus",
+          "focusSelector": "#depession-section-1 > div > div > div.wpb_column.vc_column_container.vc_col-sm-8 > div > div > div.wpb_raw_code.wpb_content_element.wpb_raw_html > div > center > a",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:28:54.232Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-298ba2f7-7ca7-4951-9b78-5b0c3bb4ee10",
+        "type": "basic",
+        "position": {
+          "x": 486.0963485768215,
+          "y": 77.71846918540685
+        },
+        "data": {
+          "code": "scroll",
+          "label": "Scroll",
+          "scrollMode": "to",
+          "scrollX": 500,
+          "scrollY": 2000,
+          "scrollStepFrom": 400,
+          "scrollStepTo": 1000,
+          "scrollStepDelayFrom": 500,
+          "scrollStepDelayTo": 1000,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:14:02.753Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-640e1f3b-03f9-481a-9de8-aeaae8bf9ef6",
+        "type": "basic",
+        "position": {
+          "x": 713.5233704418915,
+          "y": 315.0121630224882
+        },
+        "data": {
+          "code": "scrollIntoView",
+          "label": "Scroll Into View",
+          "scrollIntoViewSelector": "{{bien}}",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "scrollStepFrom": 400,
+          "scrollStepTo": 1000,
+          "scrollStepDelayFrom": 500,
+          "scrollStepDelayTo": 1000,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T09:55:01.121Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-87ad5d43-421b-4d34-b959-2a5ff2911e49",
+        "type": "basic",
+        "position": {
+          "x": 873.8269807847171,
+          "y": 455.3884413539883
+        },
+        "data": {
+          "code": "setVariables",
+          "label": "Set variables",
+          "setVariableAssignments": [
+            {
+              "variableKey": "bien",
+              "operator": "set",
+              "value": "#glbfooter > footer > div.gf-big-links > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3)"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T09:53:21.834Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-c333aa58-c2cc-419c-b412-cbf1e7178cac",
+        "type": "basic",
+        "position": {
+          "x": 313.75,
+          "y": 256.24999999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.totalbrain.com/mental-health-assessment/focus-test/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:28:39.720Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-87ad5d43-421b-4d34-b959-2a5ff2911e49",
+        "sourceHandle": "success",
+        "target": "n-640e1f3b-03f9-481a-9de8-aeaae8bf9ef6",
+        "targetHandle": "in",
+        "id": "xy-edge__n-87ad5d43-421b-4d34-b959-2a5ff2911e49success-n-640e1f3b-03f9-481a-9de8-aeaae8bf9ef6in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-e2e7e2a1-badd-42f5-b567-c8cb3c2114c5",
+        "sourceHandle": "success",
+        "target": "n-298ba2f7-7ca7-4951-9b78-5b0c3bb4ee10",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e2e7e2a1-badd-42f5-b567-c8cb3c2114c5success-n-298ba2f7-7ca7-4951-9b78-5b0c3bb4ee10in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-298ba2f7-7ca7-4951-9b78-5b0c3bb4ee10",
+        "sourceHandle": "success",
+        "target": "n-bab7de43-440e-42e0-be9a-c0f30cb6d281",
+        "targetHandle": "in",
+        "id": "xy-edge__n-298ba2f7-7ca7-4951-9b78-5b0c3bb4ee10success-n-bab7de43-440e-42e0-be9a-c0f30cb6d281in"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-c333aa58-c2cc-419c-b412-cbf1e7178cac",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-c333aa58-c2cc-419c-b412-cbf1e7178cacin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-c333aa58-c2cc-419c-b412-cbf1e7178cac",
+        "sourceHandle": "success",
+        "target": "n-82482241-ac89-4f88-88b5-90b4c3b465b7",
+        "targetHandle": "in",
+        "id": "xy-edge__n-c333aa58-c2cc-419c-b412-cbf1e7178cacsuccess-n-82482241-ac89-4f88-88b5-90b4c3b465b7in",
+        "selected": false
+      }
+    ],
+    "viewport": {
+      "x": -176.01377529956522,
+      "y": 159.32015397732033,
+      "zoom": 0.9189586839976284
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "9f19a911-7c80-4c21-ac9b-8dcd6e6b7bd5",
+        "key": "bien",
+        "value": ""
+      }
+    ]
+  }
+}

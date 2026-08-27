@@ -1,0 +1,398 @@
+{
+  "id": "7744223c-ca42-4946-a9a7-c50776c18714",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\7744223c-ca42-4946-a9a7-c50776c18714.hideflow",
+  "updatedAt": "2026-08-06T10:01:27.636Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -97.8321617655174,
+          "y": 374.45079107728935
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 49.896309330796726,
+          "y": 358.3506151115339
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-235d5d21-c150-4331-8d7b-7708656fdaa0",
+        "type": "basic",
+        "position": {
+          "x": 623.5061511153388,
+          "y": 282.47891024209247
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://x.com/account/access",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T03:55:45.698Z",
+          "delayFromSeconds": 5,
+          "delayToSeconds": 7
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-cff085bb-67d7-4d60-bd84-e13bf9496300",
+        "type": "basic",
+        "position": {
+          "x": 1037.9204746463736,
+          "y": 400.4358524347207
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "https://phatnguoi.com/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T03:36:52.216Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-4463bfb2-d81c-409a-9faf-d5ce8b09931b",
+        "type": "basic",
+        "position": {
+          "x": 1268.039543103924,
+          "y": 581.0175750544596
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "rumble.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T03:57:11.418Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-fd699fde-79dd-450d-b5f9-3748c2d00512",
+        "type": "basic",
+        "position": {
+          "x": 1540,
+          "y": 360
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 30,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T03:37:11.512Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false
+      },
+      {
+        "id": "n-885d1e1c-b022-4bbc-a08d-119092104cdb",
+        "type": "basic",
+        "position": {
+          "x": 1021.036906692033,
+          "y": 204.04569421926277
+        },
+        "data": {
+          "code": "mouseDoubleClick",
+          "label": "Mouse double click",
+          "mouseDoubleClickX": 535,
+          "mouseDoubleClickY": 340,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:08:06.259Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": true,
+        "dragging": false
+      },
+      {
+        "id": "n-2059dc73-f4ca-4be6-a78f-8fb4437939a2",
+        "type": "basic",
+        "position": {
+          "x": 355.79173358020313,
+          "y": 362.4602021774301
+        },
+        "data": {
+          "code": "runOtherScript",
+          "label": "Run Other Script",
+          "runOtherScriptWorkflowId": "4e8c2179-f7f9-40aa-9a0c-a8b2a7f8f84c",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T07:27:48.166Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19f",
+        "type": "loop",
+        "position": {
+          "x": 1512.3655537541026,
+          "y": 146.31722312294866
+        },
+        "data": {
+          "code": "loop",
+          "label": "Loop",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "loopTimes": "{{bientam1}}",
+          "lastConfiguredAt": "2026-08-06T08:21:17.250Z",
+          "loopMode": "times",
+          "loopElementsSelector": "",
+          "loopElementExport": {},
+          "loopWhileVariable": "",
+          "loopWhileOperator": "eq",
+          "loopWhileCompareValue": "",
+          "loopFrom": 0,
+          "loopTo": 10
+        },
+        "measured": {
+          "width": 120,
+          "height": 120
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-12d8e766-c933-4098-a204-803505257ed8",
+        "type": "basic",
+        "position": {
+          "x": 1743.0913884385257,
+          "y": 261.5764497959569
+        },
+        "data": {
+          "code": "stopLoop",
+          "label": "Stop loop"
+        },
+        "measured": {
+          "width": 216,
+          "height": 60
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-2059dc73-f4ca-4be6-a78f-8fb4437939a2",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-2059dc73-f4ca-4be6-a78f-8fb4437939a2in"
+      },
+      {
+        "source": "n-885d1e1c-b022-4bbc-a08d-119092104cdb",
+        "sourceHandle": "success",
+        "target": "n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19f",
+        "targetHandle": "in",
+        "id": "xy-edge__n-885d1e1c-b022-4bbc-a08d-119092104cdbsuccess-n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19fin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-2059dc73-f4ca-4be6-a78f-8fb4437939a2",
+        "sourceHandle": "success",
+        "target": "n-235d5d21-c150-4331-8d7b-7708656fdaa0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-2059dc73-f4ca-4be6-a78f-8fb4437939a2success-n-235d5d21-c150-4331-8d7b-7708656fdaa0in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19f",
+        "sourceHandle": "body",
+        "target": "n-cff085bb-67d7-4d60-bd84-e13bf9496300",
+        "targetHandle": "in",
+        "id": "xy-edge__n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19fbody-n-cff085bb-67d7-4d60-bd84-e13bf9496300in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-cff085bb-67d7-4d60-bd84-e13bf9496300",
+        "sourceHandle": "success",
+        "target": "n-fd699fde-79dd-450d-b5f9-3748c2d00512",
+        "targetHandle": "in",
+        "id": "xy-edge__n-cff085bb-67d7-4d60-bd84-e13bf9496300success-n-fd699fde-79dd-450d-b5f9-3748c2d00512in"
+      },
+      {
+        "source": "n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19f",
+        "sourceHandle": "error",
+        "target": "n-12d8e766-c933-4098-a204-803505257ed8",
+        "targetHandle": "in",
+        "id": "xy-edge__n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19ferror-n-12d8e766-c933-4098-a204-803505257ed8in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-fd699fde-79dd-450d-b5f9-3748c2d00512",
+        "sourceHandle": "success",
+        "target": "n-12d8e766-c933-4098-a204-803505257ed8",
+        "targetHandle": "in",
+        "id": "xy-edge__n-fd699fde-79dd-450d-b5f9-3748c2d00512success-n-12d8e766-c933-4098-a204-803505257ed8in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-fd699fde-79dd-450d-b5f9-3748c2d00512",
+        "sourceHandle": "success",
+        "target": "n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19f",
+        "targetHandle": "loop-in",
+        "id": "xy-edge__n-fd699fde-79dd-450d-b5f9-3748c2d00512success-n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19floop-in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19f",
+        "sourceHandle": "success",
+        "target": "n-12d8e766-c933-4098-a204-803505257ed8",
+        "targetHandle": "in",
+        "id": "xy-edge__n-f3a48e4b-c7b6-4dca-8dc0-d6a5afc3e19fsuccess-n-12d8e766-c933-4098-a204-803505257ed8in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-235d5d21-c150-4331-8d7b-7708656fdaa0",
+        "sourceHandle": "success",
+        "target": "n-885d1e1c-b022-4bbc-a08d-119092104cdb",
+        "targetHandle": "in",
+        "id": "xy-edge__n-235d5d21-c150-4331-8d7b-7708656fdaa0success-n-885d1e1c-b022-4bbc-a08d-119092104cdbin"
+      }
+    ],
+    "viewport": {
+      "x": 54.379370458650726,
+      "y": 142.9307649619145,
+      "zoom": 0.6062866266041594
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "38bb0594-76b0-4015-b91d-f58c10505c87",
+        "key": "bien1",
+        "value": "<span class=\"ux-textspans ux-textspans--BOLD\">Nike Men's T-Shirt Athletic Logo Swoosh Printed Active Short Sleeve Tee</span>"
+      },
+      {
+        "id": "0aa56c5d-a629-47f1-b32c-7975b08ade6e",
+        "key": "bien2",
+        "value": "2"
+      },
+      {
+        "id": "7ab2bfb9-81f1-4444-8a8f-7ea09e2c74ac",
+        "key": "bien3",
+        "value": "3"
+      },
+      {
+        "id": "de19f368-977b-407d-bee0-8f77920e14e8",
+        "key": "tam1",
+        "value": ""
+      },
+      {
+        "id": "ba2d7206-21c5-465b-b422-462606c45855",
+        "key": "tam2",
+        "value": ""
+      },
+      {
+        "id": "20e707b6-55bc-42be-9f6e-2afc6b11b996",
+        "key": "tam3",
+        "value": ""
+      },
+      {
+        "id": "e48e0bae-357d-421c-a463-63c86f3079b3",
+        "key": "bientam1",
+        "value": "2"
+      },
+      {
+        "id": "3ba16143-f682-4a53-b028-9f60230639d1",
+        "key": "bientam2",
+        "value": "3"
+      },
+      {
+        "id": "0319b2a7-a0cb-4f56-9fd3-716c2b73a053",
+        "key": "bientam3",
+        "value": "4"
+      }
+    ]
+  }
+}

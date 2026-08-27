@@ -1,0 +1,394 @@
+{
+  "id": "2369027d-6da6-463c-b3ec-0866ccb13785",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\2369027d-6da6-463c-b3ec-0866ccb13785.hideflow",
+  "updatedAt": "2026-07-21T04:54:32.838Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -615.0553521789561,
+          "y": -133.9102285745108
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-2b0fdbab-fa61-4c00-8af0-3d1e8ef2f2d1",
+        "type": "basic",
+        "position": {
+          "x": -391.19075411250753,
+          "y": -130.32746628755189
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      },
+      {
+        "id": "n-b21ecc11-4bd7-41ca-8b2a-93549be4e010",
+        "type": "basic",
+        "position": {
+          "x": -420.93750000000006,
+          "y": -29.804687499999943
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.instagram.com/?hl=en",
+          "lastConfiguredAt": "2026-07-21T04:36:55.714Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-df855d49-2d91-488b-ab4c-6bd7ba921c90",
+        "type": "basic",
+        "position": {
+          "x": -237.8125,
+          "y": 310.82031250000006
+        },
+        "data": {
+          "code": "getCode2Fa",
+          "label": "Authentication Code",
+          "getCode2FaSecret": "KDPI JD3C URNK WUPD 7T6B WRMA JP5T 3PQS",
+          "getCode2FaSaveTo": "otp_code",
+          "lastConfiguredAt": "2026-07-21T04:42:04.482Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "delayFromSeconds": 6,
+          "delayToSeconds": 9
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-84155642-24f4-41ee-a38c-dcdb8e555231",
+        "type": "basic",
+        "position": {
+          "x": -120.93750000000006,
+          "y": -29.804687499999943
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#login_form > div > div.x1n2onr6.x1ja2u2z.x9f619.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xz9dl7a > div > div:nth-child(1) > div > div",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-21T04:41:25.418Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-9a7753d1-7e58-49af-b6dc-b91662a23bf3",
+        "type": "basic",
+        "position": {
+          "x": -242.1875,
+          "y": 78.3203125
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "basketybc179300@outlook.com",
+          "lastConfiguredAt": "2026-07-21T04:37:21.754Z",
+          "delayFromSeconds": 15,
+          "delayToSeconds": 20,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-17da6534-a00f-42e4-9f42-11d05bcb7ce1",
+        "type": "basic",
+        "position": {
+          "x": 20.312500000000057,
+          "y": 90.8203125
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#login_form > div > div.x1n2onr6.x1ja2u2z.x9f619.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xz9dl7a > div > div:nth-child(2) > div > div",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-21T04:41:41.450Z",
+          "delayFromSeconds": 15,
+          "delayToSeconds": 20,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-afee5733-d15d-4ec3-bf41-30efd383e44a",
+        "type": "basic",
+        "position": {
+          "x": -229.06249999999977,
+          "y": 200.82031250000006
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "zgtLJ3aX8",
+          "lastConfiguredAt": "2026-07-21T04:43:21.186Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "delayFromSeconds": 6,
+          "delayToSeconds": 10
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-8b122fc8-ab7c-43b4-8635-8d92fcf3ffa4",
+        "type": "basic",
+        "position": {
+          "x": 46.56250000000023,
+          "y": 205.82031250000006
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#login_form > div > div.x1n2onr6.x1ja2u2z.x9f619.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xz9dl7a > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.x6s0dn4.xz9dl7a.x1k70j0n.xzueoph.xzboxd6.x14l7nz5 > div > div > div",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-21T04:37:57.906Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-44cad04c-737c-4083-aa4c-0b4770393bae",
+        "type": "basic",
+        "position": {
+          "x": 63.235356493716694,
+          "y": 315.3811854437464
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#_r_3_",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-21T04:50:59.338Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      },
+      {
+        "id": "n-1127b509-6124-46d4-adfc-01f4de658b0c",
+        "type": "basic",
+        "position": {
+          "x": -125.31249999999994,
+          "y": 427.0703125
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "{{otp_code}}",
+          "lastConfiguredAt": "2026-07-21T04:45:23.074Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "delayFromSeconds": 5,
+          "delayToSeconds": 10
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-ebffa784-e10d-4355-b685-bc50e5eebd5f",
+        "type": "basic",
+        "position": {
+          "x": 159.68750000000006,
+          "y": 439.5703125
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#mount_0_0_2H > div > div > div.x9f619.x1n2onr6.x1ja2u2z > div > div > div.x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > div.x9f619.x1n2onr6.x1ja2u2z > div > div > div.x78zum5.x1iyjqo2.xylbxtu.xeuugli.x1n2onr6.xornbnt.xdt5ytf > div > div > div > div:nth-child(1) > div > div > div:nth-child(3) > div > div.xod5an3.xg87l8a > div > div > div",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-07-21T04:53:08.393Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-44ef4d1b-8d08-4eee-8f6e-531e8eaaa83f",
+        "source": "n-2b0fdbab-fa61-4c00-8af0-3d1e8ef2f2d1",
+        "target": "n-b21ecc11-4bd7-41ca-8b2a-93549be4e010",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-c6ffc2b3-fd0b-44ed-82c1-c2a2db0ff8bb",
+        "source": "n-b21ecc11-4bd7-41ca-8b2a-93549be4e010",
+        "target": "n-84155642-24f4-41ee-a38c-dcdb8e555231",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-0170f5a3-b980-428d-8753-152071cb80d5",
+        "source": "n-84155642-24f4-41ee-a38c-dcdb8e555231",
+        "target": "n-9a7753d1-7e58-49af-b6dc-b91662a23bf3",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-f232c44c-1029-4bbf-8e49-0b1c536c97d3",
+        "source": "n-9a7753d1-7e58-49af-b6dc-b91662a23bf3",
+        "target": "n-17da6534-a00f-42e4-9f42-11d05bcb7ce1",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-9ecf24f8-d8a1-4759-8eaf-571c6bca9854",
+        "source": "n-afee5733-d15d-4ec3-bf41-30efd383e44a",
+        "target": "n-8b122fc8-ab7c-43b4-8635-8d92fcf3ffa4",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-e3ae5204-ba08-41af-9ffd-dc4fceb6a575",
+        "source": "n-8b122fc8-ab7c-43b4-8635-8d92fcf3ffa4",
+        "target": "n-df855d49-2d91-488b-ab4c-6bd7ba921c90",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "type": "workflowDash",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-11f372b6-aaa3-478b-8fe3-7e9b4fc687ac",
+        "source": "n-df855d49-2d91-488b-ab4c-6bd7ba921c90",
+        "target": "n-44cad04c-737c-4083-aa4c-0b4770393bae",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-7df01950-b5f1-44c3-9062-05a942ba117e",
+        "source": "n-44cad04c-737c-4083-aa4c-0b4770393bae",
+        "target": "n-1127b509-6124-46d4-adfc-01f4de658b0c",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-78cf47f0-3482-4e1b-ad24-1efc62922347",
+        "source": "n-1127b509-6124-46d4-adfc-01f4de658b0c",
+        "target": "n-ebffa784-e10d-4355-b685-bc50e5eebd5f",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "data": {},
+        "selected": false
+      },
+      {
+        "id": "e-2f296b1c-974f-4928-ab33-d67ee92a5a46",
+        "source": "n-17da6534-a00f-42e4-9f42-11d05bcb7ce1",
+        "target": "n-afee5733-d15d-4ec3-bf41-30efd383e44a",
+        "sourceHandle": "success",
+        "targetHandle": "in",
+        "type": "workflowDash",
+        "data": {},
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-start",
+        "sourceHandle": "out",
+        "target": "n-2b0fdbab-fa61-4c00-8af0-3d1e8ef2f2d1",
+        "targetHandle": "in",
+        "id": "xy-edge__n-startout-n-2b0fdbab-fa61-4c00-8af0-3d1e8ef2f2d1in"
+      }
+    ],
+    "viewport": {
+      "x": 548.5880100611918,
+      "y": 296.73827608831164,
+      "zoom": 0.918958683997628
+    }
+  }
+}

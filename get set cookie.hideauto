@@ -1,0 +1,285 @@
+{
+  "id": "55f3683b-d84e-4ced-814f-215fcebf6cc3",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\55f3683b-d84e-4ced-814f-215fcebf6cc3.hideflow",
+  "updatedAt": "2026-08-09T03:26:21.808Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 761.25,
+          "y": 423.75
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 931.2500000000002,
+          "y": 414.375
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectMode": "newProfile",
+          "lastConfiguredAt": "2026-08-05T03:11:49.238Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-ae107ffc-333a-472d-8681-3f5a4b705660",
+        "type": "basic",
+        "position": {
+          "x": 248.125,
+          "y": 265.62499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "facebook.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T02:52:03.009Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-5897f446-5b90-480f-a5e1-41c53609cffe",
+        "type": "basic",
+        "position": {
+          "x": 548.125,
+          "y": 265.62499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T02:52:10.705Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-e49ef5dd-d137-47bb-9884-dc5e5e968064",
+        "type": "basic",
+        "position": {
+          "x": 848.125,
+          "y": 265.62499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "youtobe.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T02:52:22.665Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-edb8af32-8395-4bb7-83f9-17aefec38580",
+        "type": "basic",
+        "position": {
+          "x": 1131.875,
+          "y": 23.124999999999943
+        },
+        "data": {
+          "code": "getCookie",
+          "label": "Get Cookie",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "getCookieSaveTo": "biencookie",
+          "lastConfiguredAt": "2026-07-24T02:54:40.961Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-8cbe6f98-8b73-4dc5-a2da-79eaff12db93",
+        "type": "basic",
+        "position": {
+          "x": 1189.375,
+          "y": 413.125
+        },
+        "data": {
+          "code": "setCookies",
+          "label": "Set Cookies",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "setCookieInput": "[{\"domain\":\".hidemium.io\",\"hostOnly\":false,\"httpOnly\":false,\"sameSite\":\"unspecified\",\"secure\":false,\"id\":0,\"url\":\"http:\\/\\/hidemium.io\\/\",\"name\":\"_ga\",\"value\":\"GA1.1.1965496336.1785493544\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".hidemium.io\",\"hostOnly\":false,\"httpOnly\":false,\"sameSite\":\"unspecified\",\"secure\":false,\"id\":0,\"url\":\"http:\\/\\/hidemium.io\\/\",\"name\":\"_ga_6RXYTLPJTK\",\"value\":\"GS2.1.s1785493543$o1$g0$t1785493543$j60$l0$h0\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".hidemium.io\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":2,\"url\":\"https:\\/\\/hidemium.io\\/\",\"name\":\"cf_clearance\",\"value\":\"9lg5uGBcLG2FwhQplCrs51qkIQulVU9D4Jcq6PZkZ3I-1785493547-1.2.1.1-.H8KJKmkZLM6vezt2Maa8Gl0F.erdfAUIBvMMUVYW3o5TpJaUQxQt1joV.3d4LOiTVIHcGk.CIRERV4a_Q3T7m90hXatXMzDLIZ4gOpDNQGoGHlW85CSk2MWPmNmZp65LeSni5fyjfL3Zrsn8pOGu_tvye4jNdGkj6E6U1qyqCn11WJDjhlrIMWsSlyW8hz03QhltAsu0eJDBy9QtgDMwBM_mK6aAcZlzwcqjF7iI2K1EZiKiPYUd9p0dt4CPFNV6dFppMN.6pYbazgWigHF7AzH9SBRfwhvuaEgiXEki9N5kxs6Ypl8qS3dZQM2Ac8Ty2lt5OYllgbkOAz_8JOzYfwJjcq1KNFulP48ZEpwyfY\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".google.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"lax\",\"secure\":true,\"id\":3,\"url\":\"https:\\/\\/google.com\\/\",\"name\":\"AEC\",\"value\":\"AdJVEavkjhiq7BCV7699ovsJ0d5tsgArRzeqr2iHDWYx3Q52yytmbX18GQ\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".google.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"lax\",\"secure\":true,\"id\":3,\"url\":\"https:\\/\\/google.com\\/\",\"name\":\"NID\",\"value\":\"533=kRbMA6uvkrH46Eg6bKYPRBae6PiL5LaAuhFaZy_pey9Br8PNL40SmZblyExNdkPS4mS1JwN310HTRIRFzOwDUekEyq7-XYBR5tyBrDACj_FZE066ZrUl1VYbX3A4byACan1iFSAJo0inFWbUpzeiJPaHcDhJP3KabXLRVB37QlvWO21NwDQ5fa1uJBalc5I2RPik5xbLtm1FFPR98rNzaUXTzctC4Zr4iuncgp8hoyFVBDywyrPW0qGCLFGbt_YEMpuuGS48aU-T\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".google.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"lax\",\"secure\":true,\"id\":3,\"url\":\"https:\\/\\/google.com\\/\",\"name\":\"__Secure-STRP\",\"value\":\"ANmZwa2eQUq9Z5Scixa2ynfwLaLuk3T5SIPg09Us1dCe56pKbFTl7c-jCxP6tfwa65wWAOdQkj3nrbeojuAx8QBYrZcoRx10_5_G\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".facebook.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":4,\"url\":\"https:\\/\\/facebook.com\\/\",\"name\":\"checkpoint\",\"value\":\"%7B%22u%22%3A61573848205113%2C%22t%22%3A1785554835%2C%22step%22%3A0%2C%22n%22%3A%224kH7Ug3od%5C%2F0%3D%22%2C%22inst%22%3A122190877358794940%2C%22f%22%3A465803052217681%2C%22st%22%3A%22c%22%2C%22aid%22%3Anull%2C%22ca%22%3Anull%2C%22la%22%3A%22%22%2C%22ta%22%3A%221785554840.ch.s%3An619%3Apw.9zBFAiEA3Nlb_QXuqvhEGaylbX6gH0OlD16o2zpPyD5ylQ3HNXECIHhUm5oOXpwP6z8wkHzKqbUFciYQQOIWDMvmTm_zSBQX%22%2C%22tfvaid%22%3Anull%2C%22tfvasec%22%3Anull%2C%22sat%22%3Anull%2C%22idg%22%3Afalse%2C%22cidue%22%3A%22%22%2C%22tfuln%22%3Anull%2C%22tfvri%22%3Anull%2C%22ct%22%3A%22AWR_2xo570t1qCdkOauQkK2gLlLIJktUOfqH7Ca_d2G1_HCoZE_ZkkqEf-wkdSwbRJzHW8ekNc0jDLS2mvnewfRX7B-XbudTiY7mgBaoxMRhu0NA524f7HPE149gw9bZ6_qMB7v08P_EBYPbfBbj7TCnad9qOit2iOmKKpT_oLhmore3VKZa2kmdfITCgPoY1UBh1SrdQCgg0uFhlC8PFxdNPUtafY49k8BdzMmqH2P3k9Be7tE-k3Al3IswreNaT32nX_a3C0-86iXVpUkC7W7GL6y5my9ccuVoyLt2s5tw_oFqgQfs8aBXo5bpxQYrVhUxrzYhz7ni7PGAEjnwlGq1f2WYbadDVtEKA6EzRTbmDy5VKqlE9kFvir9IW9_CvNU07wHZK4ncVITLF04BadvrraONcDpBsg%22%2C%22aads%22%3Anull%2C%22s%22%3A%22AWYVp6xwh1AHv6LTlFA%22%2C%22cs%22%3A%5B%5D%2C%22ssp%22%3A1%7D\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".facebook.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":4,\"url\":\"https:\\/\\/facebook.com\\/\",\"name\":\"datr\",\"value\":\"h2dtaqACaWQVWE55Jz9rqbu_\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".facebook.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":4,\"url\":\"https:\\/\\/facebook.com\\/\",\"name\":\"fr\",\"value\":\"0p0OuBiwhW9nugeJ3..BqbWeH..AAA.0.0.BqbWeH.AWdv9eqZbHncLI49GrzW_qOQcnA\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".facebook.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":4,\"url\":\"https:\\/\\/facebook.com\\/\",\"name\":\"locale\",\"value\":\"en_GB\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".facebook.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":4,\"url\":\"https:\\/\\/facebook.com\\/\",\"name\":\"sb\",\"value\":\"h2dtat1X0fDJuMxMEEiNaarX\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".facebook.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":4,\"url\":\"https:\\/\\/facebook.com\\/\",\"name\":\"wd\",\"value\":\"929x925\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".google.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"lax\",\"secure\":true,\"id\":10,\"url\":\"https:\\/\\/google.com\\/verify\",\"name\":\"SNID\",\"value\":\"AL3h32y91OBXC1hSyo12VZiTQ_EA--qlJGLRw9QOXAqhlUiNIiMzvXzNCSdPTYEz4Bq9A41QwDY5RSlZMf0EXg1a5lfirFjhTg\",\"path\":\"\\/verify\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"datr\",\"value\":\"smdtag9v2LaCc_fUHbGSIHY2\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"ig_did\",\"value\":\"01E6C6E5-5994-4B4B-8AA7-13717D653417\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"mid\",\"value\":\"am1nsgALAAFQ8CHs1lSOBjiMJ6cq\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"ps_l\",\"value\":\"1\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"ps_n\",\"value\":\"1\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"sessionid\",\"value\":\"15949657363%3A3pkI5YhshBDB5z%3A9%3AAYiUX2JKUNiVCs-SllGaMOA4XSa8_2pTO81bHcHlmw\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"csrftoken\",\"value\":\"ljHlfUCzvl95eqj7lD8mhSS3kVFCaIjB\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"ds_user_id\",\"value\":\"15949657363\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"rur\",\"value\":\"TTX%2C17841415880903707%2C1786764584%3A01ff48b6fc7e195206de695adab777ae772c7c9724f4957728124ce05282d6757ac06ae3\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".instagram.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":11,\"url\":\"https:\\/\\/instagram.com\\/\",\"name\":\"wd\",\"value\":\"929x746\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".youtube.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":16,\"url\":\"https:\\/\\/youtube.com\\/\",\"name\":\"YSC\",\"value\":\"-LUxc7wxWOo\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".youtube.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":16,\"url\":\"https:\\/\\/youtube.com\\/\",\"name\":\"VISITOR_INFO1_LIVE\",\"value\":\"KMF79Rz0Hg4\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".youtube.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":16,\"url\":\"https:\\/\\/youtube.com\\/\",\"name\":\"VISITOR_PRIVACY_METADATA\",\"value\":\"CgJVUxIEGgAgRw%3D%3D\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".youtube.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":16,\"url\":\"https:\\/\\/youtube.com\\/\",\"name\":\"__Secure-ROLLOUT_TOKEN\",\"value\":\"CIiNi_XnyYrKARCv2JSevv6VAxjp6aK3vv6VAw%3D%3D\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".youtube.com\",\"hostOnly\":false,\"httpOnly\":true,\"sameSite\":\"no_restriction\",\"secure\":true,\"id\":16,\"url\":\"https:\\/\\/youtube.com\\/\",\"name\":\"__Secure-YNID\",\"value\":\"20.YT=F6MJ_UDmcC8SmnGRvwtmg2AxfvAZuQSvSkukViHKPRPBrUA-D1s18YrJDT_WLzNMo4epqoap5TZge7dcTRv0E1G8Ac7AAX69vm1NuCW1wrlE8QtfCbrYtrqOIzESeZCUv3_uxnICemtMO6BXqeAjPGyZzbVA8VmBQy8S_7wF5uWmG_nALbnh73ZZPTblRXG4paAvophh1FDJT7BGPQIf8XzPqRNPtdxK6M97Wo45YMSCx5UA51owbs2ogRut0VT_ZjH4r2UR28U3UF8ulcdJTJwlwJYmrDWTZoz2lgwT50y-YujERqMbtwZvTyqM8fRmTjQeZprcaBqHxuwoSoaDrA\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\"www.google.com\",\"hostOnly\":true,\"httpOnly\":false,\"sameSite\":\"unspecified\",\"secure\":false,\"id\":22,\"url\":\"http:\\/\\/www.google.com\\/\",\"name\":\"DV\",\"value\":\"cyMmFgH8qDc6wPhEXvq4VJHe2eO1-9m6h5CKvObkZwAAAODr4fFEMpLUG64HAAA\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".2fa.live\",\"hostOnly\":false,\"httpOnly\":false,\"sameSite\":\"unspecified\",\"secure\":false,\"id\":24,\"url\":\"http:\\/\\/2fa.live\\/\",\"name\":\"_ga\",\"value\":\"GA1.1.880236984.1785554953\",\"path\":\"\\/\",\"expirationDate\":1785814197},{\"domain\":\".2fa.live\",\"hostOnly\":false,\"httpOnly\":false,\"sameSite\":\"unspecified\",\"secure\":false,\"id\":24,\"url\":\"http:\\/\\/2fa.live\\/\",\"name\":\"_ga_R2SB88WPTD\",\"value\":\"GS2.1.s1785554952$o1$g0$t1785554970$j42$l0$h0\",\"path\":\"\\/\",\"expirationDate\":1785814197}]",
+          "setCookieReload": true,
+          "setCookieSaveTo": "biencookie",
+          "lastConfiguredAt": "2026-08-05T03:10:44.547Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-c1e17fca-dc0f-4755-aa8f-1678e38c2fa3",
+        "type": "basic",
+        "position": {
+          "x": 835.3906249999999,
+          "y": 145.31250000000009
+        },
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "randomAssignments": [
+            {
+              "randomType": "number",
+              "variableKey": "month",
+              "randomLength": 16,
+              "randomNumberFrom": 1,
+              "randomNumberTo": 12
+            }
+          ],
+          "lastConfiguredAt": "2026-08-01T01:43:09.896Z"
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-c23247e3-e438-4979-a906-db76425b40f2",
+        "type": "basic",
+        "position": {
+          "x": 1148.125,
+          "y": 265.62499999999994
+        },
+        "data": {
+          "code": "getCookie",
+          "label": "Get Cookie",
+          "getCookieMode": "current",
+          "getCookieDomain": ""
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect",
+        "selected": false
+      },
+      {
+        "source": "n-ae107ffc-333a-472d-8681-3f5a4b705660",
+        "sourceHandle": "success",
+        "target": "n-5897f446-5b90-480f-a5e1-41c53609cffe",
+        "targetHandle": "in",
+        "id": "xy-edge__n-ae107ffc-333a-472d-8681-3f5a4b705660success-n-5897f446-5b90-480f-a5e1-41c53609cffein"
+      },
+      {
+        "source": "n-5897f446-5b90-480f-a5e1-41c53609cffe",
+        "sourceHandle": "success",
+        "target": "n-e49ef5dd-d137-47bb-9884-dc5e5e968064",
+        "targetHandle": "in",
+        "id": "xy-edge__n-5897f446-5b90-480f-a5e1-41c53609cffesuccess-n-e49ef5dd-d137-47bb-9884-dc5e5e968064in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-8cbe6f98-8b73-4dc5-a2da-79eaff12db93",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-8cbe6f98-8b73-4dc5-a2da-79eaff12db93in",
+        "selected": false
+      },
+      {
+        "source": "n-e49ef5dd-d137-47bb-9884-dc5e5e968064",
+        "sourceHandle": "success",
+        "target": "n-c23247e3-e438-4979-a906-db76425b40f2",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e49ef5dd-d137-47bb-9884-dc5e5e968064success-n-c23247e3-e438-4979-a906-db76425b40f2in"
+      }
+    ],
+    "viewport": {
+      "x": -363.5255537581064,
+      "y": 139.37740491287286,
+      "zoom": 0.7999999999999999
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "ae01c677-a9a6-465a-a2ad-0338ff8ce262"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\hachitech solution\\.hideflow\\profiles\\ae01c677-a9a6-465a-a2ad-0338ff8ce262"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "ae01c677-a9a6-465a-a2ad-0338ff8ce262"
+      },
+      {
+        "id": "b257d692-31d6-4c88-aa64-19515ae2accb",
+        "key": "biencookie",
+        "value": "26"
+      }
+    ]
+  }
+}

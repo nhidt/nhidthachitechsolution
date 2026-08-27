@@ -1,0 +1,279 @@
+{
+  "id": "0a4eb038-1b80-4ca3-a1d6-44c703bd85f7",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\0a4eb038-1b80-4ca3-a1d6-44c703bd85f7.hideflow",
+  "updatedAt": "2026-07-18T02:03:07.013Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -238.12499999999997,
+          "y": 249.375
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -66.875,
+          "y": 238.12499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-444437f7-4f7c-4de5-8d7b-aeb5662a33dc",
+        "type": "basic",
+        "position": {
+          "x": 824.9999999999999,
+          "y": 271.24999999999994
+        },
+        "data": {
+          "code": "createFolder",
+          "label": "Create Folder",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "createFolderPath": "C:\\Users\\hachitech solution\\Documents\\sanphamtest\\{{tensp}}",
+          "lastConfiguredAt": "2026-07-17T07:38:28.109Z",
+          "createFolderIgnoreIfExists": true,
+          "createFolderSaveTo": "bientamfolder",
+          "createFolderRecursive": true
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-8aad61b7-7619-4811-bce0-d22e2bb2e8cc",
+        "type": "basic",
+        "position": {
+          "x": 233.125,
+          "y": 238.12499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com/b/Sporting-Goods/888/bn_1865031",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-17T02:12:25.685Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-dfd2fb7f-9e6f-4a48-9600-d755797e14f6",
+        "type": "basic",
+        "position": {
+          "x": 550.625,
+          "y": 255.62499999999994
+        },
+        "data": {
+          "code": "getText",
+          "label": "Get text",
+          "getTextSelector": "#mainContent > div.flex.flex-col.gap-200.dp-browse-page.isRootLayout > div > div.flex.flex-col.gap-200.md\\:gap-400.md\\:flex-row.page-grid-container.dp-horizontal-layout > div:nth-child(1) > div > div > div > div:nth-child(7) > ul > li > a > span",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "getTextSaveTo": "tensp",
+          "lastConfiguredAt": "2026-07-17T02:12:15.351Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-dc78661a-b781-486e-b046-b487ad3c04d7",
+        "type": "basic",
+        "position": {
+          "x": 493.75,
+          "y": 48.12499999999996
+        },
+        "data": {
+          "code": "createFolder",
+          "label": "Create Folder",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "createFolderPath": "C:\\Users\\hachitech solution\\Documents\\sanphamtest\\폴더를 만들 수 없",
+          "lastConfiguredAt": "2026-07-17T02:53:42.773Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-93e6ebd0-14eb-476f-856b-e0e066e18666",
+        "type": "basic",
+        "position": {
+          "x": 1173.75,
+          "y": 266.87499999999994
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 15,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-17T07:34:01.901Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-6152ae3e-7267-4961-b729-091e197fbbea",
+        "type": "basic",
+        "position": {
+          "x": 1344.375,
+          "y": 290.62499999999994
+        },
+        "data": {
+          "code": "deleteFileFolder",
+          "label": "Delete File/Folder",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "deleteRecursive": true,
+          "deleteIgnoreIfMissing": false,
+          "deletePath": "C:\\Users\\hachitech solution\\Documents\\sanphamtest\\áo len",
+          "lastConfiguredAt": "2026-07-17T07:48:10.829Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-8aad61b7-7619-4811-bce0-d22e2bb2e8cc",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-8aad61b7-7619-4811-bce0-d22e2bb2e8ccin"
+      },
+      {
+        "source": "n-8aad61b7-7619-4811-bce0-d22e2bb2e8cc",
+        "sourceHandle": "success",
+        "target": "n-dfd2fb7f-9e6f-4a48-9600-d755797e14f6",
+        "targetHandle": "in",
+        "id": "xy-edge__n-8aad61b7-7619-4811-bce0-d22e2bb2e8ccsuccess-n-dfd2fb7f-9e6f-4a48-9600-d755797e14f6in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-dfd2fb7f-9e6f-4a48-9600-d755797e14f6",
+        "sourceHandle": "success",
+        "target": "n-444437f7-4f7c-4de5-8d7b-aeb5662a33dc",
+        "targetHandle": "in",
+        "id": "xy-edge__n-dfd2fb7f-9e6f-4a48-9600-d755797e14f6success-n-444437f7-4f7c-4de5-8d7b-aeb5662a33dcin"
+      },
+      {
+        "source": "n-444437f7-4f7c-4de5-8d7b-aeb5662a33dc",
+        "sourceHandle": "success",
+        "target": "n-93e6ebd0-14eb-476f-856b-e0e066e18666",
+        "targetHandle": "in",
+        "id": "xy-edge__n-444437f7-4f7c-4de5-8d7b-aeb5662a33dcsuccess-n-93e6ebd0-14eb-476f-856b-e0e066e18666in"
+      }
+    ],
+    "viewport": {
+      "x": -1783.1750000000002,
+      "y": 22.099999999999966,
+      "zoom": 1.6
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "b2a1ba16-2b63-4e0c-ac50-fc8ba55cf014",
+        "key": "tensp",
+        "value": ""
+      },
+      {
+        "id": "690956a1-c614-4973-aa5a-eb900be34a00",
+        "key": "tamtensp",
+        "value": ""
+      },
+      {
+        "id": "d45deaf6-a257-4ac4-8913-99c76d618db0",
+        "key": "bientamtensp",
+        "value": ""
+      },
+      {
+        "id": "3c082460-0638-40bf-9b1c-9f1cd91845ce",
+        "key": "bientamfolder",
+        "value": ""
+      }
+    ]
+  }
+}

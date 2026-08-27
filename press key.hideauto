@@ -1,0 +1,365 @@
+{
+  "id": "b3d3ea6c-aa80-4bd1-97f8-6b7f2d01da62",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\b3d3ea6c-aa80-4bd1-97f8-6b7f2d01da62.hideflow",
+  "updatedAt": "2026-08-03T09:54:55.028Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 301.99087563974,
+          "y": -279.23614763697543
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 241.1662592025782,
+          "y": -170.47157911520435
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-6347e5ba-a68c-425b-b97b-8de6daedf96f",
+        "type": "basic",
+        "position": {
+          "x": 241.42951700863102,
+          "y": -47.19793419988143
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://docs.google.com/document/d/1O-fT0nRTbWY1c_1rJgU4hc3OqF59oCqhqaUUwRIT3e4/edit?tab=t.0",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T04:39:04.543Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-7c757fe4-c500-481a-be8d-e1f44714c061",
+        "type": "basic",
+        "position": {
+          "x": 626.25,
+          "y": 249.99999999999994
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Control+a"
+          ],
+          "pressType": "press",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:44:53.123Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-1041daa2-f0e5-4389-b2f8-f5b532369408",
+        "type": "basic",
+        "position": {
+          "x": 631.2499999999999,
+          "y": 374.99999999999994
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Control+c"
+          ],
+          "pressType": "press",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:50:25.826Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-ee8264de-90af-4823-9415-99ff09087f9c",
+        "type": "basic",
+        "position": {
+          "x": 300.625,
+          "y": 237.49999999999997
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://translate.google.com.vn/?sl=en&tl=vi&op=translate",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:45:28.530Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d3682d51-4580-49a1-82c7-8051de51f804",
+        "type": "basic",
+        "position": {
+          "x": 349.375,
+          "y": 369.99999999999994
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "Gõ văn bản trên trang active (Playwright page.keyboard.type), từng ký tự với độ trễ.\n",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:45:54.338Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-23fc9541-c99f-40c3-8c39-ba13dc47dcc4",
+        "type": "basic",
+        "position": {
+          "x": 897.5,
+          "y": 253.74999999999994
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "https://translate.google.com.vn/?sl=en&tl=vi&op=translate",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:46:26.835Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-3d8a0ab4-f4eb-4081-a3ed-ee48b51122ff",
+        "type": "basic",
+        "position": {
+          "x": 922.5,
+          "y": 377.49999999999994
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#yDmH0d > c-wiz.zQTmif.SSPGKf.kXN2zb.BIdYQ > div > div.ToWKne > c-wiz > div.OlSOob > c-wiz > div.ccvoYb > div.AxqVh > div.OPPzxe > div > c-wiz",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:46:54.674Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-c6cc828d-20e2-4ed1-ad94-df7e44133a69",
+        "type": "basic",
+        "position": {
+          "x": 1186.25,
+          "y": 258.74999999999994
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Control+v"
+          ],
+          "pressType": "press",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:47:09.882Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-7e7e621a-5a7d-4f4b-8af2-be1dd34c390c",
+        "type": "basic",
+        "position": {
+          "x": 1486.25,
+          "y": 258.74999999999994
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [],
+          "pressType": "press"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-ad105e8a-1b18-418b-a072-b0dba71e86b0",
+        "type": "basic",
+        "position": {
+          "x": 513.8181698809341,
+          "y": -47.280739054607
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Control+Backspace"
+          ],
+          "pressType": "press",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T09:11:12.360Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-d3682d51-4580-49a1-82c7-8051de51f804",
+        "sourceHandle": "success",
+        "target": "n-7c757fe4-c500-481a-be8d-e1f44714c061",
+        "targetHandle": "in",
+        "id": "xy-edge__n-d3682d51-4580-49a1-82c7-8051de51f804success-n-7c757fe4-c500-481a-be8d-e1f44714c061in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-7c757fe4-c500-481a-be8d-e1f44714c061",
+        "sourceHandle": "success",
+        "target": "n-1041daa2-f0e5-4389-b2f8-f5b532369408",
+        "targetHandle": "in",
+        "id": "xy-edge__n-7c757fe4-c500-481a-be8d-e1f44714c061success-n-1041daa2-f0e5-4389-b2f8-f5b532369408in"
+      },
+      {
+        "source": "n-1041daa2-f0e5-4389-b2f8-f5b532369408",
+        "sourceHandle": "success",
+        "target": "n-23fc9541-c99f-40c3-8c39-ba13dc47dcc4",
+        "targetHandle": "in",
+        "id": "xy-edge__n-1041daa2-f0e5-4389-b2f8-f5b532369408success-n-23fc9541-c99f-40c3-8c39-ba13dc47dcc4in"
+      },
+      {
+        "source": "n-23fc9541-c99f-40c3-8c39-ba13dc47dcc4",
+        "sourceHandle": "success",
+        "target": "n-3d8a0ab4-f4eb-4081-a3ed-ee48b51122ff",
+        "targetHandle": "in",
+        "id": "xy-edge__n-23fc9541-c99f-40c3-8c39-ba13dc47dcc4success-n-3d8a0ab4-f4eb-4081-a3ed-ee48b51122ffin"
+      },
+      {
+        "source": "n-3d8a0ab4-f4eb-4081-a3ed-ee48b51122ff",
+        "sourceHandle": "success",
+        "target": "n-c6cc828d-20e2-4ed1-ad94-df7e44133a69",
+        "targetHandle": "in",
+        "id": "xy-edge__n-3d8a0ab4-f4eb-4081-a3ed-ee48b51122ffsuccess-n-c6cc828d-20e2-4ed1-ad94-df7e44133a69in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-ee8264de-90af-4823-9415-99ff09087f9c",
+        "sourceHandle": "success",
+        "target": "n-d3682d51-4580-49a1-82c7-8051de51f804",
+        "targetHandle": "in",
+        "id": "xy-edge__n-ee8264de-90af-4823-9415-99ff09087f9csuccess-n-d3682d51-4580-49a1-82c7-8051de51f804in"
+      },
+      {
+        "source": "n-c6cc828d-20e2-4ed1-ad94-df7e44133a69",
+        "sourceHandle": "success",
+        "target": "n-7e7e621a-5a7d-4f4b-8af2-be1dd34c390c",
+        "targetHandle": "in",
+        "id": "xy-edge__n-c6cc828d-20e2-4ed1-ad94-df7e44133a69success-n-7e7e621a-5a7d-4f4b-8af2-be1dd34c390cin"
+      },
+      {
+        "source": "n-6347e5ba-a68c-425b-b97b-8de6daedf96f",
+        "sourceHandle": "success",
+        "target": "n-ad105e8a-1b18-418b-a072-b0dba71e86b0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-6347e5ba-a68c-425b-b97b-8de6daedf96fsuccess-n-ad105e8a-1b18-418b-a072-b0dba71e86b0in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-6347e5ba-a68c-425b-b97b-8de6daedf96f",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-6347e5ba-a68c-425b-b97b-8de6daedf96fin"
+      }
+    ],
+    "viewport": {
+      "x": 99.7831190545094,
+      "y": 441.7780389448996,
+      "zoom": 1.0556063286183164
+    }
+  }
+}

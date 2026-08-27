@@ -1,0 +1,529 @@
+{
+  "id": "2c9d42c6-45e8-4826-9929-25d785c10df5",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\2c9d42c6-45e8-4826-9929-25d785c10df5.hideflow",
+  "updatedAt": "2026-08-06T10:04:43.225Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 374.8929218053179,
+          "y": 78.4242975467829
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 71.55137640824029,
+          "y": 231.76776673218984
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T02:51:54.524Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-3b27ab45-366a-46ae-910f-34b117373dff",
+        "type": "basic",
+        "position": {
+          "x": 1403.5940407621144,
+          "y": 416.3794804513295
+        },
+        "data": {
+          "code": "selectOption",
+          "label": "Select Option",
+          "selectOptionSelector": "#country",
+          "selectOptionMatchBy": "label",
+          "selectOptionValues": "Việt Nam",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "elementOrderTo": 3,
+          "lastConfiguredAt": "2026-08-06T10:03:15.147Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-97ec6fab-1ed8-4cac-bd12-e8324acda9f8",
+        "type": "basic",
+        "position": {
+          "x": 1399.609405904433,
+          "y": 295.2629635524457
+        },
+        "data": {
+          "code": "switchFrame",
+          "label": "Switch Frame",
+          "switchFrameMode": "sub",
+          "switchFrameSelector": "//*[@id=\"iframeResult\"]",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:21:26.733Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-a5877d7c-0a49-4ebb-98ee-126278a02c96",
+        "type": "basic",
+        "position": {
+          "x": 360.0566573895272,
+          "y": 301.61011265922485
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T02:55:08.301Z",
+          "delayFromSeconds": 4,
+          "delayToSeconds": 10
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-7e0889cc-da32-4149-a71d-3d1e7ff12136",
+        "type": "basic",
+        "position": {
+          "x": 1154.8725984101277,
+          "y": 415.94061829218606
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#runbtn",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:27:03.813Z",
+          "delayFromSeconds": 6,
+          "delayToSeconds": 9
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-a821d732-6a49-428e-ba68-74b999e2f364",
+        "type": "basic",
+        "position": {
+          "x": 882.7952948969961,
+          "y": 422.3990033165621
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "<label for=\"country\">Chọn quốc gia:</label>\n\n<select id=\"country\" name=\"country\">\n  <option value=\"\">-- Chọn quốc gia --</option>\n  <option value=\"VN\">Việt Nam</option>\n  <option value=\"US\">Hoa Kỳ</option>\n  <option value=\"JP\">Nhật Bản</option>\n</select>",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T02:53:56.005Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-e7b34a71-433d-4b87-af1c-246b1829c3e6",
+        "type": "basic",
+        "position": {
+          "x": 360.61683962729836,
+          "y": 409.1304360544149
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#textareawrapper > div > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div > div > div.CodeMirror-code > pre:nth-child(1)",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T02:55:34.797Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-65beb39d-44d3-40b0-8638-6f393157deee",
+        "type": "basic",
+        "position": {
+          "x": 625.7948170954534,
+          "y": 414.57137707501573
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Control+a"
+          ],
+          "pressType": "press",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T02:55:58.141Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-12ab58a9-87e5-4fe9-a165-91d130ea646b",
+        "type": "basic",
+        "position": {
+          "x": 871.3854068894458,
+          "y": 294.87067462179857
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Backspace"
+          ],
+          "pressType": "press",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T02:56:21.085Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-0417ae42-2e3b-40e5-a40c-ca03e934720b",
+        "type": "basic",
+        "position": {
+          "x": 222.42968349451868,
+          "y": 705.4977440494553
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_option_selected",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:48:24.151Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d289bb8f-1c8a-44bd-852e-16cea27f05da",
+        "type": "basic",
+        "position": {
+          "x": 783.5948524833559,
+          "y": 705.4977440494553
+        },
+        "data": {
+          "code": "selectOption",
+          "label": "Select Option",
+          "selectOptionSelector": "#cars",
+          "selectOptionMatchBy": "label",
+          "selectOptionValues": "Vw",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:52:41.807Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-59dd832f-b416-4058-b844-20e2263972fc",
+        "type": "basic",
+        "position": {
+          "x": 522.4296834945187,
+          "y": 705.4977440494553
+        },
+        "data": {
+          "code": "switchFrame",
+          "label": "Switch Frame",
+          "switchFrameMode": "sub",
+          "switchFrameSelector": "#iframeResult",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:49:51.663Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-515daff0-df76-4ebc-b134-5aca7af94d61",
+        "type": "basic",
+        "position": {
+          "x": -40.91186190255887,
+          "y": 550.9750190643932
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.w3schools.com/TAgs/tryit.asp?filename=tryhtml_optgroup",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T04:55:26.552Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-1a22a3bc-fb44-4d4f-94cf-290514f9f0e7",
+        "type": "basic",
+        "position": {
+          "x": 226.51306851889467,
+          "y": 554.6206651879978
+        },
+        "data": {
+          "code": "switchFrame",
+          "label": "Switch Frame",
+          "switchFrameMode": "sub",
+          "switchFrameSelector": "#iframeResult",
+          "lastConfiguredAt": "2026-08-06T04:49:51.663Z"
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        }
+      },
+      {
+        "id": "n-4a467b5b-b0a7-4cff-acc8-980872043c14",
+        "type": "basic",
+        "position": {
+          "x": 485.5018610994915,
+          "y": 555.7088533921179
+        },
+        "data": {
+          "code": "selectOption",
+          "label": "Select Option",
+          "selectOptionSelector": "#cars",
+          "selectOptionMatchBy": "label",
+          "selectOptionValues": "Saab",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "lastConfiguredAt": "2026-08-06T04:59:49.888Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-97ec6fab-1ed8-4cac-bd12-e8324acda9f8",
+        "sourceHandle": "success",
+        "target": "n-3b27ab45-366a-46ae-910f-34b117373dff",
+        "targetHandle": "in",
+        "id": "xy-edge__n-97ec6fab-1ed8-4cac-bd12-e8324acda9f8success-n-3b27ab45-366a-46ae-910f-34b117373dffin"
+      },
+      {
+        "source": "n-a5877d7c-0a49-4ebb-98ee-126278a02c96",
+        "sourceHandle": "success",
+        "target": "n-e7b34a71-433d-4b87-af1c-246b1829c3e6",
+        "targetHandle": "in",
+        "id": "xy-edge__n-a5877d7c-0a49-4ebb-98ee-126278a02c96success-n-e7b34a71-433d-4b87-af1c-246b1829c3e6in"
+      },
+      {
+        "source": "n-e7b34a71-433d-4b87-af1c-246b1829c3e6",
+        "sourceHandle": "success",
+        "target": "n-65beb39d-44d3-40b0-8638-6f393157deee",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e7b34a71-433d-4b87-af1c-246b1829c3e6success-n-65beb39d-44d3-40b0-8638-6f393157deeein"
+      },
+      {
+        "source": "n-65beb39d-44d3-40b0-8638-6f393157deee",
+        "sourceHandle": "success",
+        "target": "n-12ab58a9-87e5-4fe9-a165-91d130ea646b",
+        "targetHandle": "in",
+        "id": "xy-edge__n-65beb39d-44d3-40b0-8638-6f393157deeesuccess-n-12ab58a9-87e5-4fe9-a165-91d130ea646bin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-12ab58a9-87e5-4fe9-a165-91d130ea646b",
+        "sourceHandle": "success",
+        "target": "n-a821d732-6a49-428e-ba68-74b999e2f364",
+        "targetHandle": "in",
+        "id": "xy-edge__n-12ab58a9-87e5-4fe9-a165-91d130ea646bsuccess-n-a821d732-6a49-428e-ba68-74b999e2f364in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-a821d732-6a49-428e-ba68-74b999e2f364",
+        "sourceHandle": "success",
+        "target": "n-7e0889cc-da32-4149-a71d-3d1e7ff12136",
+        "targetHandle": "in",
+        "id": "xy-edge__n-a821d732-6a49-428e-ba68-74b999e2f364success-n-7e0889cc-da32-4149-a71d-3d1e7ff12136in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-7e0889cc-da32-4149-a71d-3d1e7ff12136",
+        "sourceHandle": "success",
+        "target": "n-97ec6fab-1ed8-4cac-bd12-e8324acda9f8",
+        "targetHandle": "in",
+        "id": "xy-edge__n-7e0889cc-da32-4149-a71d-3d1e7ff12136success-n-97ec6fab-1ed8-4cac-bd12-e8324acda9f8in",
+        "selected": false
+      },
+      {
+        "source": "n-0417ae42-2e3b-40e5-a40c-ca03e934720b",
+        "sourceHandle": "success",
+        "target": "n-59dd832f-b416-4058-b844-20e2263972fc",
+        "targetHandle": "in",
+        "id": "xy-edge__n-0417ae42-2e3b-40e5-a40c-ca03e934720bsuccess-n-59dd832f-b416-4058-b844-20e2263972fcin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-59dd832f-b416-4058-b844-20e2263972fc",
+        "sourceHandle": "success",
+        "target": "n-d289bb8f-1c8a-44bd-852e-16cea27f05da",
+        "targetHandle": "in",
+        "id": "xy-edge__n-59dd832f-b416-4058-b844-20e2263972fcsuccess-n-d289bb8f-1c8a-44bd-852e-16cea27f05dain"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-515daff0-df76-4ebc-b134-5aca7af94d61",
+        "sourceHandle": "success",
+        "target": "n-1a22a3bc-fb44-4d4f-94cf-290514f9f0e7",
+        "targetHandle": "in",
+        "id": "xy-edge__n-515daff0-df76-4ebc-b134-5aca7af94d61success-n-1a22a3bc-fb44-4d4f-94cf-290514f9f0e7in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-1a22a3bc-fb44-4d4f-94cf-290514f9f0e7",
+        "sourceHandle": "success",
+        "target": "n-4a467b5b-b0a7-4cff-acc8-980872043c14",
+        "targetHandle": "in",
+        "id": "xy-edge__n-1a22a3bc-fb44-4d4f-94cf-290514f9f0e7success-n-4a467b5b-b0a7-4cff-acc8-980872043c14in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-a5877d7c-0a49-4ebb-98ee-126278a02c96",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-a5877d7c-0a49-4ebb-98ee-126278a02c96in"
+      }
+    ],
+    "viewport": {
+      "x": -452.4036892261318,
+      "y": 22.489221565017303,
+      "zoom": 0.9189586839976279
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      }
+    ]
+  }
+}

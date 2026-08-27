@@ -1,0 +1,189 @@
+{
+  "id": "b9cc437b-9041-4594-ba10-1bf41b41ac5c",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\b9cc437b-9041-4594-ba10-1bf41b41ac5c.hideflow",
+  "updatedAt": "2026-07-27T02:19:53.683Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -464.453125,
+          "y": 113.12500000000001
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -302.5,
+          "y": 99.37499999999996
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-e12dcad2-0974-4c5b-8e93-df27333c8e44",
+        "type": "basic",
+        "position": {
+          "x": -303.74999999999994,
+          "y": 229.37499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "{{Url_Ebay}}",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-27T02:14:32.620Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-dbba2a59-1e88-4571-a665-ed613eba1160",
+        "type": "basic",
+        "position": {
+          "x": -45.62499999999994,
+          "y": 229.99999999999994
+        },
+        "data": {
+          "code": "readFile",
+          "label": "Read file",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "readFilePath": "C:\\Users\\hachitech solution\\Documents\\keyswork.txt",
+          "lastConfiguredAt": "2026-07-27T02:17:41.236Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-c20f8c3b-8824-4fb7-8ecd-6a16d10eb4c9",
+        "type": "loop",
+        "position": {
+          "x": 240.00000000000006,
+          "y": 238.74999999999994
+        },
+        "data": {
+          "code": "loop",
+          "label": "Loop",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "loopIndexVariable": "Nb_Run",
+          "lastConfiguredAt": "2026-07-27T02:18:55.939Z"
+        },
+        "measured": {
+          "width": 120,
+          "height": 120
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-e12dcad2-0974-4c5b-8e93-df27333c8e44",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-e12dcad2-0974-4c5b-8e93-df27333c8e44in"
+      },
+      {
+        "source": "n-e12dcad2-0974-4c5b-8e93-df27333c8e44",
+        "sourceHandle": "success",
+        "target": "n-dbba2a59-1e88-4571-a665-ed613eba1160",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e12dcad2-0974-4c5b-8e93-df27333c8e44success-n-dbba2a59-1e88-4571-a665-ed613eba1160in"
+      },
+      {
+        "source": "n-dbba2a59-1e88-4571-a665-ed613eba1160",
+        "sourceHandle": "success",
+        "target": "n-c20f8c3b-8824-4fb7-8ecd-6a16d10eb4c9",
+        "targetHandle": "in",
+        "id": "xy-edge__n-dbba2a59-1e88-4571-a665-ed613eba1160success-n-c20f8c3b-8824-4fb7-8ecd-6a16d10eb4c9in"
+      }
+    ],
+    "viewport": {
+      "x": 322.32500000000005,
+      "y": 22.099999999999966,
+      "zoom": 1.6
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "0163f514-8098-4450-a139-667c6ef07851",
+        "key": "Url_Ebay",
+        "value": "https://www.ebay.com/"
+      },
+      {
+        "id": "4053342d-7b8d-4334-9085-2c6483079304",
+        "key": "File_keyworks",
+        "value": "‪C:\\Users\\hachitech solution\\Documents\\keyswork.txt"
+      },
+      {
+        "id": "bc2f7ba7-58b4-4941-b08a-7b89de524c31",
+        "key": "Nb_Run",
+        "value": "2"
+      }
+    ]
+  }
+}

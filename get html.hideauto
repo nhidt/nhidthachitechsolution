@@ -1,0 +1,155 @@
+{
+  "id": "d8eb2564-6258-4055-9623-035e49be16b0",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\d8eb2564-6258-4055-9623-035e49be16b0.hideflow",
+  "updatedAt": "2026-07-20T09:30:49.536Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -98.125,
+          "y": 370.00000000000006
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-82c61cdb-58ed-4dcf-8932-9da045a18b0f",
+        "type": "basic",
+        "position": {
+          "x": 415.62499999999994,
+          "y": 351.25
+        },
+        "data": {
+          "code": "getHtml",
+          "label": "Get HTML",
+          "getHtmlSelector": "#glbfooter > footer > div.gf-big-links > div:nth-child(4) > div > ul > li:nth-child(1)",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "getHtmlSaveTo": "bienhtml",
+          "lastConfiguredAt": "2026-07-20T09:16:07.215Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-61521966-6ccc-4f36-a060-1cb564d5a4a8",
+        "type": "basic",
+        "position": {
+          "x": 203.75000000000006,
+          "y": 254.99999999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T09:09:51.071Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect",
+        "selected": false
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-61521966-6ccc-4f36-a060-1cb564d5a4a8",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-61521966-6ccc-4f36-a060-1cb564d5a4a8in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-61521966-6ccc-4f36-a060-1cb564d5a4a8",
+        "sourceHandle": "success",
+        "target": "n-82c61cdb-58ed-4dcf-8932-9da045a18b0f",
+        "targetHandle": "in",
+        "id": "xy-edge__n-61521966-6ccc-4f36-a060-1cb564d5a4a8success-n-82c61cdb-58ed-4dcf-8932-9da045a18b0fin",
+        "selected": false
+      }
+    ],
+    "viewport": {
+      "x": 319.15026170685576,
+      "y": 284.3493416052199,
+      "zoom": 0.9189586839976279
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "a2b28817-7a9b-42e5-a9de-0722500d1462",
+        "key": "bienhtml",
+        "value": ""
+      }
+    ]
+  }
+}

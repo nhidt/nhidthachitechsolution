@@ -1,0 +1,610 @@
+{
+  "id": "50c7f221-f175-400c-8b47-a2e4d1bc4a9d",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\50c7f221-f175-400c-8b47-a2e4d1bc4a9d.hideflow",
+  "updatedAt": "2026-08-06T06:46:18.723Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -257.727756973795,
+          "y": 548.3091366940737
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-8253bf2a-dea9-4c53-bca8-bbabc17198d6",
+        "type": "basic",
+        "position": {
+          "x": -169.481220064551,
+          "y": 344.8937799354491
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 32,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 256,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "custom",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "allow",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "noise-e",
+          "openConnectFingerprintNoiseAudio": true,
+          "openConnectFingerprintNoiseWebglImage": true,
+          "openConnectFingerprintNoiseWebglParam": true,
+          "openConnectFingerprintNoiseClientRects": true,
+          "openConnectFingerprintNoiseCodecs": true,
+          "openConnectFingerprintMediaDeviceMode": "noise-device",
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintBluetooth": true,
+          "openConnectFingerprintDoNotTrack": true,
+          "openConnectFingerprintMicrophonePermission": "allow",
+          "openConnectFingerprintCameraPermission": "allow",
+          "openConnectFingerprintClipboardPermission": "allow",
+          "openConnectFingerprintNotificationPermission": "allow",
+          "openConnectFingerprintSavePasswords": "on",
+          "openConnectFingerprintReplaceBatteryState": true,
+          "openConnectFingerprintWebview": true,
+          "openConnectFingerprintQuicProtocol": "enable",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-24T07:24:08.539Z",
+          "openConnectFingerprintOsVersionIds": [],
+          "openConnectFingerprintBrowsers": [
+            "brave",
+            "yandex",
+            "chrome",
+            "chromium",
+            "edge",
+            "opera",
+            "operagx",
+            "safari"
+          ],
+          "openConnectFingerprintLanguages": "bn-BD",
+          "openConnectFingerprintRedirectUrls": [
+            {
+              "from": "",
+              "condition": "!",
+              "to": ""
+            },
+            {
+              "from": "",
+              "condition": "!",
+              "to": ""
+            }
+          ],
+          "openConnectFingerprintHeaderRequests": [
+            {
+              "mode": "delete",
+              "key": "",
+              "value": "",
+              "domain": "",
+              "overwrite": false
+            }
+          ],
+          "openConnectFingerprintBlockUrls": "",
+          "openConnectFingerprintBrowserVersion": "148.0.32472.1",
+          "openConnectFingerprintMaxTouchPoints": 2,
+          "openConnectFingerprintPlatforms": [
+            "win"
+          ]
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-7992acf1-a54d-4735-b6d5-1a61d05469d7",
+        "type": "basic",
+        "position": {
+          "x": 28.097362768001048,
+          "y": 531.3758657726889
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseClientRects": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectFingerprintPlatforms": [
+            "lin"
+          ],
+          "lastConfiguredAt": "2026-07-23T09:16:54.778Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-6fb37b84-352a-45b9-8577-3ea14d7c6ccf",
+        "type": "basic",
+        "position": {
+          "x": 0.09822854069008713,
+          "y": 646.3955114808273
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseClientRects": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectFingerprintPlatforms": [
+            "mac"
+          ],
+          "lastConfiguredAt": "2026-07-24T08:39:46.931Z",
+          "openConnectFingerprintOsVersionIds": [],
+          "openConnectFingerprintBrowsers": [
+            "chrome"
+          ]
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-56c8a2d1-0a10-44d0-abb6-c6ed9191949b",
+        "type": "basic",
+        "position": {
+          "x": 9.37500000000017,
+          "y": 755.0000000000002
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "allow",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": true,
+          "openConnectFingerprintNoiseWebglImage": true,
+          "openConnectFingerprintNoiseWebglParam": true,
+          "openConnectFingerprintNoiseClientRects": true,
+          "openConnectFingerprintNoiseCodecs": true,
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintWebrtcMode": "authentic",
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintBluetooth": true,
+          "openConnectFingerprintDoNotTrack": true,
+          "openConnectFingerprintMicrophonePermission": "allow",
+          "openConnectFingerprintCameraPermission": "allow",
+          "openConnectFingerprintClipboardPermission": "allow",
+          "openConnectFingerprintNotificationPermission": "allow",
+          "openConnectFingerprintSavePasswords": "on",
+          "openConnectFingerprintReplaceBatteryState": true,
+          "openConnectFingerprintWebview": true,
+          "openConnectFingerprintQuicProtocol": "enable",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectFingerprintPlatforms": [
+            "android"
+          ],
+          "lastConfiguredAt": "2026-07-24T08:12:25.611Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-ce73dbea-7cb8-460d-ae0b-13c3e51a996e",
+        "type": "basic",
+        "position": {
+          "x": 14.75759238454149,
+          "y": 867.7314196342111
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "perfect",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": true,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseClientRects": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectFingerprintPlatforms": [
+            "ios"
+          ],
+          "lastConfiguredAt": "2026-07-24T09:10:33.579Z",
+          "openConnectFingerprintBrowsers": []
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-611f3e21-c203-4d45-ba2a-f7a96725b8e6",
+        "type": "basic",
+        "position": {
+          "x": -272.66315857987763,
+          "y": 661.3076047183556
+        },
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": false,
+          "openConnectFingerprintHardwareConcurrencyAuto": false,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": false,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": false,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": false,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": false,
+          "openConnectFingerprintMacAddressAuto": false,
+          "openConnectFingerprintTimezoneFillByIp": false,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": false,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": false,
+          "openConnectFingerprintWebglMetaAuto": false,
+          "openConnectFingerprintWebGpu": false,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseClientRects": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintPortToProtectAuto": false,
+          "openConnectFingerprintSecureDns": true,
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-23T09:58:03.709Z",
+          "openConnectFingerprintSecureDnsDomain": "https://www.cloudflare.com/"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-be0514f0-1852-4839-b6fb-ac65ef27aea2",
+        "type": "basic",
+        "position": {
+          "x": 316.0075923845415,
+          "y": 867.7314196342111
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "gmail.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T06:46:06.514Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d63a909e-f4de-40ae-acd1-3f22de5e58c7",
+        "type": "basic",
+        "position": {
+          "x": 616.0075923845416,
+          "y": 867.7314196342111
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 5,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-06T06:46:15.769Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "type": "workflowDash",
+        "source": "n-start",
+        "sourceHandle": "out",
+        "target": "n-ce73dbea-7cb8-460d-ae0b-13c3e51a996e",
+        "targetHandle": "in",
+        "id": "xy-edge__n-startout-n-ce73dbea-7cb8-460d-ae0b-13c3e51a996ein",
+        "selected": false
+      },
+      {
+        "source": "n-ce73dbea-7cb8-460d-ae0b-13c3e51a996e",
+        "sourceHandle": "success",
+        "target": "n-be0514f0-1852-4839-b6fb-ac65ef27aea2",
+        "targetHandle": "in",
+        "id": "xy-edge__n-ce73dbea-7cb8-460d-ae0b-13c3e51a996esuccess-n-be0514f0-1852-4839-b6fb-ac65ef27aea2in"
+      },
+      {
+        "source": "n-be0514f0-1852-4839-b6fb-ac65ef27aea2",
+        "sourceHandle": "success",
+        "target": "n-d63a909e-f4de-40ae-acd1-3f22de5e58c7",
+        "targetHandle": "in",
+        "id": "xy-edge__n-be0514f0-1852-4839-b6fb-ac65ef27aea2success-n-d63a909e-f4de-40ae-acd1-3f22de5e58c7in"
+      }
+    ],
+    "viewport": {
+      "x": -42.17523396164097,
+      "y": -772.5091787673127,
+      "zoom": 1.6
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "8b296882-fa71-45af-b7b2-7ff565700f6e",
+        "key": "a",
+        "value": ""
+      },
+      {
+        "id": "c51202a9-d5d7-4889-9470-e5abab99bb7c",
+        "key": "b",
+        "value": ""
+      },
+      {
+        "id": "b8f0a63f-ce1f-4618-a304-5a4cb961bc0b",
+        "key": "c",
+        "value": ""
+      }
+    ]
+  }
+}

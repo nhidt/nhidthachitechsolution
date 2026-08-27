@@ -1,0 +1,191 @@
+{
+  "id": "7332394a-a317-4135-8994-f37762222b18",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\7332394a-a317-4135-8994-f37762222b18.hideflow",
+  "updatedAt": "2026-08-01T01:01:37.530Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -64.375,
+          "y": 236.875
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 65,
+          "y": 123.12499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-1d28af89-cf19-4e3b-943a-a991dd7d14a2",
+        "type": "basic",
+        "position": {
+          "x": 365,
+          "y": 123.12499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://rumble.com/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T08:35:20.655Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-56fff694-59fd-4bf9-8f03-c937a6f60c16",
+        "type": "basic",
+        "position": {
+          "x": 640,
+          "y": 433.125
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#section-science > div > div.homepage-heading-header > a.homepage-view-all",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T08:57:10.263Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-2167eb82-f654-4a20-8748-6c38c7862a27",
+        "type": "basic",
+        "position": {
+          "x": 302.6621607315782,
+          "y": 284.6224026819329
+        },
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "#section-science > div > div.homepage-heading-header > a.homepage-view-all",
+          "elementOrderMode": "random",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T08:59:27.423Z",
+          "elementOrderFrom": 1,
+          "elementOrderTo": 10
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-c3dd227b-ba51-4678-9611-43628dbce810",
+        "type": "basic",
+        "position": {
+          "x": 764.347362768001,
+          "y": 277.118740021517
+        },
+        "data": {
+          "code": "scrollIntoView",
+          "label": "Scroll Into View",
+          "scrollIntoViewSelector": "#section-science > div > div.homepage-heading-header > a.homepage-view-all",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "scrollStepFrom": 400,
+          "scrollStepTo": 1000,
+          "scrollStepDelayFrom": 500,
+          "scrollStepDelayTo": 1000,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T08:57:07.095Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-1d28af89-cf19-4e3b-943a-a991dd7d14a2",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-1d28af89-cf19-4e3b-943a-a991dd7d14a2in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-c3dd227b-ba51-4678-9611-43628dbce810",
+        "sourceHandle": "success",
+        "target": "n-56fff694-59fd-4bf9-8f03-c937a6f60c16",
+        "targetHandle": "in",
+        "id": "xy-edge__n-c3dd227b-ba51-4678-9611-43628dbce810success-n-56fff694-59fd-4bf9-8f03-c937a6f60c16in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-1d28af89-cf19-4e3b-943a-a991dd7d14a2",
+        "sourceHandle": "success",
+        "target": "n-2167eb82-f654-4a20-8748-6c38c7862a27",
+        "targetHandle": "in",
+        "id": "xy-edge__n-1d28af89-cf19-4e3b-943a-a991dd7d14a2success-n-2167eb82-f654-4a20-8748-6c38c7862a27in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-2167eb82-f654-4a20-8748-6c38c7862a27",
+        "sourceHandle": "success",
+        "target": "n-c3dd227b-ba51-4678-9611-43628dbce810",
+        "targetHandle": "in",
+        "id": "xy-edge__n-2167eb82-f654-4a20-8748-6c38c7862a27success-n-c3dd227b-ba51-4678-9611-43628dbce810in"
+      }
+    ],
+    "viewport": {
+      "x": 334.7426032022465,
+      "y": 194.3314863771218,
+      "zoom": 1.0556063286183153
+    }
+  }
+}

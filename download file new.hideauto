@@ -1,0 +1,122 @@
+{
+  "id": "72d565b0-91cc-4f18-a691-2b61425ef0c1",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\72d565b0-91cc-4f18-a691-2b61425ef0c1.hideflow",
+  "updatedAt": "2026-08-08T08:47:46.577Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 282.76381913926116,
+          "y": 251.818560706518
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 220.11089584122502,
+          "y": 358.7980027402606
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-2dcadccd-b54c-4b88-ba5d-55e72bad0d0e",
+        "type": "basic",
+        "position": {
+          "x": 525.6732025911332,
+          "y": 280.13095939365195
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T02:54:17.564Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-6e463dc5-aee4-41ac-9d6f-1a69f7f53374",
+        "type": "basic",
+        "position": {
+          "x": 469.11713203368015,
+          "y": 498.31740076445135
+        },
+        "data": {
+          "code": "downloadFile",
+          "label": "Download File",
+          "downloadFileUrl": "https://www.orimi.com/pdf-test.pdf",
+          "downloadFileOutputDir": "C:\\Users\\hachitech solution\\Documents\\sanphamtestGolf",
+          "downloadFileOverwrite": false,
+          "downloadFileTimeoutSeconds": 120,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "downloadFileName": "pdf-test4324234.pdf",
+          "lastConfiguredAt": "2026-07-21T08:49:02.550Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-2dcadccd-b54c-4b88-ba5d-55e72bad0d0e",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-2dcadccd-b54c-4b88-ba5d-55e72bad0d0ein"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-2dcadccd-b54c-4b88-ba5d-55e72bad0d0e",
+        "sourceHandle": "success",
+        "target": "n-6e463dc5-aee4-41ac-9d6f-1a69f7f53374",
+        "targetHandle": "in",
+        "id": "xy-edge__n-2dcadccd-b54c-4b88-ba5d-55e72bad0d0esuccess-n-6e463dc5-aee4-41ac-9d6f-1a69f7f53374in"
+      }
+    ],
+    "viewport": {
+      "x": 239.36374911235043,
+      "y": -92.00502896599431,
+      "zoom": 0.7999999999999999
+    }
+  }
+}

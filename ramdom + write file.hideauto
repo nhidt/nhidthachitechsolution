@@ -1,0 +1,254 @@
+{
+  "id": "8fdf0ad9-c945-42f0-aa15-cb72b592fc25",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\8fdf0ad9-c945-42f0-aa15-cb72b592fc25.hideflow",
+  "updatedAt": "2026-08-06T01:42:27.433Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 123.125,
+          "y": 229.37499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-4bd2d253-2e28-45d7-8bbc-e75f6e97e67d",
+        "type": "basic",
+        "position": {
+          "x": 804.5625,
+          "y": 331.69531250000006
+        },
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "randomAssignments": [
+            {
+              "randomType": "email",
+              "variableKey": "email",
+              "randomLength": 8,
+              "randomEmailDomain": "gmail.com",
+              "randomNumberFrom": 0,
+              "randomNumberTo": 100
+            },
+            {
+              "randomType": "password",
+              "variableKey": "matkhau",
+              "randomLength": 12
+            }
+          ],
+          "lastConfiguredAt": "2026-07-15T07:35:07.493Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-573f0702-2ea0-43d8-b467-3be10e216d15",
+        "type": "basic",
+        "position": {
+          "x": 382.06249999999994,
+          "y": 286.6953125
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Goto url",
+          "gotoUrl": "https://www.facebook.com/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-15T07:27:39.013Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-fc24f6f4-1843-4e36-b8a2-995fbbc95c35",
+        "type": "basic",
+        "position": {
+          "x": 635.1874999999999,
+          "y": 197.9453125
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#login_form > div > div.x1n2onr6.x1ja2u2z.x9f619.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xz9dl7a > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.x6s0dn4.xexx8yu.x1k70j0n.xzueoph.xzboxd6.x14l7nz5 > div > div",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-15T07:28:26.677Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-10a08b2f-5431-4960-9f45-e3bd04fe241c",
+        "type": "basic",
+        "position": {
+          "x": 1094.5625,
+          "y": 243.5703125
+        },
+        "data": {
+          "code": "writeFile",
+          "label": "Write File",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "writeFileInput": "{{email}}|{{matkhau}}",
+          "lastConfiguredAt": "2026-07-15T10:03:46.436Z",
+          "writeFileMode": "overwrite",
+          "writeFileOutputPath": "C:\\Users\\hachitech solution\\Downloads\\New XLS Worksheet.csv"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-516abc74-2311-43b6-ba4f-5c6f6921b162",
+        "type": "basic",
+        "position": {
+          "x": 1093.3125,
+          "y": 354.19531250000006
+        },
+        "data": {
+          "code": "writeFile",
+          "label": "Write File",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "writeFileInput": "{{email}}|{{matkhau}}",
+          "lastConfiguredAt": "2026-07-15T10:09:44.812Z",
+          "writeFileOutputPath": "C:\\Users\\hachitech solution\\Downloads\\{{email}}.text"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-573f0702-2ea0-43d8-b467-3be10e216d15",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-573f0702-2ea0-43d8-b467-3be10e216d15in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-573f0702-2ea0-43d8-b467-3be10e216d15",
+        "sourceHandle": "success",
+        "target": "n-fc24f6f4-1843-4e36-b8a2-995fbbc95c35",
+        "targetHandle": "in",
+        "id": "xy-edge__n-573f0702-2ea0-43d8-b467-3be10e216d15success-n-fc24f6f4-1843-4e36-b8a2-995fbbc95c35in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-fc24f6f4-1843-4e36-b8a2-995fbbc95c35",
+        "sourceHandle": "success",
+        "target": "n-4bd2d253-2e28-45d7-8bbc-e75f6e97e67d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-fc24f6f4-1843-4e36-b8a2-995fbbc95c35success-n-4bd2d253-2e28-45d7-8bbc-e75f6e97e67din"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-4bd2d253-2e28-45d7-8bbc-e75f6e97e67d",
+        "sourceHandle": "success",
+        "target": "n-516abc74-2311-43b6-ba4f-5c6f6921b162",
+        "targetHandle": "in",
+        "id": "xy-edge__n-4bd2d253-2e28-45d7-8bbc-e75f6e97e67dsuccess-n-516abc74-2311-43b6-ba4f-5c6f6921b162in"
+      }
+    ],
+    "viewport": {
+      "x": 199.1147306886121,
+      "y": 440.7342285728221,
+      "zoom": 0.5278031643091576
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\hachitech solution\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "5e0d52d7-8ddf-4ed8-b731-c9a2aadabb66",
+        "key": "email",
+        "value": "54"
+      },
+      {
+        "id": "c5789644-5625-4e53-b7c0-50183e47c1bf",
+        "key": "matkhau",
+        "value": "#M25x42Yg&M2"
+      }
+    ]
+  }
+}

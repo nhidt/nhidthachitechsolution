@@ -1,0 +1,253 @@
+{
+  "id": "8d5d038b-8729-4e80-919b-56d5d0dceaa2",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\8d5d038b-8729-4e80-919b-56d5d0dceaa2.hideflow",
+  "updatedAt": "2026-07-20T06:56:18.003Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -105.625,
+          "y": 367.50000000000006
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-ed53b263-9984-4e9b-a193-f41977f0aa2f",
+        "type": "basic",
+        "position": {
+          "x": 478.7244446968879,
+          "y": 518.0947577935389
+        },
+        "data": {
+          "code": "downloadFile",
+          "label": "Download File",
+          "downloadFileUrl": "https://drive.google.com/file/d/1sf2NsoZTd0o2JuVKiHDZVAYc3I5QKQHV/view?usp=drive_link",
+          "downloadFileOutputDir": "C:\\Users\\hachitech solution\\Documents\\{{name}}",
+          "downloadFileOverwrite": false,
+          "downloadFileTimeoutSeconds": 120,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T01:27:58.421Z",
+          "downloadFileName": "newhi"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-f7c9d8c3-6fa4-4513-8c66-c099c26619be",
+        "type": "basic",
+        "position": {
+          "x": 220.34619058438062,
+          "y": 253.72444469688793
+        },
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "randomAssignments": [
+            {
+              "randomType": "characters",
+              "variableKey": "name",
+              "randomLength": 8
+            }
+          ],
+          "lastConfiguredAt": "2026-07-17T08:49:32.624Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-64948c53-39c1-412e-b560-b08f50e35b4d",
+        "type": "basic",
+        "position": {
+          "x": 522.5,
+          "y": 258.74999999999994
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 15,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-17T08:55:43.008Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false
+      },
+      {
+        "id": "n-89b1b290-584d-4636-96d2-d42416c8578c",
+        "type": "basic",
+        "position": {
+          "x": 429.1682586564909,
+          "y": 169.00794101585663
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-17T08:56:27.088Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-d6fb3189-94e0-4f64-bae4-85c16f33b4cb",
+        "type": "basic",
+        "position": {
+          "x": 490.81334999460614,
+          "y": 406.64491320586814
+        },
+        "data": {
+          "code": "downloadFile",
+          "label": "Download File",
+          "downloadFileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+          "downloadFileOutputDir": "C:\\Users\\hachitech solution\\Documents",
+          "downloadFileOverwrite": false,
+          "downloadFileTimeoutSeconds": 120,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "downloadFileName": "new+1",
+          "downloadFileSaveTo": "name",
+          "lastConfiguredAt": "2026-07-20T06:47:18.649Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-f7c9d8c3-6fa4-4513-8c66-c099c26619be",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-f7c9d8c3-6fa4-4513-8c66-c099c26619bein"
+      },
+      {
+        "source": "n-f7c9d8c3-6fa4-4513-8c66-c099c26619be",
+        "sourceHandle": "success",
+        "target": "n-89b1b290-584d-4636-96d2-d42416c8578c",
+        "targetHandle": "in",
+        "id": "xy-edge__n-f7c9d8c3-6fa4-4513-8c66-c099c26619besuccess-n-89b1b290-584d-4636-96d2-d42416c8578cin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-89b1b290-584d-4636-96d2-d42416c8578c",
+        "sourceHandle": "success",
+        "target": "n-64948c53-39c1-412e-b560-b08f50e35b4d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-89b1b290-584d-4636-96d2-d42416c8578csuccess-n-64948c53-39c1-412e-b560-b08f50e35b4din"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-64948c53-39c1-412e-b560-b08f50e35b4d",
+        "sourceHandle": "success",
+        "target": "n-d6fb3189-94e0-4f64-bae4-85c16f33b4cb",
+        "targetHandle": "in",
+        "id": "xy-edge__n-64948c53-39c1-412e-b560-b08f50e35b4dsuccess-n-d6fb3189-94e0-4f64-bae4-85c16f33b4cbin"
+      }
+    ],
+    "viewport": {
+      "x": -196.62317543341703,
+      "y": -94.18848744265085,
+      "zoom": 1.392880901273799
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "97b279ae-f173-428a-b36f-4a53e599bd67",
+        "key": "name",
+        "value": ""
+      },
+      {
+        "id": "7b7dcc82-e6c4-4f63-b491-af7715bc0ffc",
+        "key": "downloaded_file_path",
+        "value": ""
+      }
+    ]
+  }
+}

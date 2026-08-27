@@ -1,0 +1,275 @@
+{
+  "id": "849affea-e455-4731-b0ab-5245e6d01e31",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\849affea-e455-4731-b0ab-5245e6d01e31.hideflow",
+  "updatedAt": "2026-07-21T04:10:39.757Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 16.200482644485447,
+          "y": 53.22543185190173
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-5658cc2c-50f2-41a1-830b-49446f46f967",
+        "type": "basic",
+        "position": {
+          "x": 166.3555538615219,
+          "y": 40.59370010758499
+        },
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "randomAssignments": [
+            {
+              "randomType": "email",
+              "variableKey": "email",
+              "randomLength": 8,
+              "randomEmailDomain": "hotmail.com"
+            },
+            {
+              "randomType": "password",
+              "variableKey": "pass",
+              "randomLength": 12
+            },
+            {
+              "randomType": "number",
+              "variableKey": "egde",
+              "randomLength": 8,
+              "randomNumberFrom": 0,
+              "randomNumberTo": 100
+            },
+            {
+              "randomType": "firstname",
+              "variableKey": "name",
+              "randomLength": 8,
+              "randomNumberFrom": 0,
+              "randomNumberTo": 100
+            }
+          ],
+          "lastConfiguredAt": "2026-07-20T02:15:52.564Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-664033f8-5e6a-4885-9f75-492f5cbbf2f7",
+        "type": "basic",
+        "position": {
+          "x": 159.53313987226755,
+          "y": 302.10419008798374
+        },
+        "data": {
+          "code": "readSpreadsheet",
+          "label": "Read Spreadsheet",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "readSpreadsheetColumns": [
+            {
+              "columnKey": "user",
+              "variableKey": "a"
+            },
+            {
+              "columnKey": "pass",
+              "variableKey": "b"
+            },
+            {
+              "columnKey": "name",
+              "variableKey": "c"
+            },
+            {
+              "columnKey": "egde",
+              "variableKey": "d"
+            }
+          ],
+          "lastConfiguredAt": "2026-07-20T03:04:43.588Z",
+          "readSpreadsheetRowMode": "findRow",
+          "readSpreadsheetPath": "C:\\Users\\hachitech solution\\Downloads\\felipe.oconnell97@gmail.com.csv",
+          "readSpreadsheetSource": "googleSheet",
+          "readSpreadsheetGoogleIdOrUrl": "1vLoStOPa2wh4AWctINlKMdiSwjHY3B8LgjbKB4Tgz0c",
+          "readSpreadsheetHasHeader": true,
+          "readSpreadsheetSkipEmpty": true,
+          "readSpreadsheetTrim": true,
+          "readSpreadsheetCondition": {
+            "columnKey": "D",
+            "compareValue": "29"
+          }
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-b58a8b80-8a28-4da2-ae93-66d3f971d4e4",
+        "type": "basic",
+        "position": {
+          "x": 155.10555386152197,
+          "y": 148.71870010758502
+        },
+        "data": {
+          "code": "writeSpreadsheet",
+          "label": "Write Spreadsheet",
+          "writeSpreadsheetSource": "localFile",
+          "writeSpreadsheetAppendLastRow": true,
+          "writeSpreadsheetColumns": [
+            {
+              "columnKey": "A",
+              "value": "{{email}}"
+            },
+            {
+              "columnKey": "B",
+              "value": "{{pass}}"
+            },
+            {
+              "columnKey": "C",
+              "value": "{{name}}"
+            },
+            {
+              "columnKey": "D",
+              "value": "{{egde}}"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "writeSpreadsheetPath": "C:\\Users\\hachitech solution\\Downloads\\danh_sach_100_tai_khoan_test - Copy.csv",
+          "lastConfiguredAt": "2026-07-16T04:50:30.138Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-b9d877ed-54be-4b81-ae8d-8438558c647a",
+        "type": "basic",
+        "position": {
+          "x": 443.8555538615218,
+          "y": 155.593700107585
+        },
+        "data": {
+          "code": "writeSpreadsheet",
+          "label": "Write Spreadsheet",
+          "writeSpreadsheetSource": "googleSheet",
+          "writeSpreadsheetAppendLastRow": true,
+          "writeSpreadsheetColumns": [
+            {
+              "columnKey": "A",
+              "value": "{{email}}"
+            },
+            {
+              "columnKey": "B",
+              "value": "{{pass}}"
+            },
+            {
+              "columnKey": "C",
+              "value": "{{name}}"
+            },
+            {
+              "columnKey": "D",
+              "value": "{{egde}}"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "writeSpreadsheetGoogleUrl": "https://docs.google.com/spreadsheets/d/1vLoStOPa2wh4AWctINlKMdiSwjHY3B8LgjbKB4Tgz0c/edit?gid=0#gid=0",
+          "writeSpreadsheetSheet": "Sheet1",
+          "lastConfiguredAt": "2026-07-16T04:43:57.194Z",
+          "writeSpreadsheetServiceAccountJson": "{\n  \"type\": \"service_account\",\n  \"project_id\": \"test-502604\",\n  \"private_key_id\": \"4d442fcc0a9378c16eeb1d6cd069a67098cd2881\",\n  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDWCiT+WsoKzxv5\\n9DBJH68tPrAOLS5xa3cAs+4Ss3ZZduTbA5X3+9lJWc+fL6shx9kWipXgYwbD0wnp\\nOMgSdLn0Xcj2hlPX43yepSSiORlqw16T8X7rYB1bB65hz1mDEKVKjZjZkQGfzXBK\\nUaKJBHHSV4fxyQk0kcvAYhl/b/mIYjjGlhlneybJNFCYaeHWdN/zZVEGmtMl8VTs\\npOXs1+8e3nsvsuP9xzl/wpl44qXk8PKkPpl90Rgl8rOQwW+8Xx8KsQUDf3yxga+V\\nBcSHMOxXGGBZuL4WzDzJAibQ5wLC7Z/owQtCVNdgANz32SGyTYFUW4gMVbQYomFL\\nmgUq3BuFAgMBAAECggEACdSZcl01Hl34yPggJ5ue7hMM/vmwQmFPK+cXriAz9VPy\\nmuSFRMh6aFYJpSQJVhnZrKFc1Nt3ehL9R4rmFYLq74BHNJtiym2WUasADbtVoYOr\\nmlvjGmhlsMKfjbp6P/zJuqzaMlPooTBMUf2B240qtSB0C/TRyWpQ01suFJ5N9aeH\\ntm8YCpvCBmk6NtiasD1X0m+bV1m98dXDs+ZQhVtsZIQxVzfrDNBMw1wu2gcnqpFT\\n/9c8Dy4ITXD70Y2rZ0gBv4Q7jAfFHxAdaDNm/cbHgYJfW2Nqj0nn7QqOHmwNM1Dq\\nAALXjavFJLeLJb7gLz4IalGHh20EiPdP9td4ONcGgQKBgQDuop4KFFr1soB6GlnO\\nXYCogxtANGqfF+do2EguB8DZj59R+rwBLtn8jGHOHidwZGnVVoG0Kqvwhhw3JIyq\\npsgZbAakTwOP1QxuTIKfncbyy96ZaQ/hRHiZIJjJSg0/mry4Q1N8uK+umqLtTFHu\\n2UOy7NvaCCV6yBNRawd+W+5qEQKBgQDlnVn/MMhdz36LIcyWCYk397y7WX7ZbX1K\\nAMybr68BJxiPfKOvNLOcPEU4XtAoQgRCdMF/OtAmI2K2CnE+dGK2u+ygTMgILSZ1\\nehzQGhT8aTdScTBvuk2VHmt6XE+satxA3q4PxRFF/JdFdfHbaBLZxWYB9t/FI1NH\\nJYLJdgfGNQKBgQDlTYFK8jBNM07dBYESGSrNwd1nnnZtlUyZpGoHQRAAfk97ONF6\\n2YhBcqtwoe0HxJUlmFBdzTsWjeeC3S4FtOlF9FWVgQ9NIE0nl4FU2wkWuOuWwiuu\\nLFst2PK3SN7eJVP+Q0Nv7w9xWcoA93srZb31qj+/jGBnUOWvMIcs1i2L4QKBgDXY\\nvcc7oHFnfIySQ5EX8Wb/oPHqnfXNWGlnYJROEeNaUMctepFW8Zv9Alqi2XvnZ2pS\\nSSJWH4QiHj8EmeQElTW3QlmhR/Oq6u730RP4Wd2Lqx6ZTruU3CbROHE8fq63bKmF\\nzxoBo/hesPboHuzOLkWFplNlmrp3e0se/9nQ5SfVAoGAX05AvAWrGOuPwaJYBPKD\\nKZzYcG3FEYH5v/xZZ6W9VyYPS9MSjaIrAXKPyK2gEP993GJcURhZsHAe2ZsIjy1L\\n9jl+AKHdc7m3P1P9irc8kKIG0rTluDha0RXbN1H+thk3R0jjX54FXaDAeaayK49j\\nR4rpICgBIH4/0ud2ExMDCxc=\\n-----END PRIVATE KEY-----\\n\",\n  \"client_email\": \"nhidt-802@test-502604.iam.gserviceaccount.com\",\n  \"client_id\": \"118314146813775866894\",\n  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/nhidt-802%40test-502604.iam.gserviceaccount.com\",\n  \"universe_domain\": \"googleapis.com\"\n}\n"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "type": "workflowDash",
+        "source": "n-start",
+        "sourceHandle": "out",
+        "target": "n-5658cc2c-50f2-41a1-830b-49446f46f967",
+        "targetHandle": "in",
+        "id": "xy-edge__n-startout-n-5658cc2c-50f2-41a1-830b-49446f46f967in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-5658cc2c-50f2-41a1-830b-49446f46f967",
+        "sourceHandle": "success",
+        "target": "n-b58a8b80-8a28-4da2-ae93-66d3f971d4e4",
+        "targetHandle": "in",
+        "id": "xy-edge__n-5658cc2c-50f2-41a1-830b-49446f46f967success-n-b58a8b80-8a28-4da2-ae93-66d3f971d4e4in"
+      }
+    ],
+    "viewport": {
+      "x": -68.28352514873359,
+      "y": 138.64653310263952,
+      "zoom": 1.6
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "7454ef2b-9df8-476f-8b5f-7618067aa12b",
+        "key": "egde",
+        "value": ""
+      },
+      {
+        "id": "a6fa0c4c-8267-4e3e-90e0-23fdb0828249",
+        "key": "name",
+        "value": ""
+      }
+    ]
+  }
+}

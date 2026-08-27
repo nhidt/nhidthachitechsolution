@@ -1,0 +1,207 @@
+{
+  "id": "af8b0926-da2e-4bad-bf6b-a95a38c55306",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\af8b0926-da2e-4bad-bf6b-a95a38c55306.hideflow",
+  "updatedAt": "2026-07-22T03:35:28.733Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -11.875,
+          "y": 230.62499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-09761cbe-f533-4dd5-b1bc-e62c41256273",
+        "type": "basic",
+        "position": {
+          "x": 263.75,
+          "y": 214.99999999999994
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-22T02:46:30.351Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-bcb7dc7c-0559-408d-af72-dc79e4c730cc",
+        "type": "basic",
+        "position": {
+          "x": 563.75,
+          "y": 214.99999999999994
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#gh-ac",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-22T02:46:37.830Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-ce63e105-0cbd-4b89-8c39-0498e774b818",
+        "type": "basic",
+        "position": {
+          "x": 863.75,
+          "y": 214.99999999999994
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "dsfsdfgg dfsgdfhkds93247547-23 fgsdhkfhsdhflolhsd",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-22T02:46:52.366Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-1d9ac73f-fc47-44e9-bb85-f03497aecf16",
+        "type": "basic",
+        "position": {
+          "x": 1163.75,
+          "y": 214.99999999999994
+        },
+        "data": {
+          "code": "getInputValue",
+          "label": "Get Input value",
+          "getInputValueSelector": "#gh-ac",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "elementOrderTo": 10,
+          "lastConfiguredAt": "2026-07-22T02:47:25.822Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": true
+      },
+      {
+        "id": "n-7e4dcc9b-fe08-4a09-aa4d-6ead13f41bb4",
+        "type": "basic",
+        "position": {
+          "x": 1463.75,
+          "y": 214.99999999999994
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 10,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-22T02:47:10.750Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-09761cbe-f533-4dd5-b1bc-e62c41256273",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-09761cbe-f533-4dd5-b1bc-e62c41256273in"
+      },
+      {
+        "source": "n-09761cbe-f533-4dd5-b1bc-e62c41256273",
+        "sourceHandle": "success",
+        "target": "n-bcb7dc7c-0559-408d-af72-dc79e4c730cc",
+        "targetHandle": "in",
+        "id": "xy-edge__n-09761cbe-f533-4dd5-b1bc-e62c41256273success-n-bcb7dc7c-0559-408d-af72-dc79e4c730ccin"
+      },
+      {
+        "source": "n-bcb7dc7c-0559-408d-af72-dc79e4c730cc",
+        "sourceHandle": "success",
+        "target": "n-ce63e105-0cbd-4b89-8c39-0498e774b818",
+        "targetHandle": "in",
+        "id": "xy-edge__n-bcb7dc7c-0559-408d-af72-dc79e4c730ccsuccess-n-ce63e105-0cbd-4b89-8c39-0498e774b818in"
+      },
+      {
+        "source": "n-ce63e105-0cbd-4b89-8c39-0498e774b818",
+        "sourceHandle": "success",
+        "target": "n-1d9ac73f-fc47-44e9-bb85-f03497aecf16",
+        "targetHandle": "in",
+        "id": "xy-edge__n-ce63e105-0cbd-4b89-8c39-0498e774b818success-n-1d9ac73f-fc47-44e9-bb85-f03497aecf16in"
+      },
+      {
+        "source": "n-1d9ac73f-fc47-44e9-bb85-f03497aecf16",
+        "sourceHandle": "success",
+        "target": "n-7e4dcc9b-fe08-4a09-aa4d-6ead13f41bb4",
+        "targetHandle": "in",
+        "id": "xy-edge__n-1d9ac73f-fc47-44e9-bb85-f03497aecf16success-n-7e4dcc9b-fe08-4a09-aa4d-6ead13f41bb4in"
+      }
+    ],
+    "viewport": {
+      "x": -307.5030391712632,
+      "y": 279.44598912764656,
+      "zoom": 0.8000000000000004
+    }
+  }
+}

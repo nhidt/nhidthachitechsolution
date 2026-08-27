@@ -1,0 +1,264 @@
+{
+  "id": "baa4ce7d-4bce-4e3a-9839-9976fc286a1c",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\baa4ce7d-4bce-4e3a-9839-9976fc286a1c.hideflow",
+  "updatedAt": "2026-08-09T03:33:57.743Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 216.00976238752003,
+          "y": 130.48283487911155
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": true
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 213.82330571189866,
+          "y": 256.1433079079851
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-5d526a82-3967-4d35-9c31-96c56e5ff7a0",
+        "type": "basic",
+        "position": {
+          "x": 44.05938170781394,
+          "y": 480.41661497562393
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_Iframe",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:15:07.655Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-488080d5-f615-434b-9135-5275a889fa49",
+        "type": "basic",
+        "position": {
+          "x": 600.9255017696457,
+          "y": 407.01299182337385
+        },
+        "data": {
+          "code": "switchFrame",
+          "label": "Switch Frame",
+          "switchFrameMode": "sub",
+          "switchFrameSelector": "#iframeResult",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-05T02:10:50.750Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-43ddab50-afef-42c1-8d98-7fdeed3e621c",
+        "type": "basic",
+        "position": {
+          "x": 46.23960569271307,
+          "y": 712.1016295581087
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "body > h1",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:14:13.044Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-86a68d1e-3d94-400b-bac7-6df3144db60f",
+        "type": "basic",
+        "position": {
+          "x": 1072.8317839644612,
+          "y": 646.2075844944186
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//*[@id=\"loginContainer\"]/div[1]/div/div/div/div/div[4]/div[2]/div[2]/div",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T02:54:32.557Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-385e96ae-bb24-4b47-bc2f-6b95ad3464ef",
+        "type": "basic",
+        "position": {
+          "x": 533.4971109046978,
+          "y": 274.2741914554771
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T02:58:13.072Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-9a1815c0-990e-4075-9fe6-4da2b40cc218",
+        "type": "basic",
+        "position": {
+          "x": 896.6968401880486,
+          "y": 383.2734250671602
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "button",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-05T02:14:49.515Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-972df4ef-1e77-437f-a33a-4833ed4ebcb8",
+        "type": "basic",
+        "position": {
+          "x": 48.072190187131696,
+          "y": 590.3236235917598
+        },
+        "data": {
+          "code": "switchFrame",
+          "label": "Switch Frame",
+          "switchFrameMode": "sub",
+          "switchFrameSelector": "//*[@id=\"iframeResult\"]",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-08-03T03:14:47.671Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-385e96ae-bb24-4b47-bc2f-6b95ad3464ef",
+        "sourceHandle": "success",
+        "target": "n-488080d5-f615-434b-9135-5275a889fa49",
+        "targetHandle": "in",
+        "id": "xy-edge__n-385e96ae-bb24-4b47-bc2f-6b95ad3464efsuccess-n-488080d5-f615-434b-9135-5275a889fa49in"
+      },
+      {
+        "source": "n-488080d5-f615-434b-9135-5275a889fa49",
+        "sourceHandle": "success",
+        "target": "n-9a1815c0-990e-4075-9fe6-4da2b40cc218",
+        "targetHandle": "in",
+        "id": "xy-edge__n-488080d5-f615-434b-9135-5275a889fa49success-n-9a1815c0-990e-4075-9fe6-4da2b40cc218in"
+      },
+      {
+        "source": "n-5d526a82-3967-4d35-9c31-96c56e5ff7a0",
+        "sourceHandle": "success",
+        "target": "n-972df4ef-1e77-437f-a33a-4833ed4ebcb8",
+        "targetHandle": "in",
+        "id": "xy-edge__n-5d526a82-3967-4d35-9c31-96c56e5ff7a0success-n-972df4ef-1e77-437f-a33a-4833ed4ebcb8in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-972df4ef-1e77-437f-a33a-4833ed4ebcb8",
+        "sourceHandle": "success",
+        "target": "n-43ddab50-afef-42c1-8d98-7fdeed3e621c",
+        "targetHandle": "in",
+        "id": "xy-edge__n-972df4ef-1e77-437f-a33a-4833ed4ebcb8success-n-43ddab50-afef-42c1-8d98-7fdeed3e621cin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-385e96ae-bb24-4b47-bc2f-6b95ad3464ef",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-385e96ae-bb24-4b47-bc2f-6b95ad3464efin"
+      }
+    ],
+    "viewport": {
+      "x": 186.31270393287951,
+      "y": 340.12022157554236,
+      "zoom": 0.39815587155355975
+    }
+  }
+}

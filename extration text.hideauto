@@ -1,0 +1,275 @@
+{
+  "id": "b4290f94-25e3-48dc-8627-817745e31bb9",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\b4290f94-25e3-48dc-8627-817745e31bb9.hideflow",
+  "updatedAt": "2026-07-24T02:04:48.178Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -131.875,
+          "y": 226.875
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 6.875,
+          "y": 212.49999999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-624d2fc0-d941-4bf5-b1e5-f2794fe27ac5",
+        "type": "basic",
+        "position": {
+          "x": 305.62500000000006,
+          "y": 306.25
+        },
+        "data": {
+          "code": "extractionInText",
+          "label": "Extraction in text",
+          "extractionInTextSource": "{{6digits}}",
+          "extractionInTextRule": "\\b\\d{6}\\b",
+          "extractionInTextIndex": 2,
+          "extractionInTextSaveTo": "otp",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-24T02:02:40.633Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-e209750a-3a19-4f31-8c51-cf91f71b2669",
+        "type": "basic",
+        "position": {
+          "x": 213.75,
+          "y": 123.12499999999994
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "facebook.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T04:56:09.042Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-cedc26dc-fcd1-46b2-b8b9-6bdb472ae05c",
+        "type": "basic",
+        "position": {
+          "x": 296.25000000000006,
+          "y": 209.37499999999994
+        },
+        "data": {
+          "code": "readSpreadsheet",
+          "label": "Read Spreadsheet",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "readSpreadsheetSource": "googleSheet",
+          "readSpreadsheetGoogleIdOrUrl": "https://docs.google.com/spreadsheets/d/1vLoStOPa2wh4AWctINlKMdiSwjHY3B8LgjbKB4Tgz0c/edit?gid=1797652599#gid=1797652599",
+          "readSpreadsheetSheet": "Sheet3",
+          "readSpreadsheetHasHeader": true,
+          "readSpreadsheetColumns": [
+            {
+              "columnKey": "A",
+              "variableKey": "mail"
+            },
+            {
+              "columnKey": "B",
+              "variableKey": "mail"
+            },
+            {
+              "columnKey": "C",
+              "variableKey": "6digits"
+            }
+          ],
+          "lastConfiguredAt": "2026-07-24T02:00:12.553Z",
+          "readSpreadsheetTrim": false
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-f820fb9d-e6b9-4965-aaf4-7c5e5e69b171",
+        "type": "basic",
+        "position": {
+          "x": 312.10937499999994,
+          "y": 400.19531250000006
+        },
+        "data": {
+          "code": "extractionInText",
+          "label": "Extraction in text",
+          "extractionInTextSource": "{{mail}}",
+          "extractionInTextRule": "^[^|]+\\|[^|]+",
+          "extractionInTextIndex": 1,
+          "extractionInTextSaveTo": "mailpass",
+          "lastConfiguredAt": "2026-07-21T07:01:15.888Z",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        },
+        "selected": false,
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-e209750a-3a19-4f31-8c51-cf91f71b2669",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-e209750a-3a19-4f31-8c51-cf91f71b2669in"
+      },
+      {
+        "source": "n-e209750a-3a19-4f31-8c51-cf91f71b2669",
+        "sourceHandle": "success",
+        "target": "n-cedc26dc-fcd1-46b2-b8b9-6bdb472ae05c",
+        "targetHandle": "in",
+        "id": "xy-edge__n-e209750a-3a19-4f31-8c51-cf91f71b2669success-n-cedc26dc-fcd1-46b2-b8b9-6bdb472ae05cin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-cedc26dc-fcd1-46b2-b8b9-6bdb472ae05c",
+        "sourceHandle": "success",
+        "target": "n-624d2fc0-d941-4bf5-b1e5-f2794fe27ac5",
+        "targetHandle": "in",
+        "id": "xy-edge__n-cedc26dc-fcd1-46b2-b8b9-6bdb472ae05csuccess-n-624d2fc0-d941-4bf5-b1e5-f2794fe27ac5in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-624d2fc0-d941-4bf5-b1e5-f2794fe27ac5",
+        "sourceHandle": "success",
+        "target": "n-f820fb9d-e6b9-4965-aaf4-7c5e5e69b171",
+        "targetHandle": "in",
+        "id": "xy-edge__n-624d2fc0-d941-4bf5-b1e5-f2794fe27ac5success-n-f820fb9d-e6b9-4965-aaf4-7c5e5e69b171in"
+      }
+    ],
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "5a2ab828-62e6-45c0-896b-c19753488f73",
+        "key": "USER",
+        "value": ""
+      },
+      {
+        "id": "b11f1d7a-1fe9-49b0-a47c-d65e59ece6dd",
+        "key": "PASS",
+        "value": ""
+      },
+      {
+        "id": "d4465f81-70cc-405b-b063-143c45bde13a",
+        "key": "mailpass",
+        "value": ""
+      },
+      {
+        "id": "7441ad09-5696-4b91-8eb9-c1894884761e",
+        "key": "extracted",
+        "value": ""
+      },
+      {
+        "id": "7d30c552-8685-4bd1-963f-fefa8ef16325",
+        "key": "6",
+        "value": ""
+      },
+      {
+        "id": "ba67b333-790e-4cf9-9a92-98d698e96cc5",
+        "key": "url",
+        "value": ""
+      },
+      {
+        "id": "c8891128-fea2-4442-b141-e8b9de0a1583",
+        "key": "6digits",
+        "value": ""
+      },
+      {
+        "id": "589a5a03-bb65-483c-86e5-c79f22f004f7",
+        "key": "mail",
+        "value": ""
+      },
+      {
+        "id": "b62a3cc1-5dc3-4959-8cfb-6fc64ad3d17d",
+        "key": "otp",
+        "value": ""
+      }
+    ],
+    "viewport": {
+      "x": -109.41015641532096,
+      "y": -56.91548602951523,
+      "zoom": 1.3928809012737986
+    }
+  }
+}

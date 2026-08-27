@@ -1,0 +1,190 @@
+{
+  "id": "f27a12d1-dd9b-4b14-886e-7648e2fd294d",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\f27a12d1-dd9b-4b14-886e-7648e2fd294d.hideflow",
+  "updatedAt": "2026-07-20T08:22:53.769Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 144.37499999999997,
+          "y": 246.87499999999994
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-7ccfc3c3-d7df-4db8-9af3-cdf6ab96e135",
+        "type": "basic",
+        "position": {
+          "x": 384.0456942192629,
+          "y": 217.5595342287751
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://vintech24h.com/tin-tuc/kiem-tra-chuot/",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:38:45.608Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-21d59892-c401-4cf4-8b80-57bdd2d3efdd",
+        "type": "basic",
+        "position": {
+          "x": 649.2890328079937,
+          "y": 268.8996182807373
+        },
+        "data": {
+          "code": "mouseDown",
+          "label": "Mouse Down",
+          "mouseDownX": 600,
+          "mouseDownY": 900,
+          "mouseDownButton": "left",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:43:53.064Z",
+          "delayFromSeconds": 6,
+          "delayToSeconds": 9
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-f3eb4773-6a01-4a69-b590-08bc5ee1754d",
+        "type": "basic",
+        "position": {
+          "x": 660.0100345830234,
+          "y": 395.9022546926281
+        },
+        "data": {
+          "code": "mouseUp",
+          "label": "Mouse Up",
+          "mouseUpX": 600,
+          "mouseUpY": 900,
+          "mouseUpButton": "left",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-20T07:44:00.544Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-7ccfc3c3-d7df-4db8-9af3-cdf6ab96e135",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-7ccfc3c3-d7df-4db8-9af3-cdf6ab96e135in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-7ccfc3c3-d7df-4db8-9af3-cdf6ab96e135",
+        "sourceHandle": "success",
+        "target": "n-21d59892-c401-4cf4-8b80-57bdd2d3efdd",
+        "targetHandle": "in",
+        "id": "xy-edge__n-7ccfc3c3-d7df-4db8-9af3-cdf6ab96e135success-n-21d59892-c401-4cf4-8b80-57bdd2d3efddin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-21d59892-c401-4cf4-8b80-57bdd2d3efdd",
+        "sourceHandle": "success",
+        "target": "n-f3eb4773-6a01-4a69-b590-08bc5ee1754d",
+        "targetHandle": "in",
+        "id": "xy-edge__n-21d59892-c401-4cf4-8b80-57bdd2d3efddsuccess-n-f3eb4773-6a01-4a69-b590-08bc5ee1754din"
+      }
+    ],
+    "viewport": {
+      "x": -223.00933671973627,
+      "y": 85.56911149038854,
+      "zoom": 1.055606328618316
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "887be503-83d6-4c5a-b31d-cc7d1c732d99",
+        "key": "1",
+        "value": ""
+      },
+      {
+        "id": "f8f4a912-c52b-40e8-add7-f3ceec9e8dc9",
+        "key": "downloaded_file_path",
+        "value": ""
+      }
+    ]
+  }
+}

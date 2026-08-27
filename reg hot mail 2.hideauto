@@ -1,0 +1,813 @@
+{
+  "id": "8e84eeb1-9cac-444f-80ca-fd7457992964",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\8e84eeb1-9cac-444f-80ca-fd7457992964.hideflow",
+  "updatedAt": "2026-07-30T09:36:40.990Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -324.91602383962345,
+          "y": -80.7256014670537
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-random",
+        "position": {
+          "x": -313.4146592709972,
+          "y": 110.16604824469255
+        },
+        "type": "basic",
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "randomAssignments": [
+            {
+              "randomType": "firstname",
+              "variableKey": "firstname"
+            },
+            {
+              "randomType": "lastname",
+              "variableKey": "lastname"
+            },
+            {
+              "randomType": "number",
+              "variableKey": "day",
+              "randomNumberFrom": 1,
+              "randomNumberTo": 28
+            },
+            {
+              "randomType": "number",
+              "variableKey": "month",
+              "randomNumberFrom": 1,
+              "randomNumberTo": 12
+            },
+            {
+              "randomType": "number",
+              "variableKey": "year",
+              "randomNumberFrom": 1996,
+              "randomNumberTo": 2007
+            },
+            {
+              "randomType": "number",
+              "variableKey": "suffix",
+              "randomNumberFrom": 11111,
+              "randomNumberTo": 99999
+            },
+            {
+              "randomType": "password",
+              "variableKey": "password",
+              "randomLength": 12
+            }
+          ],
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-07T10:21:00.949Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-set-vars",
+        "position": {
+          "x": -321.003242448212,
+          "y": 304.0793075579104
+        },
+        "type": "basic",
+        "data": {
+          "code": "setVariables",
+          "label": "Set variables",
+          "setVariableAssignments": [
+            {
+              "variableKey": "username",
+              "value": "{{lastname}}{{firstname}}{{suffix}}"
+            },
+            {
+              "variableKey": "email",
+              "value": "{{username}}@outlook.com"
+            }
+          ],
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T07:01:15.267Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -335.82905690041457,
+          "y": 501.4032124796897
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectPlatform": "hidemium",
+          "openConnectBrowserUuid": "{{profile_uuid}}",
+          "openConnectCloseWhenDone": false,
+          "isRunning": false,
+          "openConnectProxyEnabled": false,
+          "openConnectProxyServer": "",
+          "lastConfiguredAt": "2026-07-22T04:05:27.122Z",
+          "delayFromSeconds": 2,
+          "delayToSeconds": 3,
+          "openConnectFingerprintPlatforms": [
+            "android"
+          ],
+          "openConnectChromiumExtraArgs": "--load-extensions=C:\\Users\\congh\\Downloads\\automation\\Test_auto\\Extension\\capchar",
+          "openConnectProfilePath": "{{profile_path}}",
+          "openConnectProxyUsername": "",
+          "openConnectProxyPassword": "",
+          "isDone": false,
+          "isDimmed": false
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-goto-create",
+        "position": {
+          "x": -350.4303712390581,
+          "y": 717.0024925592005
+        },
+        "type": "basic",
+        "data": {
+          "code": "gotoUrl",
+          "label": "Goto url",
+          "gotoUrl": "https://outlook.live.com/mail/0/?prompt=create_account",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-09T03:22:54.332Z",
+          "delayFromSeconds": 20,
+          "delayToSeconds": 30,
+          "nodeTimeoutSeconds": 60
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-set-username",
+        "position": {
+          "x": -364.53023812282856,
+          "y": 964.4689937696096
+        },
+        "type": "basic",
+        "data": {
+          "code": "setValue",
+          "label": "Set value",
+          "setValueSelector": "//input[@name='email']",
+          "setValueValue": "{{username}}",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-09T03:22:50.445Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-submit-1",
+        "position": {
+          "x": 69.33742623181354,
+          "y": 123.18233617281226
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//button[@type='submit']",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T10:05:17.752Z",
+          "delayFromSeconds": 5,
+          "delayToSeconds": 8
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-set-password",
+        "position": {
+          "x": 46.087961690231566,
+          "y": 327.31921399953626
+        },
+        "type": "basic",
+        "data": {
+          "code": "setValue",
+          "label": "Set value",
+          "setValueSelector": "//input[@type='password']",
+          "setValueValue": "{{password}}",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T03:55:18.131Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-submit-2",
+        "position": {
+          "x": 20.602321155584477,
+          "y": 520.2036416344279
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//button[@type='submit']",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T03:55:20.918Z",
+          "delayFromSeconds": 10,
+          "delayToSeconds": 10
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-month-dropdown",
+        "position": {
+          "x": -10.786540218633348,
+          "y": 717.518141915542
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//label[@for='BirthMonthDropdown']",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T01:59:40.693Z",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 2
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-month-value",
+        "position": {
+          "x": -23.844798668075185,
+          "y": 991.5715971852394
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//div[contains(@class,'fui-FluentProvider')]//div[@role='listbox']//div[{{month}}]",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T01:59:45.930Z",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 2
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-day-dropdown",
+        "position": {
+          "x": 559.700241953003,
+          "y": 132.27777835325176
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//label[@for='BirthDayDropdown']",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T01:59:50.705Z",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 2
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-day-value",
+        "position": {
+          "x": 559.385450122581,
+          "y": 345.0019164212473
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//div[contains(@class,'fui-FluentProvider')]//div[@role='listbox']//div[{{day}}]",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T02:00:02.993Z",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 2
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-set-year",
+        "position": {
+          "x": 559.385450122581,
+          "y": 495.00191642124673
+        },
+        "type": "basic",
+        "data": {
+          "code": "setValue",
+          "label": "Set value",
+          "setValueSelector": "//input[@name='BirthYear']",
+          "setValueValue": "{{year}}",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T02:00:08.143Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-submit-3",
+        "position": {
+          "x": 559.385450122581,
+          "y": 645.0019164212467
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//button[@type='submit']",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T02:00:09.755Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-pause-10-3",
+        "position": {
+          "x": 559.385450122581,
+          "y": 795.0019164212467
+        },
+        "type": "basic",
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 10,
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T02:00:11.305Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-set-firstname",
+        "position": {
+          "x": 548.5035680813794,
+          "y": 1018.9987143014171
+        },
+        "type": "basic",
+        "data": {
+          "code": "setValue",
+          "label": "Set value",
+          "setValueSelector": "//input[@name='firstNameInput']",
+          "setValueValue": "{{firstname}}",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T02:00:13.780Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-set-lastname",
+        "position": {
+          "x": 1036.0118835272085,
+          "y": 154.80730806143328
+        },
+        "type": "basic",
+        "data": {
+          "code": "setValue",
+          "label": "Set value",
+          "setValueSelector": "//input[@name='lastNameInput']",
+          "setValueValue": "{{lastname}}",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-08T02:00:16.554Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-click-submit-4",
+        "position": {
+          "x": 1078.2093001633548,
+          "y": 380.5191993289566
+        },
+        "type": "basic",
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//button[@type='submit']",
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-09T07:27:57.628Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-pause-15-1",
+        "position": {
+          "x": 1085.1897480610346,
+          "y": 638.7259910373259
+        },
+        "type": "basic",
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 60,
+          "isRunning": false,
+          "lastConfiguredAt": "2026-07-09T07:28:00.753Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-337dfc10-1b10-48e3-8dff-c75dd14ee8b0",
+        "type": "basic",
+        "position": {
+          "x": 1020.6075029395824,
+          "y": 915.5398120406187
+        },
+        "data": {
+          "code": "writeFile",
+          "label": "Write File",
+          "isRunning": false,
+          "writeFileOutputPath": "{{file_path}}",
+          "writeFileMode": "append",
+          "writeFileInputSource": "rowVariables",
+          "writeFileInputVariable": "firstname",
+          "writeFileTxtLineFormat": " {{profile_uuid}}|{{profile_path}}|{{username}}|{{password}}|{{email}}",
+          "writeFileType": "txt",
+          "writeFileCsvIncludeHeader": true,
+          "writeFileCsvColumns": [
+            {
+              "fieldKey": "",
+              "enabled": true
+            },
+            {
+              "fieldKey": "",
+              "enabled": true
+            },
+            {
+              "fieldKey": "",
+              "enabled": true
+            }
+          ],
+          "lastConfiguredAt": "2026-07-12T23:59:06.987Z",
+          "writeFileInput": "profile: {{profile_path}}, email: {{email}}, pass: {{password}}"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-random-set-vars",
+        "source": "n-random",
+        "sourceHandle": "success",
+        "target": "n-set-vars",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-password-submit2",
+        "source": "n-set-password",
+        "sourceHandle": "success",
+        "target": "n-click-submit-2",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-month-dd-month-val",
+        "source": "n-click-month-dropdown",
+        "sourceHandle": "success",
+        "target": "n-click-month-value",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-month-val-day-dd",
+        "source": "n-click-month-value",
+        "sourceHandle": "success",
+        "target": "n-click-day-dropdown",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-day-dd-day-val",
+        "source": "n-click-day-dropdown",
+        "sourceHandle": "success",
+        "target": "n-click-day-value",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-day-val-year",
+        "source": "n-click-day-value",
+        "sourceHandle": "success",
+        "target": "n-set-year",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-year-submit3",
+        "source": "n-set-year",
+        "sourceHandle": "success",
+        "target": "n-click-submit-3",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-submit3-pause3",
+        "source": "n-click-submit-3",
+        "sourceHandle": "success",
+        "target": "n-pause-10-3",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-pause3-firstname",
+        "source": "n-pause-10-3",
+        "sourceHandle": "success",
+        "target": "n-set-firstname",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-firstname-lastname",
+        "source": "n-set-firstname",
+        "sourceHandle": "success",
+        "target": "n-set-lastname",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-lastname-submit4",
+        "source": "n-set-lastname",
+        "sourceHandle": "success",
+        "target": "n-click-submit-4",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "id": "e-submit4-pause15a",
+        "source": "n-click-submit-4",
+        "sourceHandle": "success",
+        "target": "n-pause-15-1",
+        "targetHandle": "in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-goto-create",
+        "sourceHandle": "success",
+        "target": "n-set-username",
+        "targetHandle": "in",
+        "id": "xy-edge__n-goto-createsuccess-n-set-usernamein",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-click-submit-1",
+        "sourceHandle": "success",
+        "target": "n-set-password",
+        "targetHandle": "in",
+        "id": "xy-edge__n-click-submit-1success-n-set-passwordin",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-click-submit-2",
+        "sourceHandle": "success",
+        "target": "n-click-month-dropdown",
+        "targetHandle": "in",
+        "id": "xy-edge__n-click-submit-2success-n-click-month-dropdownin",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-goto-create",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-goto-createin",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-goto-create",
+        "sourceHandle": "error",
+        "target": "n-set-username",
+        "targetHandle": "in",
+        "id": "xy-edge__n-goto-createerror-n-set-usernamein",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-set-username",
+        "sourceHandle": "success",
+        "target": "n-click-submit-1",
+        "targetHandle": "in",
+        "id": "xy-edge__n-set-usernamesuccess-n-click-submit-1in",
+        "selected": false
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-start",
+        "sourceHandle": "out",
+        "target": "n-random",
+        "targetHandle": "in",
+        "id": "xy-edge__n-startout-n-randomin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-set-vars",
+        "sourceHandle": "success",
+        "target": "n-open-connect",
+        "targetHandle": "in",
+        "id": "xy-edge__n-set-varssuccess-n-open-connectin"
+      }
+    ],
+    "viewport": {
+      "x": 416.07755434167876,
+      "y": 103.85379736764872,
+      "zoom": 0.5979396989599042
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\congh\\.hideflow\\profiles\\400a18be-281f-4493-97f8-173646ea2572"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "v-firstname",
+        "key": "firstname",
+        "value": ""
+      },
+      {
+        "id": "v-lastname",
+        "key": "lastname",
+        "value": ""
+      },
+      {
+        "id": "v-day",
+        "key": "day",
+        "value": ""
+      },
+      {
+        "id": "v-month",
+        "key": "month",
+        "value": ""
+      },
+      {
+        "id": "v-year",
+        "key": "year",
+        "value": ""
+      },
+      {
+        "id": "v-suffix",
+        "key": "suffix",
+        "value": ""
+      },
+      {
+        "id": "v-password",
+        "key": "password",
+        "value": ""
+      },
+      {
+        "id": "v-username",
+        "key": "username",
+        "value": ""
+      },
+      {
+        "id": "v-email",
+        "key": "email",
+        "value": ""
+      },
+      {
+        "id": "v-oauth-url",
+        "key": "oauth_url",
+        "value": "https://login.live.com/oauth20_authorize.srf?client_id=9e5f94bc-e8a4-4e73-b8be-63364c29d753&scope=User.Read+Mail.Read+openid+profile+offline_access&redirect_uri=https%3A%2F%2Flocalhost&response_type=code&state=123abc&response_mode=query&login_hint={{email}}&uaid=3aaa9282188d4c99ab55dfb6b833b166&msproxy=1&issuer=mso&tenant=common&ui_locales=en-US&epct=PAQABDgEAAABlMNzVhAPUTrARzfQjWPtKT7xYWy4xecyvPYEk9xRCMxJP-ihf1xYfmRw2JtzHXiBgMT7hlkFH54-9kAr7gGrKcRG4IRANgI87DmQqidQ4nsv9ekzyikzRgSlwWy_migKt5YkuqfHE9iFqXsxFkuECOFhsRuWhQTAljDKfwsfX458cUYDuzoJJZT1HVVceCc09-AogHwg0Bm4KaW6FJV7w5oBypyQA2uDYxxf82A-7ViAA&jshs=0#"
+      },
+      {
+        "id": "7189cef6-e6f4-433c-8765-5e680aafb199",
+        "key": "proxy_server",
+        "value": "127.0.0.1:50000"
+      },
+      {
+        "id": "bcf579b4-fc3f-4780-835c-dfbd8b79eb3a",
+        "key": "file_path",
+        "value": "D:\\hot-mail\\hotmail reg.txt"
+      }
+    ]
+  }
+}

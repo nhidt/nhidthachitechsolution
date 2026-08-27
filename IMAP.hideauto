@@ -1,0 +1,199 @@
+{
+  "id": "316270d2-0ec7-46a0-bf5a-af365a39c5ee",
+  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\316270d2-0ec7-46a0-bf5a-af365a39c5ee.hideflow",
+  "updatedAt": "2026-08-06T02:26:02.620Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 74.46095064991106,
+          "y": 170.7690470780972
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 266.3562888530824,
+          "y": 163.19238116876107
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-f9bf9dfd-f3d0-4b9e-8143-e6962932c734",
+        "type": "basic",
+        "position": {
+          "x": 536.9354844129224,
+          "y": 161.66825865649076
+        },
+        "data": {
+          "code": "readMailSftp",
+          "label": "Read Mail IMAP",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "readMailCredentialSource": "fields",
+          "readMailImapUser": "nhidthachitech@gmail.com",
+          "readMailImapPassword": "vbmr sinw pwlr ciqm",
+          "lastConfiguredAt": "2026-08-06T02:05:10.664Z",
+          "readMailSubjectFilter": "User Verification",
+          "readMailSaveMatchTo": "OTP",
+          "readMailContentRegex": "\\b\\d{6}\\b",
+          "readMailMarkSeen": true,
+          "readMailOnlyUnread": true,
+          "readMailFromFilter": "noreply@hidemium.io"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-3c0c337d-0f2d-4d1b-a05d-4e9f9d0b87d0",
+        "type": "basic",
+        "position": {
+          "x": 812.5763667997178,
+          "y": 167.0930320734233
+        },
+        "data": {
+          "code": "sendMailSftp",
+          "label": "Send Mail IMAP",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "mailSmtpUser": "nhidthachitech@gmail.com",
+          "mailSmtpPassword": "vbmr sinw pwlr ciqm",
+          "mailSmtpHost": "gmail.com",
+          "mailTo": "nhidt@hachitechsolution.com",
+          "mailSubject": "A new device is using your account",
+          "mailBody": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>User Verification</title>\n</head>\n\n<body style=\"margin:0; padding:0; background:#eef4f8; font-family:Arial, sans-serif;\">\n  <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\">\n    <tr>\n      <td align=\"center\" style=\"padding:32px 16px;\">\n        <table\n          width=\"600\"\n          cellpadding=\"0\"\n          cellspacing=\"0\"\n          role=\"presentation\"\n          style=\"max-width:600px; width:100%; background:#ffffff; border-radius:8px;\"\n        >\n          <tr>\n            <td\n              align=\"center\"\n              style=\"padding:24px; background:#eaf1f7; font-size:22px; font-weight:bold;\"\n            >\n              Hidemium\n            </td>\n          </tr>\n\n          <tr>\n            <td style=\"padding:32px; color:#26364a; font-size:16px; line-height:1.6;\">\n              <h2 style=\"margin:0 0 16px; font-size:20px;\">Hello test</h2>\n\n              <p>\n                You recently signed up for Hidemium. To complete the\n                registration, please confirm your account.\n              </p>\n\n              <p>\n                Your OTP is\n                <strong style=\"font-size:20px; color:#315b8a;\">362862</strong>\n                and will expire in <strong>60 minutes</strong>.\n              </p>\n\n              <p>Thanks.</p>\n            </td>\n          </tr>\n\n          <tr>\n            <td\n              align=\"center\"\n              style=\"padding:20px; background:#eaf1f7; color:#8d98a8; font-size:13px;\"\n            >\n              © 2026 Hidemium. All rights reserved.\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>",
+          "mailIsHtml": true,
+          "mailAttachments": "C:\\Users\\Hachitech\\Desktop\\đăng ký hotmail.hideflow",
+          "mailSaveResultTo": "sendmail",
+          "mailCc": "test1@mailforspam.com",
+          "mailBcc": "test2@mailforspam.com",
+          "lastConfiguredAt": "2026-08-06T02:10:07.537Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-f9bf9dfd-f3d0-4b9e-8143-e6962932c734",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-f9bf9dfd-f3d0-4b9e-8143-e6962932c734in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-f9bf9dfd-f3d0-4b9e-8143-e6962932c734",
+        "sourceHandle": "success",
+        "target": "n-3c0c337d-0f2d-4d1b-a05d-4e9f9d0b87d0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-f9bf9dfd-f3d0-4b9e-8143-e6962932c734success-n-3c0c337d-0f2d-4d1b-a05d-4e9f9d0b87d0in"
+      }
+    ],
+    "viewport": {
+      "x": -259.0203372750143,
+      "y": 159.0464102397276,
+      "zoom": 1.0556063286183153
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "5d77da5d-6f7f-43d6-b628-41995fcbe8d2",
+        "key": "tieude",
+        "value": ""
+      },
+      {
+        "id": "a1bd7253-7eba-4ecb-b3ca-ca95f8978853",
+        "key": "nguoigui",
+        "value": ""
+      },
+      {
+        "id": "77e18833-c22d-4bc5-ba6a-08aa3733faed",
+        "key": "ngay",
+        "value": ""
+      },
+      {
+        "id": "57d0603e-36b5-4d83-a606-5e130a516b5a",
+        "key": "noidung",
+        "value": ""
+      },
+      {
+        "id": "78e57a0f-05ba-4f80-a09b-d0f657b83cd4",
+        "key": "OTP",
+        "value": "362862"
+      },
+      {
+        "id": "44e8bfba-a284-49fb-8699-a6591910f212",
+        "key": "senmail",
+        "value": ""
+      },
+      {
+        "id": "4573a931-06d6-4cab-983e-775ed952c64f",
+        "key": "sendmail",
+        "value": ""
+      }
+    ]
+  }
+}

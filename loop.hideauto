@@ -1,0 +1,442 @@
+{
+  "id": "342d14ab-bf76-487f-b619-f096ec241eb1",
+  "filePath": "C:\\Users\\hachitech solution\\.hideflow\\workflows\\342d14ab-bf76-487f-b619-f096ec241eb1.hideflow",
+  "updatedAt": "2026-07-22T01:36:49.494Z",
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -96.25,
+          "y": 361.87500000000006
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        },
+        "measured": {
+          "width": 96,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:26:35.411Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false
+      },
+      {
+        "id": "n-68511b04-cf2e-464a-a617-52537f4909b1",
+        "type": "loop",
+        "position": {
+          "x": 775.745977005812,
+          "y": 273.15636677892996
+        },
+        "data": {
+          "code": "loop",
+          "label": "Loop",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-21T02:23:54.140Z",
+          "loopMode": "while",
+          "loopWhileVariable": "index",
+          "loopWhileOperator": "neq",
+          "loopWhileCompareValue": "Sports",
+          "loopElementsSelector": "",
+          "loopElementExport": {},
+          "loopIndexVariable": "chisoloop"
+        },
+        "measured": {
+          "width": 120,
+          "height": 120
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-0582e98d-6d7b-42e6-9015-67e7c0f048a0",
+        "type": "basic",
+        "position": {
+          "x": 268.20635281268534,
+          "y": 288.20635281268534
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:26:52.011Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-279d2909-74b3-4c17-a237-d1a2d85715e6",
+        "type": "basic",
+        "position": {
+          "x": 497.1306420972437,
+          "y": 247.28397391591596
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 3,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:27:03.763Z"
+        },
+        "measured": {
+          "width": 140,
+          "height": 84
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-11af7a34-b64b-43df-97d7-65ca73617e4a",
+        "type": "basic",
+        "position": {
+          "x": 754.1962508098433,
+          "y": 565.9203816925071
+        },
+        "data": {
+          "code": "getText",
+          "label": "Get text",
+          "getTextSelector": "#vl-flyout-nav > ul > li:nth-child({{index}}) > a > span",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "getTextSaveTo": "gettext",
+          "lastConfiguredAt": "2026-07-16T07:36:37.355Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-07af08e1-8bf7-4a24-bdf3-3bd99de7f01c",
+        "type": "basic",
+        "position": {
+          "x": 982.6828650801882,
+          "y": 500.32668158492214
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "{{gettext}}",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:30:45.115Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-2b459ff9-3340-4b8f-bbfd-2e5dd113e710",
+        "type": "stop",
+        "position": {
+          "x": 989.7791088803198,
+          "y": 265.5390493500889
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        },
+        "measured": {
+          "width": 95,
+          "height": 44
+        },
+        "selected": false
+      },
+      {
+        "id": "n-3e8ae19f-b83f-4717-851d-06bba3293820",
+        "type": "if",
+        "position": {
+          "x": 1277.9462508098431,
+          "y": 467.1703816925072
+        },
+        "data": {
+          "code": "if",
+          "label": "IF",
+          "ifConditions": [
+            {
+              "id": "c16835ac-6179-41bc-86c7-c057cbac96a2",
+              "leftValue": "inedex",
+              "operator": "equals",
+              "rightValue": "1"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-18T04:43:27.928Z"
+        },
+        "measured": {
+          "width": 120,
+          "height": 120
+        },
+        "selected": false
+      },
+      {
+        "id": "n-e8c8f77b-18a7-45cc-9ed7-07eef257f839",
+        "type": "basic",
+        "position": {
+          "x": 1445.3210512401834,
+          "y": 502.22132729306014
+        },
+        "data": {
+          "code": "stopLoop",
+          "label": "Stop loop"
+        },
+        "measured": {
+          "width": 216,
+          "height": 60
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-401ddb7d-cb31-44d5-ae5d-4b9c4b862321",
+        "type": "basic",
+        "position": {
+          "x": 1238.4600356788176,
+          "y": 635.793849716789
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "sai",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:32:27.523Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-fe43ac9a-4385-4fc5-89a9-3e75d5c627e0",
+        "type": "basic",
+        "position": {
+          "x": 378.4067725820505,
+          "y": 529.1034261366386
+        },
+        "data": {
+          "code": "setVariables",
+          "label": "Set variables",
+          "setVariableAssignments": [
+            {
+              "variableKey": "index",
+              "operator": "add",
+              "value": "1"
+            }
+          ],
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:35:58.467Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "n-3cc5c90d-f5cc-43bb-a643-03305f64f3c4",
+        "type": "basic",
+        "position": {
+          "x": 452.66339251139334,
+          "y": 422.302813432492
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "\n{{chisoloop}}",
+          "addLogLevel": "info",
+          "addLogIncludeTimestamp": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-07-16T07:47:42.108Z"
+        },
+        "measured": {
+          "width": 216,
+          "height": 58
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-0582e98d-6d7b-42e6-9015-67e7c0f048a0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-0582e98d-6d7b-42e6-9015-67e7c0f048a0in"
+      },
+      {
+        "source": "n-0582e98d-6d7b-42e6-9015-67e7c0f048a0",
+        "sourceHandle": "success",
+        "target": "n-279d2909-74b3-4c17-a237-d1a2d85715e6",
+        "targetHandle": "in",
+        "id": "xy-edge__n-0582e98d-6d7b-42e6-9015-67e7c0f048a0success-n-279d2909-74b3-4c17-a237-d1a2d85715e6in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-279d2909-74b3-4c17-a237-d1a2d85715e6",
+        "sourceHandle": "success",
+        "target": "n-68511b04-cf2e-464a-a617-52537f4909b1",
+        "targetHandle": "in",
+        "id": "xy-edge__n-279d2909-74b3-4c17-a237-d1a2d85715e6success-n-68511b04-cf2e-464a-a617-52537f4909b1in"
+      },
+      {
+        "source": "n-11af7a34-b64b-43df-97d7-65ca73617e4a",
+        "sourceHandle": "success",
+        "target": "n-07af08e1-8bf7-4a24-bdf3-3bd99de7f01c",
+        "targetHandle": "in",
+        "id": "xy-edge__n-11af7a34-b64b-43df-97d7-65ca73617e4asuccess-n-07af08e1-8bf7-4a24-bdf3-3bd99de7f01cin"
+      },
+      {
+        "source": "n-68511b04-cf2e-464a-a617-52537f4909b1",
+        "sourceHandle": "success",
+        "target": "n-2b459ff9-3340-4b8f-bbfd-2e5dd113e710",
+        "targetHandle": "in",
+        "id": "xy-edge__n-68511b04-cf2e-464a-a617-52537f4909b1success-n-2b459ff9-3340-4b8f-bbfd-2e5dd113e710in"
+      },
+      {
+        "source": "n-07af08e1-8bf7-4a24-bdf3-3bd99de7f01c",
+        "sourceHandle": "success",
+        "target": "n-3e8ae19f-b83f-4717-851d-06bba3293820",
+        "targetHandle": "in",
+        "id": "xy-edge__n-07af08e1-8bf7-4a24-bdf3-3bd99de7f01csuccess-n-3e8ae19f-b83f-4717-851d-06bba3293820in"
+      },
+      {
+        "source": "n-3e8ae19f-b83f-4717-851d-06bba3293820",
+        "sourceHandle": "success",
+        "target": "n-e8c8f77b-18a7-45cc-9ed7-07eef257f839",
+        "targetHandle": "in",
+        "id": "xy-edge__n-3e8ae19f-b83f-4717-851d-06bba3293820success-n-e8c8f77b-18a7-45cc-9ed7-07eef257f839in"
+      },
+      {
+        "source": "n-3e8ae19f-b83f-4717-851d-06bba3293820",
+        "sourceHandle": "error",
+        "target": "n-401ddb7d-cb31-44d5-ae5d-4b9c4b862321",
+        "targetHandle": "in",
+        "id": "xy-edge__n-3e8ae19f-b83f-4717-851d-06bba3293820error-n-401ddb7d-cb31-44d5-ae5d-4b9c4b862321in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-fe43ac9a-4385-4fc5-89a9-3e75d5c627e0",
+        "sourceHandle": "success",
+        "target": "n-11af7a34-b64b-43df-97d7-65ca73617e4a",
+        "targetHandle": "in",
+        "id": "xy-edge__n-fe43ac9a-4385-4fc5-89a9-3e75d5c627e0success-n-11af7a34-b64b-43df-97d7-65ca73617e4ain"
+      },
+      {
+        "source": "n-68511b04-cf2e-464a-a617-52537f4909b1",
+        "sourceHandle": "body",
+        "target": "n-3cc5c90d-f5cc-43bb-a643-03305f64f3c4",
+        "targetHandle": "in",
+        "id": "xy-edge__n-68511b04-cf2e-464a-a617-52537f4909b1body-n-3cc5c90d-f5cc-43bb-a643-03305f64f3c4in"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-3cc5c90d-f5cc-43bb-a643-03305f64f3c4",
+        "sourceHandle": "success",
+        "target": "n-fe43ac9a-4385-4fc5-89a9-3e75d5c627e0",
+        "targetHandle": "in",
+        "id": "xy-edge__n-3cc5c90d-f5cc-43bb-a643-03305f64f3c4success-n-fe43ac9a-4385-4fc5-89a9-3e75d5c627e0in"
+      }
+    ],
+    "viewport": {
+      "x": -479.4021839333202,
+      "y": 19.612296854877854,
+      "zoom": 0.9189586839976285
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "ef97c9e0-dd20-4d2b-9a2a-7e09e03df19f",
+        "key": "index",
+        "value": ""
+      }
+    ]
+  }
+}
