@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": -12.142857142857125,
+          "y": 250.71428571428572
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintNoiseFonts": false,
+          "openConnectFingerprintDisableImage": false,
+          "openConnectFingerprintNoiseClientRects": "off",
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintSwiftShader": false,
+          "openConnectFingerprintWebgl2": true,
+          "openConnectFingerprintRestoreSession": false,
+          "openConnectFingerprintDisableAutofill": false,
+          "openConnectFingerprintHideProfileName": false,
+          "openConnectFingerprintAkamaiBypassDns": false,
+          "openConnectFingerprintDisableCssAnimation": false,
+          "openConnectFingerprintDisableTrackingProtection": false,
+          "openConnectFingerprintDisableAiMode": false,
+          "openConnectFingerprintDisableAvatar": false,
+          "openConnectFingerprintDisablePasskey": true,
+          "openConnectFingerprintTranslate": false,
+          "openConnectFingerprintAutoAcceptExt": false,
+          "openConnectFingerprintDisableWindowHello": false,
+          "openConnectFingerprintAllowPopups": false,
+          "openConnectFingerprintDisableMachineId": false,
+          "openConnectFingerprintIncognito": false,
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintWebrtcFillByIp": true,
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintSecureDnsProvider": "cloudflare",
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintNetworkSaveData": false,
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "openConnectDeleteProfileDirWhenDone": true,
+          "openConnectFingerprintPlatforms": [
+            "win"
+          ],
+          "openConnectFingerprintBrowsers": [
+            "chrome"
+          ],
+          "nodeTimeoutSeconds": 120
+        }
+      },
+      {
+        "id": "n-open-fail",
+        "type": "basic",
+        "position": {
+          "x": 182.20537293643642,
+          "y": 367.0123022306776
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không mở được trình duyệt (hồ sơ Win + Chrome)",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-stop-openfail",
+        "type": "stop",
+        "position": {
+          "x": 200,
+          "y": 440
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        }
+      },
+      {
+        "id": "n-random-key",
+        "type": "basic",
+        "position": {
+          "x": -81.9221698119938,
+          "y": 365.0143106326478
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "const keys = [\"wireless earbuds\", \"stainless steel water bottle\", \"usb c cable 3 pack\", \"reusable shopping bags\", \"led desk lamp\", \"yoga mat\"];\nconst k = keys[Math.floor(Math.random() * keys.length)];\nvariables.key_search = k;\nreturn k;",
+          "runJsSaveResultTo": "key_search"
+        }
+      },
+      {
+        "id": "n-goto-search",
+        "type": "basic",
+        "position": {
+          "x": 19.755460150703726,
+          "y": 502.09239263951065
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.amazon.com/s?k={{key_search}}",
+          "nodeTimeoutSeconds": 60
+        }
+      },
+      {
+        "id": "n-get-url",
+        "type": "basic",
+        "position": {
+          "x": 22.469996805434235,
+          "y": 620.3203616353323
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url"
+        }
+      },
+      {
+        "id": "n-log-url",
+        "type": "basic",
+        "position": {
+          "x": 18.586993906300222,
+          "y": 729.1232741256332
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Đã mở trang tìm kiếm '{{key_search}}' -> {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-wait-results",
+        "type": "basic",
+        "position": {
+          "x": 17.142857142857054,
+          "y": 832.8571428571429
+        },
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "div[data-component-type=\"s-search-result\"]",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-no-results",
+        "type": "basic",
+        "position": {
+          "x": 199.99999999999994,
+          "y": 938.5714285714286
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không thấy kết quả tìm kiếm - có thể Amazon chặn hoặc hiện captcha. URL: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-stop-nores",
+        "type": "stop",
+        "position": {
+          "x": 257.14285714285717,
+          "y": 1069.4642857142858
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        }
+      },
+      {
+        "id": "n-random-item",
+        "type": "basic",
+        "position": {
+          "x": -71.42857142857152,
+          "y": 940
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "const items = document.querySelectorAll('div[data-component-type=\"s-search-result\"]:not(.AdHolder)');\nconst max = Math.min(8, items.length);\nconst i = Math.floor(Math.random() * Math.max(1, max)) + 1;\nvariables.item_index = i;\nreturn i;",
+          "runJsSaveResultTo": "item_index"
+        }
+      },
+      {
+        "id": "n-pause-click",
+        "type": "basic",
+        "position": {
+          "x": -35.71428571428581,
+          "y": 1054.2857142857142
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "random",
+          "pauseSeconds": 2,
+          "pauseRandomFromSeconds": 1,
+          "pauseRandomToSeconds": 3
+        }
+      },
+      {
+        "id": "n-click-product",
+        "type": "basic",
+        "position": {
+          "x": -72.85714285714282,
+          "y": 1215.7142857142858
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "(//div[@data-component-type=\"s-search-result\" and not(contains(@class,\"AdHolder\"))])[{{item_index}}]//a[.//h2]",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-wait-atc",
+        "type": "basic",
+        "position": {
+          "x": -57.21137144706471,
+          "y": 1359.171313798763
+        },
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "#add-to-cart-button",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-no-atc",
+        "type": "basic",
+        "position": {
+          "x": 314.8862102521815,
+          "y": 1274.455492399085
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không vào được trang sản phẩm hoặc sản phẩm không có nút Thêm vào giỏ. URL: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-stop-noatc",
+        "type": "stop",
+        "position": {
+          "x": 380.11723140221955,
+          "y": 1427.6843302487928
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        }
+      },
+      {
+        "id": "n-get-prod-url",
+        "type": "basic",
+        "position": {
+          "x": -45.31004479647596,
+          "y": 1493.940292648725
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url"
+        }
+      },
+      {
+        "id": "n-get-title",
+        "type": "basic",
+        "position": {
+          "x": -58.84691084623438,
+          "y": 1617.631172798509
+        },
+        "data": {
+          "code": "getText",
+          "label": "Get text",
+          "getTextSelector": "#productTitle",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "getTextSaveTo": "product_title",
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-log-title",
+        "type": "basic",
+        "position": {
+          "x": -59.25579569602694,
+          "y": 1740.7066788295444
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Sản phẩm đang xem: {{product_title}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-click-atc",
+        "type": "basic",
+        "position": {
+          "x": -64.19862237819763,
+          "y": 1873.6480590820731
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "#add-to-cart-button",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-atc-fail",
+        "type": "basic",
+        "position": {
+          "x": 373.97075223506494,
+          "y": 1625.1227295325004
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không bấm được nút Thêm vào giỏ của sản phẩm: {{product_title}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-pause-after",
+        "type": "basic",
+        "position": {
+          "x": -26.075701239654993,
+          "y": 2025.7793914694662
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 3
+        }
+      },
+      {
+        "id": "n-cart-count",
+        "type": "basic",
+        "position": {
+          "x": -55.516343482596355,
+          "y": 2212.5293435679555
+        },
+        "data": {
+          "code": "getText",
+          "label": "Get text",
+          "getTextSelector": "#nav-cart-count",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "getTextSaveTo": "cart_count",
+          "nodeTimeoutSeconds": 20
+        }
+      },
+      {
+        "id": "n-log-done",
+        "type": "basic",
+        "position": {
+          "x": -55.10953784109917,
+          "y": 2357.9281439098795
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[XONG] Đã thêm vào giỏ: {{product_title}} | Giỏ hàng hiện có: {{cart_count}} sản phẩm | URL: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "id": "e-open-randomkey",
+        "source": "n-open-connect",
+        "target": "n-random-key",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-open-fail",
+        "source": "n-open-connect",
+        "target": "n-open-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-openfail-stop",
+        "source": "n-open-fail",
+        "target": "n-stop-openfail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-randomkey-goto",
+        "source": "n-random-key",
+        "target": "n-goto-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-goto-geturl",
+        "source": "n-goto-search",
+        "target": "n-get-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-goto-error",
+        "source": "n-goto-search",
+        "target": "n-open-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl-log",
+        "source": "n-get-url",
+        "target": "n-log-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-logurl-wait",
+        "source": "n-log-url",
+        "target": "n-wait-results",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wait-randomitem",
+        "source": "n-wait-results",
+        "target": "n-random-item",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wait-nores",
+        "source": "n-wait-results",
+        "target": "n-no-results",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-nores-stop",
+        "source": "n-no-results",
+        "target": "n-stop-nores",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-randomitem-pause",
+        "source": "n-random-item",
+        "target": "n-pause-click",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pause-clickproduct",
+        "source": "n-pause-click",
+        "target": "n-click-product",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-clickproduct-waitatc",
+        "source": "n-click-product",
+        "target": "n-wait-atc",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-clickproduct-noatc",
+        "source": "n-click-product",
+        "target": "n-no-atc",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-waitatc-getprodurl",
+        "source": "n-wait-atc",
+        "target": "n-get-prod-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-waitatc-noatc",
+        "source": "n-wait-atc",
+        "target": "n-no-atc",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-noatc-stop",
+        "source": "n-no-atc",
+        "target": "n-stop-noatc",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-getprodurl-title",
+        "source": "n-get-prod-url",
+        "target": "n-get-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-title-logtitle",
+        "source": "n-get-title",
+        "target": "n-log-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-title-logtitle-err",
+        "source": "n-get-title",
+        "target": "n-log-title",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-logtitle-clickatc",
+        "source": "n-log-title",
+        "target": "n-click-atc",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-clickatc-pause",
+        "source": "n-click-atc",
+        "target": "n-pause-after",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-clickatc-fail",
+        "source": "n-click-atc",
+        "target": "n-atc-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-atcfail-stop",
+        "source": "n-atc-fail",
+        "target": "n-stop-noatc",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pause-cartcount",
+        "source": "n-pause-after",
+        "target": "n-cart-count",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-cartcount-logdone",
+        "source": "n-cart-count",
+        "target": "n-log-done",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-cartcount-logdone-err",
+        "source": "n-cart-count",
+        "target": "n-log-done",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      }
+    ],
+    "viewport": {
+      "x": 450.2199757558205,
+      "y": -17.562331165664634,
+      "zoom": 0.46182776877051296
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "2e3e7bfd-2250-4f9c-9e21-1b91414f5b90"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\2e3e7bfd-2250-4f9c-9e21-1b91414f5b90"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "2e3e7bfd-2250-4f9c-9e21-1b91414f5b90"
+      },
+      {
+        "id": "b0ee788d-7481-4414-9ad3-283943cc5585",
+        "key": "cart_count",
+        "value": "1"
+      },
+      {
+        "id": "cff2aa01-21d3-43ec-915f-bc6299d8dd02",
+        "key": "cur_url",
+        "value": "https://www.amazon.com/Gaiam-Essentials-Fitness-Exercise-Easy-Cinch/dp/B0FNX94PPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.NvERwv6-4wdMXo9AazZLBxdGN_kRl_eQFzN5gPSk-Lv_5TWuZvrriSay6WN2iIGkzSvCp5E9daTrQVXimJMMXgQVCdXUVJUCboqJK-rCb4V7RwwAY34JpMLT4AhPvf5ypQwVq4ooMVa6nbscbkpZCxzVZ7ZiJZHLLf5h4oXLBWec3VE9-Xp3ImShxI6kkgYpWiRcQQc4O_ZMsKXnvs5CTGMIzpTiyVuFcOCglHK65LZ8bhbglxhhw74B3OiVE-XY-ihvOAHrVnjeG0A60FBvytmOOYfcMey_kSHZwmfNIoY.LUFVaIF5xUhL6beJlrpy6IeQe6WjJ9tZJczpgSAYfdA&dib_tag=se&keywords=yoga+mat&qid=1790136047&sr=8-9"
+      },
+      {
+        "id": "4721a5f8-84f3-4080-9aa9-1bf11d2a9de5",
+        "key": "item_index",
+        "value": "5"
+      },
+      {
+        "id": "2e57afe5-097d-45fc-bb1b-ef4f6c037b57",
+        "key": "key_search",
+        "value": "yoga mat"
+      },
+      {
+        "id": "f0d8fcfa-5ed8-4f91-864f-429ffba415b3",
+        "key": "product_title",
+        "value": "        Gaiam Thick Yoga Mat, Exercise & Fitness Mat with Easy-Cinch Carrying Strap       "
+      }
+    ]
+  }
+}
