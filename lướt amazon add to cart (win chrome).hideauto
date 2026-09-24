@@ -24,7 +24,7 @@
         "data": {
           "code": "openConnect",
           "label": "Open & Connect",
-          "openConnectMode": "newProfile",
+          "openConnectMode": "existedProfile",
           "openConnectCloseWhenDone": false,
           "openConnectFingerprintBrowserVersionAuto": true,
           "openConnectFingerprintWebview": false,
@@ -99,7 +99,12 @@
           "openConnectFingerprintBrowsers": [
             "chrome"
           ],
-          "nodeTimeoutSeconds": 120
+          "nodeTimeoutSeconds": 120,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectProfilePath": "",
+          "lastConfiguredAt": "2026-09-24T04:12:23.461Z"
         }
       },
       {
@@ -153,7 +158,13 @@
           "code": "gotoUrl",
           "label": "Go to url",
           "gotoUrl": "https://www.amazon.com/s?k={{key_search}}",
-          "nodeTimeoutSeconds": 60
+          "nodeTimeoutSeconds": 60,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "delayFromSeconds": 300,
+          "delayToSeconds": 400,
+          "lastConfiguredAt": "2026-09-24T04:13:40.581Z"
         }
       },
       {
@@ -196,7 +207,13 @@
           "waitForSelector": "div[data-component-type=\"s-search-result\"]",
           "elementOrderMode": "fixed",
           "elementOrder": 1,
-          "nodeTimeoutSeconds": 30
+          "nodeTimeoutSeconds": 30,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "delayFromSeconds": 100,
+          "delayToSeconds": 110,
+          "lastConfiguredAt": "2026-09-24T04:13:50.821Z"
         }
       },
       {
@@ -251,8 +268,12 @@
           "label": "Pause",
           "pauseMode": "random",
           "pauseSeconds": 2,
-          "pauseRandomFromSeconds": 1,
-          "pauseRandomToSeconds": 3
+          "pauseRandomFromSeconds": 400,
+          "pauseRandomToSeconds": 600,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "lastConfiguredAt": "2026-09-24T04:13:23.724Z"
         }
       },
       {
@@ -284,7 +305,13 @@
           "waitForSelector": "#add-to-cart-button",
           "elementOrderMode": "fixed",
           "elementOrder": 1,
-          "nodeTimeoutSeconds": 30
+          "nodeTimeoutSeconds": 30,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "delayFromSeconds": 200,
+          "delayToSeconds": 400,
+          "lastConfiguredAt": "2026-09-24T04:14:03.704Z"
         }
       },
       {
@@ -397,8 +424,14 @@
         "data": {
           "code": "pause",
           "label": "Pause",
-          "pauseMode": "fixed",
-          "pauseSeconds": 3
+          "pauseMode": "random",
+          "pauseSeconds": 3,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "pauseRandomFromSeconds": 600,
+          "pauseRandomToSeconds": 700,
+          "lastConfiguredAt": "2026-09-24T04:13:12.726Z"
         }
       },
       {
@@ -637,9 +670,9 @@
       }
     ],
     "viewport": {
-      "x": 450.2199757558205,
-      "y": -17.562331165664634,
-      "zoom": 0.46182776877051296
+      "x": 535.397314933012,
+      "y": -1089.4321153037724,
+      "zoom": 0.6062866266041601
     },
     "variables": [
       {
