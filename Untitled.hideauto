@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      }
+    ],
+    "viewport": {
+      "x": 517.0710326274725,
+      "y": 170.9334068044525,
+      "zoom": 0.609385394307287
+    }
+  }
+}

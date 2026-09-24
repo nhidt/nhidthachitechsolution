@@ -5,8 +5,8 @@
       {
         "id": "n-start",
         "position": {
-          "x": 40,
-          "y": 160
+          "x": -31.049214055174815,
+          "y": 127.79102296165411
         },
         "type": "start",
         "data": {
@@ -17,14 +17,14 @@
       {
         "id": "n-open-connect",
         "position": {
-          "x": -12.142857142857125,
-          "y": 250.71428571428572
+          "x": -91.43899564036252,
+          "y": 282.4327411132879
         },
         "type": "basic",
         "data": {
           "code": "openConnect",
           "label": "Open & Connect",
-          "openConnectMode": "newProfile",
+          "openConnectMode": "existedProfile",
           "openConnectCloseWhenDone": false,
           "openConnectFingerprintBrowserVersionAuto": true,
           "openConnectFingerprintWebview": false,
@@ -99,15 +99,21 @@
           "openConnectFingerprintBrowsers": [
             "chrome"
           ],
-          "nodeTimeoutSeconds": 120
+          "nodeTimeoutSeconds": 120,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88",
+          "openConnectProfileName": "Agnes Cremin",
+          "lastConfiguredAt": "2026-09-23T08:07:18.717Z"
         }
       },
       {
         "id": "n-open-fail",
         "type": "basic",
         "position": {
-          "x": -15.720813679497667,
-          "y": 372.66733613399003
+          "x": 391.41659069857246,
+          "y": 267.27227195395534
         },
         "data": {
           "code": "addLog",
@@ -120,8 +126,8 @@
         "id": "n-stop-openfail",
         "type": "stop",
         "position": {
-          "x": 200,
-          "y": 440
+          "x": 387.56992510566147,
+          "y": 360.4248802582042
         },
         "data": {
           "code": "stop",
@@ -132,8 +138,8 @@
         "id": "n-random-key",
         "type": "basic",
         "position": {
-          "x": 280,
-          "y": 480
+          "x": -98.41636576770601,
+          "y": 564.8719516374967
         },
         "data": {
           "code": "runJs",
@@ -431,6 +437,23 @@
           "addLogMessage": "[XONG] Đã thêm vào giỏ: {{product_title}} | Giỏ hàng hiện có: {{cart_count}} sản phẩm | URL: {{cur_url}}",
           "addLogIncludeTimestamp": true
         }
+      },
+      {
+        "id": "n-c1b53f0b-b03d-493c-8986-a1cec521d6ed",
+        "type": "loop",
+        "position": {
+          "x": -17.849157762852876,
+          "y": 380.00699508239455
+        },
+        "data": {
+          "code": "loop",
+          "label": "Loop",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "loopTimes": 10,
+          "lastConfiguredAt": "2026-09-23T09:39:58.739Z"
+        }
       }
     ],
     "edges": [
@@ -438,13 +461,6 @@
         "id": "e-start-open-connect",
         "source": "n-start",
         "target": "n-open-connect"
-      },
-      {
-        "id": "e-open-randomkey",
-        "source": "n-open-connect",
-        "target": "n-random-key",
-        "sourceHandle": "success",
-        "targetHandle": "in"
       },
       {
         "id": "e-open-fail",
@@ -634,23 +650,38 @@
         "target": "n-log-done",
         "sourceHandle": "error",
         "targetHandle": "in"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-c1b53f0b-b03d-493c-8986-a1cec521d6ed",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-c1b53f0b-b03d-493c-8986-a1cec521d6edin"
+      },
+      {
+        "type": "workflowDash",
+        "source": "n-c1b53f0b-b03d-493c-8986-a1cec521d6ed",
+        "sourceHandle": "body",
+        "target": "n-random-key",
+        "targetHandle": "in",
+        "id": "xy-edge__n-c1b53f0b-b03d-493c-8986-a1cec521d6edbody-n-random-keyin"
       }
     ],
     "viewport": {
-      "x": 297.1541206821522,
-      "y": -11.60669180032744,
-      "zoom": 1.0610015965572788
+      "x": 161.64514600266963,
+      "y": -246.55735512240864,
+      "zoom": 1.0556063286183168
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": "2e3e7bfd-2250-4f9c-9e21-1b91414f5b90"
+        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\2e3e7bfd-2250-4f9c-9e21-1b91414f5b90"
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -665,7 +696,7 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": "2e3e7bfd-2250-4f9c-9e21-1b91414f5b90"
+        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "b0ee788d-7481-4414-9ad3-283943cc5585",
@@ -675,12 +706,12 @@
       {
         "id": "cff2aa01-21d3-43ec-915f-bc6299d8dd02",
         "key": "cur_url",
-        "value": "https://www.amazon.com/Gaiam-Essentials-Fitness-Exercise-Easy-Cinch/dp/B0FNX94PPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.NvERwv6-4wdMXo9AazZLBxdGN_kRl_eQFzN5gPSk-Lv_5TWuZvrriSay6WN2iIGkzSvCp5E9daTrQVXimJMMXgQVCdXUVJUCboqJK-rCb4V7RwwAY34JpMLT4AhPvf5ypQwVq4ooMVa6nbscbkpZCxzVZ7ZiJZHLLf5h4oXLBWec3VE9-Xp3ImShxI6kkgYpWiRcQQc4O_ZMsKXnvs5CTGMIzpTiyVuFcOCglHK65LZ8bhbglxhhw74B3OiVE-XY-ihvOAHrVnjeG0A60FBvytmOOYfcMey_kSHZwmfNIoY.LUFVaIF5xUhL6beJlrpy6IeQe6WjJ9tZJczpgSAYfdA&dib_tag=se&keywords=yoga+mat&qid=1790136047&sr=8-9"
+        "value": "https://www.amazon.com/Haulcove-Floor-Tiles-Puzzle-Exercise/dp/B0GLQH4453/ref=sr_1_16?dib=eyJ2IjoiMSJ9.NvERwv6-4wdMXo9AazZLB9JwnkH8Fuf1kpiMYXWfgaHuW1AsMX2P-tRgctnpxYIFU7zxg43Cgt5XfUWQ-zhTKluplMzQ9LC_PkZ1fVrcpI6qKUBqj-ndbt6C7t0DdGthNuk-TMJz61pah5YLYek71DlDdCyGUSR78gr_o9zuo933kQz2ebckq2ZthODSCFBQ07ag-8Ekq4z31nMI7E5hIyx-CfMFhhxkjrDD27YB-7_EkQ5XK_2LBgltaGqH4Io-wFGZXLU3jVINbt-cjzTMqoQv9br7na0VPh0XSKy-1hg.GVHG1IWLHbN8PXsQLxc0n4a5IYyj59v9EeHTq8rVnlg&dib_tag=se&keywords=yoga+mat&qid=1790150861&sr=8-16"
       },
       {
         "id": "4721a5f8-84f3-4080-9aa9-1bf11d2a9de5",
         "key": "item_index",
-        "value": "5"
+        "value": "8"
       },
       {
         "id": "2e57afe5-097d-45fc-bb1b-ef4f6c037b57",
@@ -690,7 +721,7 @@
       {
         "id": "f0d8fcfa-5ed8-4f91-864f-429ffba415b3",
         "key": "product_title",
-        "value": "        Gaiam Thick Yoga Mat, Exercise & Fitness Mat with Easy-Cinch Carrying Strap       "
+        "value": "        18 Pcs EVA Foam Floor Tiles, Puzzle Exercise Mat Set for Gym       "
       }
     ]
   }

@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": false,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintNoiseFonts": false,
+          "openConnectFingerprintDisableImage": false,
+          "openConnectFingerprintNoiseClientRects": "off",
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintSwiftShader": false,
+          "openConnectFingerprintWebgl2": true,
+          "openConnectFingerprintRestoreSession": false,
+          "openConnectFingerprintDisableAutofill": false,
+          "openConnectFingerprintHideProfileName": false,
+          "openConnectFingerprintAkamaiBypassDns": false,
+          "openConnectFingerprintDisableCssAnimation": false,
+          "openConnectFingerprintDisableTrackingProtection": false,
+          "openConnectFingerprintDisableAiMode": false,
+          "openConnectFingerprintDisableAvatar": false,
+          "openConnectFingerprintDisablePasskey": true,
+          "openConnectFingerprintTranslate": false,
+          "openConnectFingerprintAutoAcceptExt": false,
+          "openConnectFingerprintDisableWindowHello": false,
+          "openConnectFingerprintAllowPopups": false,
+          "openConnectFingerprintDisableMachineId": false,
+          "openConnectFingerprintIncognito": false,
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintWebrtcFillByIp": true,
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintSecureDnsProvider": "cloudflare",
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintNetworkSaveData": false,
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintQuicProtocol": "default"
+        }
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 520
+        },
+        "data": {
+          "code": "browserClose",
+          "label": "Close Profile"
+        },
+        "id": "n-close-browser",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 700
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.amazon.com"
+        },
+        "id": "n-goto-amazon",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 880
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "input[placeholder*='Search' i], input[type='text'], input[name='field-keywords']",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-click-search",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 1060
+        },
+        "data": {
+          "code": "typeText",
+          "label": "Type text",
+          "typeTextBody": "sản phẩm cần thêm vào giỏ",
+          "typeTextDelayMs": 90,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-type-search",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 1240
+        },
+        "data": {
+          "code": "pressKey",
+          "label": "Press key",
+          "pressKeys": [
+            "Enter"
+          ],
+          "pressType": "press",
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-press-enter",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 1420
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "a[href*='/dp/'], a[href*='/gp/product/']",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-click-product",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 1600
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "input#add-to-cart-button, button#add-to-cart-button, #add-to-cart-button",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-click-add-cart",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 1780
+        },
+        "data": {
+          "code": "browserClose",
+          "label": "Close Profile"
+        },
+        "id": "n-close-browser-2",
+        "type": "basic"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "id": "e-n-open-connect-n-goto-amazon-1790139347373",
+        "source": "n-open-connect",
+        "target": "n-goto-amazon",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-goto-amazon-n-click-search-1790139347373",
+        "source": "n-goto-amazon",
+        "target": "n-click-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-click-search-n-type-search-1790139347373",
+        "source": "n-click-search",
+        "target": "n-type-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-type-search-n-press-enter-1790139347373",
+        "source": "n-type-search",
+        "target": "n-press-enter",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-press-enter-n-click-product-1790139347373",
+        "source": "n-press-enter",
+        "target": "n-click-product",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-click-product-n-click-add-cart-1790139347373",
+        "source": "n-click-product",
+        "target": "n-click-add-cart",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-click-add-cart-n-close-browser-2-1790139347373",
+        "source": "n-click-add-cart",
+        "target": "n-close-browser-2",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      }
+    ],
+    "viewport": {
+      "x": 405.3085501776121,
+      "y": -61.155199233837536,
+      "zoom": 0.5305007982786394
+    }
+  }
+}
