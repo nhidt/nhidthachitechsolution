@@ -103,7 +103,8 @@
           "code": "loop",
           "label": "Loop",
           "loopMode": "times",
-          "loopTimes": 20
+          "loopTimes": 20,
+          "loopIndexVariable": "loop_index"
         },
         "id": "n-loop-1",
         "type": "loop"
@@ -125,30 +126,32 @@
     ],
     "edges": [
       {
-        "id": "e-start-open-connect",
+        "id": "e-n-start-n-loop-1-1790242121129",
         "source": "n-start",
-        "target": "n-open-connect"
-      },
-      {
-        "id": "e-n-open-connect-n-loop-1-1790240549788",
-        "source": "n-open-connect",
         "target": "n-loop-1",
-        "sourceHandle": "success",
+        "sourceHandle": "out",
         "targetHandle": "in"
       },
       {
-        "id": "e-n-loop-1-n-add-log-1-1790240549788",
+        "id": "e-n-loop-1-n-open-connect-1790242121129",
         "source": "n-loop-1",
-        "target": "n-add-log-1",
+        "target": "n-open-connect",
         "sourceHandle": "body",
         "targetHandle": "in"
       },
       {
-        "id": "e-n-add-log-1-n-loop-1-1790240549788",
+        "id": "e-n-open-connect-n-add-log-1-1790242121129",
+        "source": "n-open-connect",
+        "target": "n-add-log-1",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-add-log-1-n-loop-1-1790242121129",
         "source": "n-add-log-1",
         "target": "n-loop-1",
         "sourceHandle": "success",
-        "targetHandle": "in"
+        "targetHandle": "loop-in"
       }
     ],
     "viewport": {
