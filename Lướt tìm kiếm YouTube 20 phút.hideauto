@@ -208,6 +208,36 @@
         },
         "id": "n-pause-watch",
         "type": "basic"
+      },
+      {
+        "position": {
+          "x": 340,
+          "y": 360
+        },
+        "data": {
+          "code": "random",
+          "label": "Random",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "randomAssignments": [
+            {
+              "variableKey": "ten_ngau_nhien",
+              "valueType": "list",
+              "values": [
+                "An",
+                "Bình",
+                "Chi",
+                "Dũng",
+                "Hà",
+                "Lan",
+                "Minh",
+                "Ngọc"
+              ]
+            }
+          ]
+        },
+        "id": "n-random-name",
+        "type": "basic"
       }
     ],
     "edges": [
@@ -215,13 +245,6 @@
         "id": "e-start-open-connect",
         "source": "n-start",
         "target": "n-open-connect"
-      },
-      {
-        "id": "e-n-open-connect-n-goto-youtube-1790304272558",
-        "source": "n-open-connect",
-        "target": "n-goto-youtube",
-        "sourceHandle": "success",
-        "targetHandle": "in"
       },
       {
         "id": "e-n-goto-youtube-n-click-search-1790304272558",
@@ -271,12 +294,58 @@
         "target": "n-loop-watch",
         "sourceHandle": "success",
         "targetHandle": "in"
+      },
+      {
+        "id": "e-n-open-connect-n-random-name-1790305198100",
+        "source": "n-open-connect",
+        "target": "n-random-name",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-random-name-n-goto-youtube-1790305198100",
+        "source": "n-random-name",
+        "target": "n-goto-youtube",
+        "sourceHandle": "success",
+        "targetHandle": "in"
       }
     ],
     "viewport": {
-      "x": 455.4,
-      "y": 27.200000000000017,
-      "zoom": 0.7
-    }
+      "x": 406.3421803634417,
+      "y": -1675.0618073365868,
+      "zoom": 1.2125732532083187
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "default-profile"
+      },
+      {
+        "id": "342b7e9a-566c-4724-862c-710b7cdb55f2",
+        "key": "ten_ngau_nhien",
+        "value": ""
+      }
+    ]
   }
 }
