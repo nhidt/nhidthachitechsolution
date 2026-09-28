@@ -17,14 +17,14 @@
       {
         "id": "n-open-connect",
         "position": {
-          "x": 40,
-          "y": 360
+          "x": 360,
+          "y": 160
         },
         "type": "basic",
         "data": {
           "code": "openConnect",
           "label": "Open & Connect",
-          "openConnectMode": "newProfile",
+          "openConnectMode": "existedProfile",
           "openConnectCloseWhenDone": true,
           "openConnectFingerprintBrowserVersionAuto": true,
           "openConnectFingerprintWebview": false,
@@ -92,7 +92,13 @@
           "openConnectFingerprintSavePasswords": "ask",
           "openConnectFingerprintReplaceBatteryState": false,
           "openConnectFingerprintQuicProtocol": "default",
-          "openConnectDeleteProfileDirWhenDone": true
+          "openConnectDeleteProfileDirWhenDone": true,
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88",
+          "openConnectProfileName": "Agnes Cremin",
+          "lastConfiguredAt": "2026-09-28T04:46:19.846Z"
         }
       },
       {
@@ -106,8 +112,8 @@
         "id": "n-goto-home",
         "type": "basic",
         "position": {
-          "x": 120,
-          "y": 400
+          "x": 680,
+          "y": 160
         }
       },
       {
@@ -120,8 +126,8 @@
         "id": "n-pick-search",
         "type": "basic",
         "position": {
-          "x": 200,
-          "y": 440
+          "x": 1000,
+          "y": 160
         }
       },
       {
@@ -135,8 +141,8 @@
         "id": "n-goto-search",
         "type": "basic",
         "position": {
-          "x": 280,
-          "y": 480
+          "x": 1320,
+          "y": 160
         }
       },
       {
@@ -151,8 +157,8 @@
         "id": "n-wait-results",
         "type": "basic",
         "position": {
-          "x": 360,
-          "y": 520
+          "x": 1640,
+          "y": 160
         }
       },
       {
@@ -170,8 +176,8 @@
         "id": "n-scroll",
         "type": "basic",
         "position": {
-          "x": 440,
-          "y": 560
+          "x": 1960,
+          "y": 160
         }
       },
       {
@@ -189,8 +195,8 @@
         "id": "n-click-product",
         "type": "basic",
         "position": {
-          "x": 520,
-          "y": 600
+          "x": 2600,
+          "y": 160
         }
       },
       {
@@ -205,8 +211,8 @@
         "id": "n-wait-title",
         "type": "basic",
         "position": {
-          "x": 600,
-          "y": 640
+          "x": 2920,
+          "y": 160
         }
       },
       {
@@ -221,8 +227,8 @@
         "id": "n-get-title",
         "type": "basic",
         "position": {
-          "x": 680,
-          "y": 680
+          "x": 3240,
+          "y": 160
         }
       },
       {
@@ -234,8 +240,8 @@
         "id": "n-get-url",
         "type": "basic",
         "position": {
-          "x": 760,
-          "y": 720
+          "x": 3560,
+          "y": 160
         }
       },
       {
@@ -248,8 +254,8 @@
         "id": "n-log",
         "type": "basic",
         "position": {
-          "x": 840,
-          "y": 760
+          "x": 3880,
+          "y": 160
         }
       },
       {
@@ -264,8 +270,8 @@
         "id": "n-view",
         "type": "basic",
         "position": {
-          "x": 920,
-          "y": 800
+          "x": 4200,
+          "y": 160
         }
       },
       {
@@ -278,9 +284,43 @@
         "id": "n-pick-product",
         "type": "basic",
         "position": {
-          "x": 1080,
-          "y": 880
+          "x": 2280,
+          "y": 160
         }
+      },
+      {
+        "position": {
+          "x": 3220,
+          "y": 280
+        },
+        "data": {
+          "code": "hover",
+          "label": "Hover",
+          "hoverSelector": "//button[contains(normalize-space(), 'Add to cart') or contains(normalize-space(), 'Add to Cart')] | //input[(@type='submit' or @type='button') and (contains(@value, 'Add to cart') or contains(@value, 'Add to Cart'))] | //a[contains(normalize-space(), 'Add to cart') or contains(normalize-space(), 'Add to Cart')]",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-click-add-to-cart-hover",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 3220,
+          "y": 400
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "//button[contains(normalize-space(), 'Add to cart') or contains(normalize-space(), 'Add to Cart')] | //input[(@type='submit' or @type='button') and (contains(@value, 'Add to cart') or contains(@value, 'Add to Cart'))] | //a[contains(normalize-space(), 'Add to cart') or contains(normalize-space(), 'Add to Cart')]",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-click-add-to-cart",
+        "type": "basic"
       }
     ],
     "edges": [
@@ -332,13 +372,6 @@
         "targetHandle": "in"
       },
       {
-        "id": "e-wtitle-gettitle",
-        "source": "n-wait-title",
-        "target": "n-get-title",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
         "id": "e-gettitle-geturl",
         "source": "n-get-title",
         "target": "n-get-url",
@@ -379,23 +412,44 @@
         "target": "n-wait-title",
         "sourceHandle": "success",
         "targetHandle": "in"
+      },
+      {
+        "id": "e-n-wait-title-n-click-add-to-cart-hover-1790570557903",
+        "source": "n-wait-title",
+        "target": "n-click-add-to-cart-hover",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-click-add-to-cart-n-get-title-1790570557903",
+        "source": "n-click-add-to-cart",
+        "target": "n-get-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-click-add-to-cart-hover-n-click-add-to-cart-1790570557903",
+        "source": "n-click-add-to-cart-hover",
+        "target": "n-click-add-to-cart",
+        "sourceHandle": "success",
+        "targetHandle": "in"
       }
     ],
     "viewport": {
-      "x": 97.85395610666654,
-      "y": -70.68406282133333,
-      "zoom": 0.7
+      "x": -190.2919896089794,
+      "y": 96.26671720487576,
+      "zoom": 1.6
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": "595331d6-f209-4c1d-8672-ace518fc7240"
+        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\595331d6-f209-4c1d-8672-ace518fc7240"
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -410,32 +464,32 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": "595331d6-f209-4c1d-8672-ace518fc7240"
+        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "8a7c7da3-8ed1-4958-a554-ba9a2346d0ad",
         "key": "search_keyword",
-        "value": "backpack"
+        "value": "phone case"
       },
       {
         "id": "b5dbb063-d3b0-43ca-b157-2b6827c52f77",
         "key": "search_url",
-        "value": "https://www.ebay.com/sch/i.html?_nkw=backpack&_ipg=60"
+        "value": "https://www.ebay.com/sch/i.html?_nkw=phone%20case&_ipg=60"
       },
       {
         "id": "cbd3285b-ea63-4875-a37a-eb8aaf4ca52a",
         "key": "product_title",
-        "value": "Nick Nitro"
+        "value": "Liquid Silicone Phone Case For Apple iPhone 17 18 Pro Max Shockproof Soft Cover"
       },
       {
         "id": "972df7ec-7b9e-4496-b98a-2d96b49e98cd",
         "key": "product_url",
-        "value": "https://www.ebay.com/itm/376722408222?_skw=action+figure&itmmeta=01M3JW4XHHN4DC3383VMK4P25T&hash=item57b667c31e:g:ePYAAeSwid5pIgDf&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xDSdINUtc4IO9HjqMrZelO5587y%2F%2Boe4PS1pg1P31Keu2M8VZxfejM30x43Qx23iumdoTWqvK3wfnQCkHxCcsNXN4Y5JKqG%2BlrXGcvz%2B14kBh9FKZkBarOonmChnOpGkkgzhWWwDe424MgqWf%2BsWnXsQG4MEqbYz29qrn%2BdJrxkDMCKxI2Rw3Xf5Se021Af%2FakOOoQORXG5pISARN5wXaeDt6Atf7rqAdhADYsH%2F0m1%2B%2FxaCgkiluNfYBypK7BGl3bAuvuEUw00NhpLf2Z2de1mZG0OWSfVemtrdEW5kTIoHA%3D%3D%7Ctkp%3ABFBMjNmT3Jxo"
+        "value": "https://www.ebay.com/itm/286823817582?_skw=phone+case&itmmeta=01M3KC5YXJA1D6XAB7YADGSB89&hash=item42c808216e:g:cZUAAeSwR1NoyW~5&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xDLdDELnkZoFrU7p5YjrITZ%2FRb%2FjuVfslvZVeTsqt23y7pD3vHwa5kfevH41xTtOzHu8yMfl1rQzhLZfX8ULCQei7yoi2BseLjZGEOfK%2Fluz3XFl2lhYKdHyCVY8LZvyW0bPI7yaedelpjQNXnQvj0cKITv2OcELr9XHtWUVE6zu%2Bz%2BxQmhTPRjz41EIu5T%2FR1eDleO6Jc1JB5eYyQ%2FAUeRcjVLeLqD%2BoX7HHEU4e5c5rYUk9VgVhQ%2FJ1ZqNWRjz8g8YjL51wkEHdxqMHP3NQ%2Bg%7Ctkp%3ABFBMpu-X7Jxo"
       },
       {
         "id": "021a0ce2-b6ab-4941-add3-50235a80f771",
         "key": "product_item_id",
-        "value": ""
+        "value": "286823817582"
       }
     ]
   }
