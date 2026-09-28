@@ -24,7 +24,7 @@
         "data": {
           "code": "openConnect",
           "label": "Open & Connect",
-          "openConnectMode": "existedProfile",
+          "openConnectMode": "defaultProfile",
           "openConnectCloseWhenDone": true,
           "openConnectFingerprintBrowserVersionAuto": true,
           "openConnectFingerprintWebview": false,
@@ -92,13 +92,14 @@
           "openConnectFingerprintSavePasswords": "ask",
           "openConnectFingerprintReplaceBatteryState": false,
           "openConnectFingerprintQuicProtocol": "default",
-          "openConnectDeleteProfileDirWhenDone": true,
+          "openConnectDeleteProfileDirWhenDone": false,
           "isRunning": false,
           "isDone": false,
           "isDimmed": false,
-          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88",
-          "openConnectProfileName": "Agnes Cremin",
-          "lastConfiguredAt": "2026-09-28T04:46:19.846Z"
+          "openConnectProfilePath": "",
+          "openConnectProfileName": "",
+          "lastConfiguredAt": "2026-09-28T04:46:19.846Z",
+          "nodeTimeoutSeconds": 120
         }
       },
       {
@@ -278,7 +279,7 @@
         "data": {
           "code": "runJs",
           "label": "Run JS",
-          "runJsScript": "var links = document.querySelectorAll('.srp-river-results li.s-card:has(.s-card__title) a.s-card__link[href*=\"/itm/\"]');\nvar seen = {}, uniq = [];\nfor (var i = 0; i < links.length; i++) {\n  var m = links[i].href.match(/\\/itm\\/(\\d+)/);\n  if (!m || seen[m[1]]) continue;\n  seen[m[1]] = 1;\n  uniq.push({ el: links[i], id: m[1] });\n}\nif (uniq.length === 0) throw new Error('No product found in the results');\nvar pool = uniq.slice(0, 30);\nvar pick = pool[Math.floor(Math.random() * pool.length)];\npick.el.setAttribute('target', '_self');\nvariables.product_title = '';\nvariables.product_url = '';\nvariables.product_item_id = pick.id;\nreturn pick.id;",
+          "runJsScript": "var links = document.querySelectorAll('.srp-river-results li.s-card a.s-card__link[href*=\"/itm/\"]');\nvar seen = {}, uniq = [];\nfor (var i = 0; i < links.length; i++) {\n  var m = links[i].href.match(/\\/itm\\/(\\d+)/);\n  if (!m || seen[m[1]]) continue;\n  seen[m[1]] = 1;\n  uniq.push({ el: links[i], id: m[1] });\n}\nif (uniq.length === 0) throw new Error('No product found in the results');\nvar pool = uniq.slice(0, 30);\nvar pick = pool[Math.floor(Math.random() * pool.length)];\npick.el.setAttribute('target', '_self');\nvariables.product_title = '';\nvariables.product_url = 'https://www.ebay.com/itm/' + pick.id;\nvariables.product_item_id = pick.id;\nreturn pick.id;",
           "runJsSaveResultTo": "product_item_id"
         },
         "id": "n-pick-product",
@@ -290,8 +291,8 @@
       },
       {
         "position": {
-          "x": 3220,
-          "y": 280
+          "x": 4520,
+          "y": 160
         },
         "data": {
           "code": "hover",
@@ -307,8 +308,8 @@
       },
       {
         "position": {
-          "x": 3220,
-          "y": 400
+          "x": 4840,
+          "y": 160
         },
         "data": {
           "code": "clickElement",
@@ -320,6 +321,197 @@
           "delayToSeconds": 1.5
         },
         "id": "n-click-add-to-cart",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 360,
+          "y": 320
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không mở được trình duyệt / không kết nối được profile. Dừng workflow.",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-oc-fail",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 1640,
+          "y": 320
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không thấy kết quả tìm kiếm eBay cho từ khóa '{{search_keyword}}' (có thể bị chặn hoặc hiện captcha).",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-no-results",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 2280,
+          "y": 320
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không chọn được sản phẩm nào từ kết quả tìm kiếm eBay.",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-pick-fail",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 7000,
+          "y": 320
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        },
+        "id": "n-stop-fail",
+        "type": "stop"
+      },
+      {
+        "position": {
+          "x": 5160,
+          "y": 160
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "random",
+          "pauseSeconds": 4,
+          "pauseRandomFromSeconds": 4,
+          "pauseRandomToSeconds": 9
+        },
+        "id": "n-pause-after-atc",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 5480,
+          "y": 160
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url"
+        },
+        "id": "n-get-done-url",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 6440,
+          "y": 160
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "var id = String(variables.product_item_id || '');\nvar links = document.querySelectorAll('a[href*=\"/itm/\"]');\nvar found = false;\nfor (var i = 0; i < links.length; i++) {\n  if (links[i].href.indexOf('/itm/' + id) >= 0) { found = true; break; }\n}\nif (!found) throw new Error('Khong thay san pham trong gio eBay sau khi bam Add to cart (item=' + id + ', url=' + location.href + ')');\nvariables.atc_confirmed = 'yes';\nreturn 'yes';",
+          "runJsSaveResultTo": "atc_confirmed",
+          "nodeTimeoutSeconds": 30
+        },
+        "id": "n-check-cart",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 6760,
+          "y": 160
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[XONG] Đã thêm vào giỏ eBay: {{product_title}} | Xác nhận trong giỏ: {{atc_confirmed}} | {{product_url}}",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-log-done",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 6440,
+          "y": 240
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không xác nhận được sản phẩm trong giỏ eBay (nút Thêm vào giỏ không hoạt động hoặc tài khoản bị yêu cầu đăng nhập). Sản phẩm: {{product_title}} | {{product_url}}",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-atc-fail",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 2920,
+          "y": 60
+        },
+        "data": {
+          "code": "activeTabs",
+          "label": "Active tabs",
+          "activeTabsMode": "matchUrl",
+          "activeTabsIndex": 1,
+          "activeTabsUrlMatch": "contains",
+          "activeTabsUrl": "/itm/",
+          "nodeTimeoutSeconds": 20
+        },
+        "id": "n-switch-tab",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 2920,
+          "y": -80
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "{{product_url}}",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 3,
+          "nodeTimeoutSeconds": 60
+        },
+        "id": "n-fallback-goto",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 5800,
+          "y": 160
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://cart.ebay.com",
+          "nodeTimeoutSeconds": 60,
+          "delayFromSeconds": 1,
+          "delayToSeconds": 3
+        },
+        "id": "n-goto-cart",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 6120,
+          "y": 160
+        },
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "a[href*='/itm/']",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 45
+        },
+        "id": "n-wait-cart",
         "type": "basic"
       }
     ],
@@ -365,13 +557,6 @@
         "targetHandle": "in"
       },
       {
-        "id": "e-click-title",
-        "source": "n-click-product",
-        "target": "n-wait-title",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
         "id": "e-gettitle-geturl",
         "source": "n-get-title",
         "target": "n-get-url",
@@ -382,13 +567,6 @@
         "id": "e-geturl-log",
         "source": "n-get-url",
         "target": "n-log",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-log-view",
-        "source": "n-log",
-        "target": "n-view",
         "sourceHandle": "success",
         "targetHandle": "in"
       },
@@ -407,49 +585,189 @@
         "targetHandle": "in"
       },
       {
-        "id": "e-click-wtitle",
-        "source": "n-click-product",
-        "target": "n-wait-title",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-wait-title-n-click-add-to-cart-hover-1790570557903",
-        "source": "n-wait-title",
-        "target": "n-click-add-to-cart-hover",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-click-add-to-cart-n-get-title-1790570557903",
-        "source": "n-click-add-to-cart",
-        "target": "n-get-title",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
         "id": "e-n-click-add-to-cart-hover-n-click-add-to-cart-1790570557903",
         "source": "n-click-add-to-cart-hover",
         "target": "n-click-add-to-cart",
         "sourceHandle": "success",
         "targetHandle": "in"
+      },
+      {
+        "id": "e-oc-failbranch",
+        "source": "n-open-connect",
+        "target": "n-oc-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-ocfail-stop",
+        "source": "n-oc-fail",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wait-nores",
+        "source": "n-wait-results",
+        "target": "n-no-results",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-nores-stop",
+        "source": "n-no-results",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pick-failbranch",
+        "source": "n-pick-product",
+        "target": "n-pick-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pickfail-stop",
+        "source": "n-pick-fail",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-waittitle-gettitle",
+        "source": "n-wait-title",
+        "target": "n-get-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-view-hover",
+        "source": "n-view",
+        "target": "n-click-add-to-cart-hover",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-click-pauseafter",
+        "source": "n-click-add-to-cart",
+        "target": "n-pause-after-atc",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pauseafter-doneurl",
+        "source": "n-pause-after-atc",
+        "target": "n-get-done-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-checkcart-logdone",
+        "source": "n-check-cart",
+        "target": "n-log-done",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-checkcart-atcfail",
+        "source": "n-check-cart",
+        "target": "n-atc-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-atcfail-stop",
+        "source": "n-atc-fail",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-click-switchtab",
+        "source": "n-click-product",
+        "target": "n-switch-tab",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-switchtab-waittitle",
+        "source": "n-switch-tab",
+        "target": "n-wait-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-switchtab-fallback",
+        "source": "n-switch-tab",
+        "target": "n-fallback-goto",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-fallback-waittitle",
+        "source": "n-fallback-goto",
+        "target": "n-wait-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-log-view",
+        "source": "n-log",
+        "target": "n-view",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-doneurl-gotocart",
+        "source": "n-get-done-url",
+        "target": "n-goto-cart",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-gotocart-waitcart",
+        "source": "n-goto-cart",
+        "target": "n-wait-cart",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-gotocart-fail",
+        "source": "n-goto-cart",
+        "target": "n-atc-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-waitcart-checkcart",
+        "source": "n-wait-cart",
+        "target": "n-check-cart",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-waitcart-fail",
+        "source": "n-wait-cart",
+        "target": "n-atc-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
       }
     ],
     "viewport": {
-      "x": -190.2919896089794,
-      "y": 96.26671720487576,
-      "zoom": 1.6
+      "x": 122.41880238381857,
+      "y": 204.89311229920116,
+      "zoom": 0.3031433133020797
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
+        "value": "default-profile"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88"
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -464,32 +782,42 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
+        "value": "default-profile"
       },
       {
         "id": "8a7c7da3-8ed1-4958-a554-ba9a2346d0ad",
         "key": "search_keyword",
-        "value": "phone case"
+        "value": "mechanical keyboard"
       },
       {
         "id": "b5dbb063-d3b0-43ca-b157-2b6827c52f77",
         "key": "search_url",
-        "value": "https://www.ebay.com/sch/i.html?_nkw=phone%20case&_ipg=60"
+        "value": "https://www.ebay.com/sch/i.html?_nkw=mechanical%20keyboard&_ipg=60"
       },
       {
         "id": "cbd3285b-ea63-4875-a37a-eb8aaf4ca52a",
         "key": "product_title",
-        "value": "Liquid Silicone Phone Case For Apple iPhone 17 18 Pro Max Shockproof Soft Cover"
+        "value": ""
       },
       {
         "id": "972df7ec-7b9e-4496-b98a-2d96b49e98cd",
         "key": "product_url",
-        "value": "https://www.ebay.com/itm/286823817582?_skw=phone+case&itmmeta=01M3KC5YXJA1D6XAB7YADGSB89&hash=item42c808216e:g:cZUAAeSwR1NoyW~5&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xDLdDELnkZoFrU7p5YjrITZ%2FRb%2FjuVfslvZVeTsqt23y7pD3vHwa5kfevH41xTtOzHu8yMfl1rQzhLZfX8ULCQei7yoi2BseLjZGEOfK%2Fluz3XFl2lhYKdHyCVY8LZvyW0bPI7yaedelpjQNXnQvj0cKITv2OcELr9XHtWUVE6zu%2Bz%2BxQmhTPRjz41EIu5T%2FR1eDleO6Jc1JB5eYyQ%2FAUeRcjVLeLqD%2BoX7HHEU4e5c5rYUk9VgVhQ%2FJ1ZqNWRjz8g8YjL51wkEHdxqMHP3NQ%2Bg%7Ctkp%3ABFBMpu-X7Jxo"
+        "value": ""
       },
       {
         "id": "021a0ce2-b6ab-4941-add3-50235a80f771",
         "key": "product_item_id",
-        "value": "286823817582"
+        "value": "366265330018"
+      },
+      {
+        "id": "a2dcef70-fb60-4f0e-bd84-10d467c08df7",
+        "key": "cur_url",
+        "value": ""
+      },
+      {
+        "id": "9b0c0ea5-d5a3-4c43-9017-c6848d09506d",
+        "key": "atc_confirmed",
+        "value": ""
       }
     ]
   }
