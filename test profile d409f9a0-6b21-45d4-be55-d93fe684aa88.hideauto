@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "openConnectMode": "existedProfile",
+          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88",
+          "openConnectProfileName": "Agnes Cremin",
+          "lastConfiguredAt": "2026-09-28T06:47:41.627Z"
+        }
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 520
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com"
+        },
+        "id": "n-goto-1",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 700
+        },
+        "data": {
+          "code": "scroll",
+          "label": "Scroll",
+          "scrollMode": "by",
+          "scrollX": 0,
+          "scrollY": 900,
+          "scrollStepFrom": 400,
+          "scrollStepTo": 1000,
+          "scrollStepDelayFrom": 500,
+          "scrollStepDelayTo": 1000,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-scroll-1",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 880
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "a[href*='/itm/']",
+          "elementOrderMode": "random",
+          "elementOrder": 1,
+          "elementOrderFrom": 1,
+          "elementOrderTo": 1,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-click-product-1",
+        "type": "basic"
+      },
+      {
+        "id": "n-get-url",
+        "type": "basic",
+        "position": {
+          "x": 320,
+          "y": 880
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url"
+        }
+      },
+      {
+        "id": "n-log",
+        "type": "basic",
+        "position": {
+          "x": 600,
+          "y": 880
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Đã mở eBay và click 1 sản phẩm — URL hiện tại: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "id": "e-n-open-connect-n-goto-1-1790571055906",
+        "source": "n-open-connect",
+        "target": "n-goto-1",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-goto-1-n-scroll-1-1790571055907",
+        "source": "n-goto-1",
+        "target": "n-scroll-1",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-scroll-1-n-click-product-1-1790571055907",
+        "source": "n-scroll-1",
+        "target": "n-click-product-1",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-click-geturl",
+        "source": "n-click-product-1",
+        "target": "n-get-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl-log",
+        "source": "n-get-url",
+        "target": "n-log",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      }
+    ],
+    "viewport": {
+      "x": 491.76478149100257,
+      "y": -53.41645244215937,
+      "zoom": 0.6401028277634961
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      },
+      {
+        "id": "85697537-0134-4729-9d43-687cb2ee16db",
+        "key": "cur_url",
+        "value": ""
+      }
+    ]
+  }
+}

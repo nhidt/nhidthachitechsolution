@@ -17,14 +17,14 @@
       {
         "id": "n-open-connect",
         "position": {
-          "x": 40,
-          "y": 360
+          "x": 360,
+          "y": 160
         },
         "type": "basic",
         "data": {
           "code": "openConnect",
           "label": "Open & Connect",
-          "openConnectMode": "defaultProfile",
+          "openConnectMode": "existedProfile",
           "openConnectCloseWhenDone": false,
           "openConnectFingerprintBrowserVersionAuto": true,
           "openConnectFingerprintWebview": false,
@@ -91,153 +91,119 @@
           "openConnectFingerprintNotificationPermission": "ask",
           "openConnectFingerprintSavePasswords": "ask",
           "openConnectFingerprintReplaceBatteryState": false,
-          "openConnectFingerprintQuicProtocol": "default"
+          "openConnectFingerprintQuicProtocol": "default",
+          "openConnectProfileName": "default-profile",
+          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile",
+          "openConnectProxyEnabled": false
         }
       },
       {
+        "id": "n-goto-ebay",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 520
+          "x": 680,
+          "y": 160
         },
         "data": {
           "code": "gotoUrl",
           "label": "Go to url",
-          "gotoUrl": "https://www.youtube.com"
-        },
-        "id": "n-goto-youtube",
-        "type": "basic"
+          "gotoUrl": "https://www.ebay.com/"
+        }
       },
       {
+        "id": "n-get-url",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 700
+          "x": 1000,
+          "y": 160
         },
         "data": {
-          "code": "clickElement",
-          "label": "Click Element",
-          "clickSelector": "input#search, input[name='search_query'], input[placeholder*='Search' i], input[placeholder*='Tìm kiếm' i]",
-          "elementOrderMode": "fixed",
-          "elementOrder": 1,
-          "delayFromSeconds": 0.4,
-          "delayToSeconds": 1.5
-        },
-        "id": "n-click-search",
-        "type": "basic"
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url"
+        }
       },
       {
+        "id": "n-page-title",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 880
+          "x": 1320,
+          "y": 160
         },
         "data": {
-          "code": "typeText",
-          "label": "Type text",
-          "typeTextBody": "wireless headphones",
-          "typeTextDelayMs": 90,
-          "delayFromSeconds": 0.4,
-          "delayToSeconds": 1.5
-        },
-        "id": "n-type-search",
-        "type": "basic"
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "return document.title",
+          "runJsSaveResultTo": "page_title"
+        }
       },
       {
+        "id": "n-log-ok",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 1060
+          "x": 1640,
+          "y": 160
         },
         "data": {
-          "code": "pressKey",
-          "label": "Press key",
-          "pressKeys": [
-            "Enter"
-          ],
-          "pressType": "press",
-          "delayFromSeconds": 0.4,
-          "delayToSeconds": 1.5
-        },
-        "id": "n-press-enter",
-        "type": "basic"
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Đã mở eBay — tiêu đề: {{page_title}} | URL: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
       },
       {
+        "id": "n-log-oc-fail",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 1240
+          "x": 360,
+          "y": 340
         },
         "data": {
-          "code": "loop",
-          "label": "Loop",
-          "loopMode": "times",
-          "loopTimes": 20
-        },
-        "id": "n-loop-watch",
-        "type": "loop"
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "LỖI: không mở được trình duyệt/profile",
+          "addLogIncludeTimestamp": true
+        }
       },
       {
+        "id": "n-log-goto-fail",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 1420
+          "x": 680,
+          "y": 340
         },
         "data": {
-          "code": "scroll",
-          "label": "Scroll",
-          "scrollMode": "by",
-          "scrollX": 0,
-          "scrollY": 700,
-          "scrollStepFrom": 400,
-          "scrollStepTo": 1000,
-          "scrollStepDelayFrom": 500,
-          "scrollStepDelayTo": 1000,
-          "delayFromSeconds": 0.4,
-          "delayToSeconds": 1.5
-        },
-        "id": "n-scroll-down",
-        "type": "basic"
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "LỖI: không mở được trang ebay.com",
+          "addLogIncludeTimestamp": true
+        }
       },
       {
+        "id": "n-log-title-fail",
+        "type": "basic",
         "position": {
-          "x": 40,
-          "y": 1600
+          "x": 1320,
+          "y": 340
         },
         "data": {
-          "code": "pause",
-          "label": "Pause",
-          "pauseMode": "random",
-          "pauseSeconds": 1,
-          "pauseRandomFromSeconds": 40,
-          "pauseRandomToSeconds": 70
-        },
-        "id": "n-pause-watch",
-        "type": "basic"
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "LỖI: không đọc được tiêu đề trang",
+          "addLogIncludeTimestamp": true
+        }
       },
       {
+        "id": "n-stop-fail",
+        "type": "stop",
         "position": {
-          "x": 340,
-          "y": 360
+          "x": 1900,
+          "y": 340
         },
         "data": {
-          "code": "random",
-          "label": "Random",
-          "elementOrderMode": "fixed",
-          "elementOrder": 1,
-          "randomAssignments": [
-            {
-              "variableKey": "ten_ngau_nhien",
-              "valueType": "list",
-              "values": [
-                "An",
-                "Bình",
-                "Chi",
-                "Dũng",
-                "Hà",
-                "Lan",
-                "Minh",
-                "Ngọc"
-              ]
-            }
-          ]
-        },
-        "id": "n-random-name",
-        "type": "basic"
+          "code": "stop",
+          "label": "Stop"
+        }
       }
     ],
     "edges": [
@@ -247,84 +213,98 @@
         "target": "n-open-connect"
       },
       {
-        "id": "e-n-goto-youtube-n-click-search-1790304272558",
-        "source": "n-goto-youtube",
-        "target": "n-click-search",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-click-search-n-type-search-1790304272558",
-        "source": "n-click-search",
-        "target": "n-type-search",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-type-search-n-press-enter-1790304272558",
-        "source": "n-type-search",
-        "target": "n-press-enter",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-press-enter-n-loop-watch-1790304272558",
-        "source": "n-press-enter",
-        "target": "n-loop-watch",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-loop-watch-n-scroll-down-1790304272558",
-        "source": "n-loop-watch",
-        "target": "n-scroll-down",
-        "sourceHandle": "body",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-scroll-down-n-pause-watch-1790304272558",
-        "source": "n-scroll-down",
-        "target": "n-pause-watch",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-pause-watch-n-loop-watch-1790304272558",
-        "source": "n-pause-watch",
-        "target": "n-loop-watch",
-        "sourceHandle": "success",
-        "targetHandle": "in"
-      },
-      {
-        "id": "e-n-open-connect-n-random-name-1790305198100",
+        "id": "e-oc-goto",
         "source": "n-open-connect",
-        "target": "n-random-name",
+        "target": "n-goto-ebay",
         "sourceHandle": "success",
         "targetHandle": "in"
       },
       {
-        "id": "e-n-random-name-n-goto-youtube-1790305198100",
-        "source": "n-random-name",
-        "target": "n-goto-youtube",
+        "id": "e-oc-fail",
+        "source": "n-open-connect",
+        "target": "n-log-oc-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-goto-geturl",
+        "source": "n-goto-ebay",
+        "target": "n-get-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-goto-fail",
+        "source": "n-goto-ebay",
+        "target": "n-log-goto-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl-title",
+        "source": "n-get-url",
+        "target": "n-page-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl-fail",
+        "source": "n-get-url",
+        "target": "n-stop-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-title-log",
+        "source": "n-page-title",
+        "target": "n-log-ok",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-title-fail",
+        "source": "n-page-title",
+        "target": "n-log-title-fail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-ocfail-stop",
+        "source": "n-log-oc-fail",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-gotofail-stop",
+        "source": "n-log-goto-fail",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-titlefail-stop",
+        "source": "n-log-title-fail",
+        "target": "n-stop-fail",
         "sourceHandle": "success",
         "targetHandle": "in"
       }
     ],
     "viewport": {
-      "x": 333.5806212660813,
-      "y": -28.17958882754749,
-      "zoom": 0.45947934199881396
+      "x": 514.4,
+      "y": 95.70000000000002,
+      "zoom": 0.7
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": "default-profile"
+        "value": ""
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile"
+        "value": ""
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -339,12 +319,17 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": "default-profile"
+        "value": ""
       },
       {
-        "id": "342b7e9a-566c-4724-862c-710b7cdb55f2",
-        "key": "ten_ngau_nhien",
-        "value": "wP5tVNzO"
+        "id": "c135c68c-0662-407d-81c6-8466f9a4c82b",
+        "key": "cur_url",
+        "value": ""
+      },
+      {
+        "id": "64476818-1272-4b08-bf05-5adedc940d85",
+        "key": "page_title",
+        "value": ""
       }
     ]
   }
