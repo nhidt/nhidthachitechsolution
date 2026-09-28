@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "openConnectMode": "newProfile",
+          "openConnectCloseWhenDone": true,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintNoiseFonts": false,
+          "openConnectFingerprintDisableImage": false,
+          "openConnectFingerprintNoiseClientRects": "off",
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintSwiftShader": false,
+          "openConnectFingerprintWebgl2": true,
+          "openConnectFingerprintRestoreSession": false,
+          "openConnectFingerprintDisableAutofill": false,
+          "openConnectFingerprintHideProfileName": false,
+          "openConnectFingerprintAkamaiBypassDns": false,
+          "openConnectFingerprintDisableCssAnimation": false,
+          "openConnectFingerprintDisableTrackingProtection": false,
+          "openConnectFingerprintDisableAiMode": false,
+          "openConnectFingerprintDisableAvatar": false,
+          "openConnectFingerprintDisablePasskey": true,
+          "openConnectFingerprintTranslate": false,
+          "openConnectFingerprintAutoAcceptExt": false,
+          "openConnectFingerprintDisableWindowHello": false,
+          "openConnectFingerprintAllowPopups": true,
+          "openConnectFingerprintDisableMachineId": false,
+          "openConnectFingerprintIncognito": false,
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintWebrtcFillByIp": true,
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintSecureDnsProvider": "cloudflare",
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintNetworkSaveData": false,
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintQuicProtocol": "default",
+          "openConnectDeleteProfileDirWhenDone": true
+        }
+      },
+      {
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com/",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 3
+        },
+        "id": "n-goto-home",
+        "type": "basic",
+        "position": {
+          "x": 120,
+          "y": 400
+        }
+      },
+      {
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "var cats = [\"wireless earbuds\", \"phone case\", \"vintage watch\", \"mechanical keyboard\", \"lego set\", \"coffee maker\", \"running shoes\", \"graphic t-shirt\", \"camera lens\", \"board game\", \"desk lamp\", \"backpack\", \"sunglasses\", \"guitar pedal\", \"action figure\"];\nvar kw = cats[Math.floor(Math.random() * cats.length)];\nvariables.search_keyword = kw;\nreturn \"https://www.ebay.com/sch/i.html?_nkw=\" + encodeURIComponent(kw) + \"&_ipg=60\";",
+          "runJsSaveResultTo": "search_url"
+        },
+        "id": "n-pick-search",
+        "type": "basic",
+        "position": {
+          "x": 200,
+          "y": 440
+        }
+      },
+      {
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "{{search_url}}",
+          "delayFromSeconds": 1,
+          "delayToSeconds": 3
+        },
+        "id": "n-goto-search",
+        "type": "basic",
+        "position": {
+          "x": 280,
+          "y": 480
+        }
+      },
+      {
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": ".srp-river-results li.s-card",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 45
+        },
+        "id": "n-wait-results",
+        "type": "basic",
+        "position": {
+          "x": 360,
+          "y": 520
+        }
+      },
+      {
+        "data": {
+          "code": "scroll",
+          "label": "Scroll",
+          "scrollMode": "by",
+          "scrollX": 0,
+          "scrollY": 600,
+          "scrollStepFrom": 300,
+          "scrollStepTo": 800,
+          "scrollStepDelayFrom": 400,
+          "scrollStepDelayTo": 900
+        },
+        "id": "n-scroll",
+        "type": "basic",
+        "position": {
+          "x": 440,
+          "y": 560
+        }
+      },
+      {
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "li.s-card a.s-card__link[href*=\"/itm/{{product_item_id}}\"]",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "elementOrderFrom": 1,
+          "elementOrderTo": 40,
+          "delayFromSeconds": 2,
+          "delayToSeconds": 4
+        },
+        "id": "n-click-product",
+        "type": "basic",
+        "position": {
+          "x": 520,
+          "y": 600
+        }
+      },
+      {
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "h1.x-item-title__mainTitle",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 45
+        },
+        "id": "n-wait-title",
+        "type": "basic",
+        "position": {
+          "x": 600,
+          "y": 640
+        }
+      },
+      {
+        "data": {
+          "code": "getText",
+          "label": "Get text",
+          "getTextSelector": "h1.x-item-title__mainTitle",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "getTextSaveTo": "product_title"
+        },
+        "id": "n-get-title",
+        "type": "basic",
+        "position": {
+          "x": 680,
+          "y": 680
+        }
+      },
+      {
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "product_url"
+        },
+        "id": "n-get-url",
+        "type": "basic",
+        "position": {
+          "x": 760,
+          "y": 720
+        }
+      },
+      {
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "eBay: searched \"{{search_keyword}}\" -> opened random product: {{product_title}} | {{product_url}}",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-log",
+        "type": "basic",
+        "position": {
+          "x": 840,
+          "y": 760
+        }
+      },
+      {
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "random",
+          "pauseSeconds": 1,
+          "pauseRandomFromSeconds": 3,
+          "pauseRandomToSeconds": 8
+        },
+        "id": "n-view",
+        "type": "basic",
+        "position": {
+          "x": 920,
+          "y": 800
+        }
+      },
+      {
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "var links = document.querySelectorAll('.srp-river-results li.s-card:has(.s-card__title) a.s-card__link[href*=\"/itm/\"]');\nvar seen = {}, uniq = [];\nfor (var i = 0; i < links.length; i++) {\n  var m = links[i].href.match(/\\/itm\\/(\\d+)/);\n  if (!m || seen[m[1]]) continue;\n  seen[m[1]] = 1;\n  uniq.push({ el: links[i], id: m[1] });\n}\nif (uniq.length === 0) throw new Error('No product found in the results');\nvar pool = uniq.slice(0, 30);\nvar pick = pool[Math.floor(Math.random() * pool.length)];\npick.el.setAttribute('target', '_self');\nvariables.product_title = '';\nvariables.product_url = '';\nvariables.product_item_id = pick.id;\nreturn pick.id;",
+          "runJsSaveResultTo": "product_item_id"
+        },
+        "id": "n-pick-product",
+        "type": "basic",
+        "position": {
+          "x": 1080,
+          "y": 880
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "id": "e-oc-home",
+        "source": "n-open-connect",
+        "target": "n-goto-home",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-home-pick",
+        "source": "n-goto-home",
+        "target": "n-pick-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pick-search",
+        "source": "n-pick-search",
+        "target": "n-goto-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-search-wait",
+        "source": "n-goto-search",
+        "target": "n-wait-results",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wait-scroll",
+        "source": "n-wait-results",
+        "target": "n-scroll",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-click-title",
+        "source": "n-click-product",
+        "target": "n-wait-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wtitle-gettitle",
+        "source": "n-wait-title",
+        "target": "n-get-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-gettitle-geturl",
+        "source": "n-get-title",
+        "target": "n-get-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl-log",
+        "source": "n-get-url",
+        "target": "n-log",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-log-view",
+        "source": "n-log",
+        "target": "n-view",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-scroll-pick",
+        "source": "n-scroll",
+        "target": "n-pick-product",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pick-click",
+        "source": "n-pick-product",
+        "target": "n-click-product",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-click-wtitle",
+        "source": "n-click-product",
+        "target": "n-wait-title",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      }
+    ],
+    "viewport": {
+      "x": 97.85395610666654,
+      "y": -70.68406282133333,
+      "zoom": 0.7
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "595331d6-f209-4c1d-8672-ace518fc7240"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\595331d6-f209-4c1d-8672-ace518fc7240"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "595331d6-f209-4c1d-8672-ace518fc7240"
+      },
+      {
+        "id": "8a7c7da3-8ed1-4958-a554-ba9a2346d0ad",
+        "key": "search_keyword",
+        "value": "backpack"
+      },
+      {
+        "id": "b5dbb063-d3b0-43ca-b157-2b6827c52f77",
+        "key": "search_url",
+        "value": "https://www.ebay.com/sch/i.html?_nkw=backpack&_ipg=60"
+      },
+      {
+        "id": "cbd3285b-ea63-4875-a37a-eb8aaf4ca52a",
+        "key": "product_title",
+        "value": "Nick Nitro"
+      },
+      {
+        "id": "972df7ec-7b9e-4496-b98a-2d96b49e98cd",
+        "key": "product_url",
+        "value": "https://www.ebay.com/itm/376722408222?_skw=action+figure&itmmeta=01M3JW4XHHN4DC3383VMK4P25T&hash=item57b667c31e:g:ePYAAeSwid5pIgDf&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xDSdINUtc4IO9HjqMrZelO5587y%2F%2Boe4PS1pg1P31Keu2M8VZxfejM30x43Qx23iumdoTWqvK3wfnQCkHxCcsNXN4Y5JKqG%2BlrXGcvz%2B14kBh9FKZkBarOonmChnOpGkkgzhWWwDe424MgqWf%2BsWnXsQG4MEqbYz29qrn%2BdJrxkDMCKxI2Rw3Xf5Se021Af%2FakOOoQORXG5pISARN5wXaeDt6Atf7rqAdhADYsH%2F0m1%2B%2FxaCgkiluNfYBypK7BGl3bAuvuEUw00NhpLf2Z2de1mZG0OWSfVemtrdEW5kTIoHA%3D%3D%7Ctkp%3ABFBMjNmT3Jxo"
+      },
+      {
+        "id": "021a0ce2-b6ab-4941-add3-50235a80f771",
+        "key": "product_item_id",
+        "value": ""
+      }
+    ]
+  }
+}
