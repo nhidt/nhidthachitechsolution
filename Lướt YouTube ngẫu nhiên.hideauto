@@ -640,12 +640,12 @@
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": ""
+        "value": "default-profile"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": ""
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -660,33 +660,38 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": ""
+        "value": "default-profile"
       },
       {
         "id": "9c855e5a-a7b4-44ec-944d-e70fe3cb8f59",
         "key": "video_url",
-        "value": ""
+        "value": "https://www.youtube.com/watch?v=HwUX7mRTU2Y&list=RDHwUX7mRTU2Y&start_radio=1&pp=oAcB"
       },
       {
         "id": "443829ba-a736-446f-9e6f-6c0d78ac2456",
         "key": "video_title",
-        "value": ""
+        "value": "Không Buông x Tìm Em x Nghĩ Nhiều x Ngày Rời Chuyến Bay | Những Bản Hits Nhạc Trẻ Chill Triệu View"
       },
       {
         "id": "9da53cf1-c6b0-4c27-96ab-be88c1fce19d",
         "key": "cur_url",
-        "value": ""
+        "value": "https://www.youtube.com/watch?v=HwUX7mRTU2Y&list=RDHwUX7mRTU2Y&start_radio=1"
       },
       {
         "id": "720959cb-c062-427f-b761-0b85c563eddd",
         "key": "vid_index",
-        "value": ""
+        "value": "1"
       },
       {
         "id": "7a369688-a973-4f4c-b769-b2ff003da3b9",
         "key": "pick_status",
-        "value": ""
+        "value": "ok"
       }
-    ]
+    ],
+    "viewport": {
+      "x": -62.10000000000002,
+      "y": 154.2,
+      "zoom": 0.2
+    }
   }
 }

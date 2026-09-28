@@ -157,20 +157,20 @@
       }
     ],
     "viewport": {
-      "x": 491.76478149100257,
-      "y": -53.41645244215937,
-      "zoom": 0.6401028277634961
+      "x": 555.7125258180472,
+      "y": 105.87440896871394,
+      "zoom": 0.3676425326404392
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": ""
+        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": ""
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -185,12 +185,12 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": ""
+        "value": "d409f9a0-6b21-45d4-be55-d93fe684aa88"
       },
       {
         "id": "85697537-0134-4729-9d43-687cb2ee16db",
         "key": "cur_url",
-        "value": ""
+        "value": "https://www.ebay.com/itm/168130314813?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20250416182756%26meid%3De8fcb0302b1a4523aa09c05e99383e8b%26pid%3D102690%26rk%3D1%26rkt%3D15%26itm%3D168130314813%26pmt%3D0%26noa%3D1%26pg%3D4375194%26algv%3DFeaturedDealsV2%26tu%3D01M3KH3BQ0XPSS5RFT2G43QVN4"
       }
     ]
   }

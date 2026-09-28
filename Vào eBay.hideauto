@@ -291,20 +291,20 @@
       }
     ],
     "viewport": {
-      "x": 514.4,
-      "y": 95.70000000000002,
-      "zoom": 0.7
+      "x": 119.43984502382386,
+      "y": 34.82388519978201,
+      "zoom": 0.5278031643091577
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": ""
+        "value": "default-profile"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": ""
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -319,17 +319,17 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": ""
+        "value": "default-profile"
       },
       {
         "id": "c135c68c-0662-407d-81c6-8466f9a4c82b",
         "key": "cur_url",
-        "value": ""
+        "value": "https://www.ebay.com/"
       },
       {
         "id": "64476818-1272-4b08-bf05-5adedc940d85",
         "key": "page_title",
-        "value": ""
+        "value": "Electronics, Cars, Fashion, Collectibles & More | eBay"
       }
     ]
   }
