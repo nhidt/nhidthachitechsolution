@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": -124.56351293541465,
+          "y": 371.1176646210912
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 49.47322854068997,
+          "y": 360.947322854069
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "canConfigure": true,
+          "openConnectMode": "existedProfile",
+          "openConnectRemoteCdp": "{{remote_ws}}",
+          "lastConfiguredAt": "2026-09-29T04:45:21.916Z",
+          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\fb1bf2be-5b9a-4454-af0a-764a8b308f6e",
+          "openConnectProfileName": "Pedro Schulist Sr."
+        }
+      },
+      {
+        "id": "n-44031ded-679c-4bd7-8b84-2572c46bd7ad",
+        "type": "basic",
+        "position": {
+          "x": 313.47496008606805,
+          "y": 359.052677145931
+        },
+        "data": {
+          "code": "newTab",
+          "label": "New tab",
+          "newTabUrl": "ebay.com",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false,
+          "canConfigure": true,
+          "lastConfiguredAt": "2026-09-29T02:50:19.208Z"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-open-connect",
+        "source": "n-start",
+        "target": "n-open-connect"
+      },
+      {
+        "source": "n-open-connect",
+        "sourceHandle": "success",
+        "target": "n-44031ded-679c-4bd7-8b84-2572c46bd7ad",
+        "targetHandle": "in",
+        "id": "xy-edge__n-open-connectsuccess-n-44031ded-679c-4bd7-8b84-2572c46bd7adin"
+      }
+    ],
+    "viewport": {
+      "x": 253.10743933563717,
+      "y": -139.73508392892407,
+      "zoom": 1.0556063286183153
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": "fb1bf2be-5b9a-4454-af0a-764a8b308f6e"
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\fb1bf2be-5b9a-4454-af0a-764a8b308f6e"
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": "ws://127.0.0.1:4000/devtools/browser/eb6bcb5d-4db3-4574-a26f-a3ebaff399ea"
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": "fb1bf2be-5b9a-4454-af0a-764a8b308f6e"
+      }
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "n-start",
+        "position": {
+          "x": 40,
+          "y": 160
+        },
+        "type": "start",
+        "data": {
+          "code": "start",
+          "label": "Start"
+        }
+      },
+      {
+        "id": "n-open-connect",
+        "position": {
+          "x": 40,
+          "y": 360
+        },
+        "type": "basic",
+        "data": {
+          "code": "openConnect",
+          "label": "Open & Connect"
+        }
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 520
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.ebay.com/"
+        },
+        "id": "n-goto-ebay",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 700
+        },
+        "data": {
+          "code": "scroll",
+          "label": "Scroll",
+          "scrollMode": "by",
+          "scrollX": 0,
+          "scrollY": 900,
+          "scrollStepFrom": 400,
+          "scrollStepTo": 1000,
+          "scrollStepDelayFrom": 500,
+          "scrollStepDelayTo": 1000,
+          "delayFromSeconds": 0.4,
+          "delayToSeconds": 1.5
+        },
+        "id": "n-scroll-ebay",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": 40,
+          "y": 880
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Đã mở eBay và lướt trang",
+          "addLogIncludeTimestamp": true
+        },
+        "id": "n-log-done",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": -260,
+          "y": 360
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 3
+        },
+        "id": "n-fix-pause-1",
+        "type": "basic"
+      },
+      {
+        "position": {
+          "x": -260,
+          "y": 480
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "fixed",
+          "pauseSeconds": 10
+        },
+        "id": "n-fix-pause-2",
+        "type": "basic"
+      },
+      {
+        "id": "n-f76a4051-7c1a-4980-a3c5-0578b886f589",
+        "type": "comment",
+        "position": {
+          "x": 340,
+          "y": 880
+        },
+        "data": {
+          "code": "addComment",
+          "label": "Add Comment",
+          "addCommentText": ""
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-n-open-connect-n-goto-ebay-1790656778043",
+        "source": "n-open-connect",
+        "target": "n-goto-ebay",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-goto-ebay-n-scroll-ebay-1790656778043",
+        "source": "n-goto-ebay",
+        "target": "n-scroll-ebay",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-scroll-ebay-n-log-done-1790656778043",
+        "source": "n-scroll-ebay",
+        "target": "n-log-done",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-start-n-fix-pause-1-1790656823607",
+        "source": "n-start",
+        "target": "n-fix-pause-1",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-fix-pause-1-n-fix-pause-2-1790656837432",
+        "source": "n-fix-pause-1",
+        "target": "n-fix-pause-2",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-n-fix-pause-2-n-open-connect-1790656837432",
+        "source": "n-fix-pause-2",
+        "target": "n-open-connect",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      }
+    ],
+    "viewport": {
+      "x": 483.46734608619875,
+      "y": -180.63010990103163,
+      "zoom": 0.6062866266041597
+    },
+    "variables": [
+      {
+        "id": "__workflow_builtin_profile_uuid",
+        "key": "profile_uuid",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_profile_path",
+        "key": "profile_path",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_port",
+        "key": "remote_port",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_remote_ws",
+        "key": "remote_ws",
+        "value": ""
+      },
+      {
+        "id": "__workflow_builtin_browser_uuid",
+        "key": "browser_uuid",
+        "value": ""
+      }
+    ]
+  }
+}
