@@ -24,65 +24,723 @@
         "data": {
           "code": "openConnect",
           "label": "Open & Connect",
+          "openConnectMode": "existedProfile",
+          "openConnectCloseWhenDone": true,
+          "openConnectFingerprintBrowserVersionAuto": true,
+          "openConnectFingerprintWebview": false,
+          "openConnectFingerprintHardwareConcurrencyAuto": true,
+          "openConnectFingerprintHardwareConcurrency": 8,
+          "openConnectFingerprintDeviceMemoryAuto": true,
+          "openConnectFingerprintDeviceMemory": 8,
+          "openConnectFingerprintPhysicalMemoryAuto": true,
+          "openConnectFingerprintPhysicalMemory": 16,
+          "openConnectFingerprintMaxTouchPointsAuto": true,
+          "openConnectFingerprintScreenSizeMode": "realDevice",
+          "openConnectFingerprintComputerNameAuto": true,
+          "openConnectFingerprintMacAddressAuto": true,
+          "openConnectFingerprintTimezoneFillByIp": true,
+          "openConnectFingerprintTimezone": "UTC",
+          "openConnectFingerprintGeolocationMode": "prompt",
+          "openConnectFingerprintGeolocationFillByIp": true,
+          "openConnectFingerprintGeoAccuracy": 100,
+          "openConnectFingerprintLanguageMode": "fillBaseIp",
+          "openConnectFingerprintUserAgentAuto": true,
+          "openConnectFingerprintWebglMetaAuto": true,
+          "openConnectFingerprintWebGpu": true,
+          "openConnectFingerprintCanvasMode": "off",
+          "openConnectFingerprintNoiseAudio": false,
+          "openConnectFingerprintNoiseWebglImage": false,
+          "openConnectFingerprintNoiseWebglParam": false,
+          "openConnectFingerprintNoiseCodecs": false,
+          "openConnectFingerprintNoiseFonts": false,
+          "openConnectFingerprintDisableImage": false,
+          "openConnectFingerprintNoiseClientRects": "off",
+          "openConnectFingerprintMediaDeviceMode": "noise",
+          "openConnectFingerprintSwiftShader": false,
+          "openConnectFingerprintWebgl2": true,
+          "openConnectFingerprintRestoreSession": false,
+          "openConnectFingerprintDisableAutofill": false,
+          "openConnectFingerprintHideProfileName": false,
+          "openConnectFingerprintAkamaiBypassDns": false,
+          "openConnectFingerprintDisableCssAnimation": false,
+          "openConnectFingerprintDisableTrackingProtection": false,
+          "openConnectFingerprintDisableAiMode": false,
+          "openConnectFingerprintDisableAvatar": false,
+          "openConnectFingerprintDisablePasskey": true,
+          "openConnectFingerprintTranslate": false,
+          "openConnectFingerprintAutoAcceptExt": false,
+          "openConnectFingerprintDisableWindowHello": false,
+          "openConnectFingerprintAllowPopups": false,
+          "openConnectFingerprintDisableMachineId": false,
+          "openConnectFingerprintIncognito": false,
+          "openConnectFingerprintWebrtcMode": "altered",
+          "openConnectFingerprintWebrtcFillByIp": true,
+          "openConnectFingerprintPortToProtectAuto": true,
+          "openConnectFingerprintSecureDns": false,
+          "openConnectFingerprintSecureDnsProvider": "cloudflare",
+          "openConnectFingerprintCustomNetworkMode": "noise",
+          "openConnectFingerprintNetworkEffectiveType": "default",
+          "openConnectFingerprintNetworkType": "default",
+          "openConnectFingerprintNetworkCustomEffectiveType": "4g",
+          "openConnectFingerprintNetworkSaveData": false,
+          "openConnectFingerprintBluetooth": false,
+          "openConnectFingerprintDoNotTrack": false,
+          "openConnectFingerprintMicrophonePermission": "default",
+          "openConnectFingerprintCameraPermission": "default",
+          "openConnectFingerprintClipboardPermission": "ask",
+          "openConnectFingerprintNotificationPermission": "ask",
+          "openConnectFingerprintSavePasswords": "ask",
+          "openConnectFingerprintReplaceBatteryState": false,
+          "openConnectFingerprintQuicProtocol": "default",
           "isRunning": false,
           "isDone": false,
           "isDimmed": false,
           "canConfigure": true,
-          "openConnectMode": "existedProfile",
           "openConnectRemoteCdp": "{{remote_ws}}",
-          "lastConfiguredAt": "2026-09-29T04:45:21.916Z",
-          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\fb1bf2be-5b9a-4454-af0a-764a8b308f6e",
-          "openConnectProfileName": "Pedro Schulist Sr."
+          "lastConfiguredAt": "2026-09-29T08:03:29.876Z",
+          "openConnectProfilePath": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\baa2b163-b221-47f4-9c37-c9ad7d0e7ee6",
+          "openConnectProfileName": "Jay Jacobson-Sipes",
+          "nodeTimeoutSeconds": 120
         }
       },
       {
-        "id": "n-44031ded-679c-4bd7-8b84-2572c46bd7ad",
-        "type": "basic",
+        "id": "n-loop-kw",
+        "type": "loop",
         "position": {
-          "x": 313.47496008606805,
-          "y": 359.052677145931
+          "x": 275.76056196257366,
+          "y": 285.853553346438
         },
         "data": {
-          "code": "newTab",
-          "label": "New tab",
-          "newTabUrl": "ebay.com",
-          "isRunning": false,
-          "isDone": false,
-          "isDimmed": false,
-          "canConfigure": true,
-          "lastConfiguredAt": "2026-09-29T02:50:19.208Z"
+          "code": "loop",
+          "label": "Loop",
+          "loopMode": "times",
+          "loopTimes": 20,
+          "loopIndexVariable": "kw_index"
+        }
+      },
+      {
+        "id": "n-random-kw",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 460
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "var keywords = ['nhạc lofi chill','cách nấu phở ngon','du lịch đà nẵng','mẹo vệ sinh nhà cửa','học tiếng anh giao tiếp','bài tập thể dục buổi sáng','review điện thoại mới','tin tức công nghệ','phim hoạt hình thiếu nhi','nhạc thiền thư giãn','cách trồng cây trong nhà','công thức nấu ăn gia đình','thủ thuật máy tính','bóng đá việt nam','cách tiết kiệm tiền','karaoke thiếu nhi','hướng dẫn photoshop','nuôi dạy con','xe điện','cà phê pha máy'];\nvar k = keywords[Math.floor(Math.random() * keywords.length)];\nvariables.keyword = k;\nvariables.keyword_url = encodeURIComponent(k);\nreturn k;",
+          "nodeTimeoutSeconds": 30,
+          "runJsSaveResultTo": "keyword"
+        }
+      },
+      {
+        "id": "n-log-search",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 590
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Từ khóa {{kw_index}}/20: {{keyword}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-goto-search",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 720
+        },
+        "data": {
+          "code": "gotoUrl",
+          "label": "Go to url",
+          "gotoUrl": "https://www.youtube.com/results?search_query={{keyword_url}}",
+          "nodeTimeoutSeconds": 60
+        }
+      },
+      {
+        "id": "n-wait-results",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 850
+        },
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "ytd-video-renderer a#video-title",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-get-url1",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 980
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url"
+        }
+      },
+      {
+        "id": "n-log-url",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1110
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Đang ở trang kết quả: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-random-video",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1240
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "var list = document.querySelectorAll(\"ytd-video-renderer a#video-title\");\nvar max = Math.min(6, list.length);\nvar i = max > 0 ? Math.floor(Math.random() * max) + 1 : 1;\nvariables.video_index = String(i);\nreturn i;",
+          "nodeTimeoutSeconds": 30,
+          "runJsSaveResultTo": "video_index"
+        }
+      },
+      {
+        "id": "n-click-video",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1370
+        },
+        "data": {
+          "code": "clickElement",
+          "label": "Click Element",
+          "clickSelector": "(//ytd-video-renderer//a[@id='video-title'])[{{video_index}}]",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-wait-player",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1500
+        },
+        "data": {
+          "code": "waitForSelector",
+          "label": "Wait for selector",
+          "waitForSelector": "video.html5-main-video, #movie_player video, video",
+          "elementOrderMode": "fixed",
+          "elementOrder": 1,
+          "nodeTimeoutSeconds": 30
+        }
+      },
+      {
+        "id": "n-play-video",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1630
+        },
+        "data": {
+          "code": "runJs",
+          "label": "Run JS",
+          "runJsScript": "try {\n  var v = document.querySelector(\"video.html5-main-video\") || document.querySelector(\"#movie_player video\");\n  if (!v) return \"khong-thay-video\";\n  var p = v.play();\n  if (p && p.catch) p.catch(function () { try { v.muted = true; v.play(); } catch (e) {} });\n  return \"dang-phat\";\n} catch (e) { return \"loi:\" + String(e && e.message ? e.message : e); }",
+          "nodeTimeoutSeconds": 30,
+          "runJsSaveResultTo": "play_state"
+        }
+      },
+      {
+        "id": "n-log-watch",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1760
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "Bắt đầu xem video #{{video_index}} cho '{{keyword}}' ({{play_state}}) - khoảng 2 phút",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-watch",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 1890
+        },
+        "data": {
+          "code": "pause",
+          "label": "Pause",
+          "pauseMode": "random",
+          "pauseSeconds": 1,
+          "pauseRandomFromSeconds": 110,
+          "pauseRandomToSeconds": 130
+        }
+      },
+      {
+        "id": "n-scroll-watch",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 2020
+        },
+        "data": {
+          "code": "scroll",
+          "label": "Scroll",
+          "scrollMode": "by",
+          "scrollX": 0,
+          "scrollY": 400,
+          "scrollStepFrom": 300,
+          "scrollStepTo": 700,
+          "scrollStepDelayFrom": 600,
+          "scrollStepDelayTo": 1400
+        }
+      },
+      {
+        "id": "n-get-url2",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 2150
+        },
+        "data": {
+          "code": "getUrl",
+          "label": "Get url",
+          "getUrlSaveTo": "cur_url2"
+        }
+      },
+      {
+        "id": "n-log-done",
+        "type": "basic",
+        "position": {
+          "x": 60,
+          "y": 2280
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[XONG] Đã xem video #{{video_index}} | từ khóa: {{keyword}} | {{cur_url2}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-log-noresult",
+        "type": "basic",
+        "position": {
+          "x": -320,
+          "y": 850
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không thấy kết quả tìm kiếm cho '{{keyword}}' - bỏ qua, sang từ khóa tiếp theo. URL: {{cur_url}}",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-log-clickfail",
+        "type": "basic",
+        "position": {
+          "x": -320,
+          "y": 1370
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không bấm được video #{{video_index}} cho '{{keyword}}' - sang từ khóa tiếp theo",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-log-noplay",
+        "type": "basic",
+        "position": {
+          "x": -320,
+          "y": 1500
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Video không mở được cho '{{keyword}}' - sang từ khóa tiếp theo",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-log-openfail",
+        "type": "basic",
+        "position": {
+          "x": -20,
+          "y": 150
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Không mở được hồ sơ trình duyệt - dừng lượt chạy",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-stop-openfail",
+        "type": "stop",
+        "position": {
+          "x": -20,
+          "y": 20
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        }
+      },
+      {
+        "id": "n-log-finish",
+        "type": "basic",
+        "position": {
+          "x": 430,
+          "y": 300
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[XONG] Đã lướt và xem xong 20 từ khóa trong lượt này",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-log-loopfail",
+        "type": "basic",
+        "position": {
+          "x": 430,
+          "y": 440
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[LỖI] Lượt lướt dừng ở từ khóa {{kw_index}} ({{keyword}})",
+          "addLogIncludeTimestamp": true
+        }
+      },
+      {
+        "id": "n-stop-fail",
+        "type": "stop",
+        "position": {
+          "x": 660,
+          "y": 440
+        },
+        "data": {
+          "code": "stop",
+          "label": "Stop"
+        }
+      },
+      {
+        "id": "n-log-warn",
+        "type": "basic",
+        "position": {
+          "x": -620,
+          "y": 850
+        },
+        "data": {
+          "code": "addLog",
+          "label": "Add Log",
+          "addLogMessage": "[CẢNH BÁO] Một bước phụ bị lỗi - chuyển sang từ khóa tiếp theo",
+          "addLogIncludeTimestamp": true
         }
       }
     ],
     "edges": [
       {
-        "id": "e-start-open-connect",
+        "id": "e-start-open",
         "source": "n-start",
-        "target": "n-open-connect"
+        "target": "n-open-connect",
+        "sourceHandle": "out",
+        "targetHandle": "in"
       },
       {
+        "id": "e-open-loop",
         "source": "n-open-connect",
+        "target": "n-loop-kw",
         "sourceHandle": "success",
-        "target": "n-44031ded-679c-4bd7-8b84-2572c46bd7ad",
-        "targetHandle": "in",
-        "id": "xy-edge__n-open-connectsuccess-n-44031ded-679c-4bd7-8b84-2572c46bd7adin"
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-open-fail",
+        "source": "n-open-connect",
+        "target": "n-log-openfail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-openfail-stop",
+        "source": "n-log-openfail",
+        "target": "n-stop-openfail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-loop-body",
+        "source": "n-loop-kw",
+        "target": "n-random-kw",
+        "sourceHandle": "body",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-kw-log",
+        "source": "n-random-kw",
+        "target": "n-log-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-log-goto",
+        "source": "n-log-search",
+        "target": "n-goto-search",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-goto-wait",
+        "source": "n-goto-search",
+        "target": "n-wait-results",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-goto-err",
+        "source": "n-goto-search",
+        "target": "n-log-noresult",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wait-geturl",
+        "source": "n-wait-results",
+        "target": "n-get-url1",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-wait-err",
+        "source": "n-wait-results",
+        "target": "n-log-noresult",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-noresult-loop",
+        "source": "n-log-noresult",
+        "target": "n-loop-kw",
+        "sourceHandle": "success",
+        "targetHandle": "loop-in"
+      },
+      {
+        "id": "e-geturl-log",
+        "source": "n-get-url1",
+        "target": "n-log-url",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-logurl-randvideo",
+        "source": "n-log-url",
+        "target": "n-random-video",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-randvideo-click",
+        "source": "n-random-video",
+        "target": "n-click-video",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-click-waitplayer",
+        "source": "n-click-video",
+        "target": "n-wait-player",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-clickfail-err",
+        "source": "n-click-video",
+        "target": "n-log-clickfail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-clickfail-loop",
+        "source": "n-log-clickfail",
+        "target": "n-loop-kw",
+        "sourceHandle": "success",
+        "targetHandle": "loop-in"
+      },
+      {
+        "id": "e-waitplayer-play",
+        "source": "n-wait-player",
+        "target": "n-play-video",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-waitplayer-err",
+        "source": "n-wait-player",
+        "target": "n-log-noplay",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-noplay-loop",
+        "source": "n-log-noplay",
+        "target": "n-loop-kw",
+        "sourceHandle": "success",
+        "targetHandle": "loop-in"
+      },
+      {
+        "id": "e-play-log",
+        "source": "n-play-video",
+        "target": "n-log-watch",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-logwatch-pause",
+        "source": "n-log-watch",
+        "target": "n-watch",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-pause-scroll",
+        "source": "n-watch",
+        "target": "n-scroll-watch",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-scroll-geturl2",
+        "source": "n-scroll-watch",
+        "target": "n-get-url2",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl2-logdone",
+        "source": "n-get-url2",
+        "target": "n-log-done",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-logdone-loopin",
+        "source": "n-log-done",
+        "target": "n-loop-kw",
+        "sourceHandle": "success",
+        "targetHandle": "loop-in"
+      },
+      {
+        "id": "e-loop-done",
+        "source": "n-loop-kw",
+        "target": "n-log-finish",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-loop-err",
+        "source": "n-loop-kw",
+        "target": "n-log-loopfail",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-loopfail-stop",
+        "source": "n-log-loopfail",
+        "target": "n-stop-fail",
+        "sourceHandle": "success",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-warn-loop",
+        "source": "n-log-warn",
+        "target": "n-loop-kw",
+        "sourceHandle": "success",
+        "targetHandle": "loop-in"
+      },
+      {
+        "id": "e-kw-err",
+        "source": "n-random-kw",
+        "target": "n-log-warn",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl1-err",
+        "source": "n-get-url1",
+        "target": "n-log-warn",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-randvideo-err",
+        "source": "n-random-video",
+        "target": "n-log-warn",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-play-err",
+        "source": "n-play-video",
+        "target": "n-log-warn",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-scroll-err",
+        "source": "n-scroll-watch",
+        "target": "n-log-warn",
+        "sourceHandle": "error",
+        "targetHandle": "in"
+      },
+      {
+        "id": "e-geturl2-err",
+        "source": "n-get-url2",
+        "target": "n-log-warn",
+        "sourceHandle": "error",
+        "targetHandle": "in"
       }
     ],
     "viewport": {
-      "x": 253.10743933563717,
-      "y": -139.73508392892407,
-      "zoom": 1.0556063286183153
+      "x": 427.28797531335266,
+      "y": -237.1413877639567,
+      "zoom": 0.527803164309158
     },
     "variables": [
       {
         "id": "__workflow_builtin_profile_uuid",
         "key": "profile_uuid",
-        "value": "fb1bf2be-5b9a-4454-af0a-764a8b308f6e"
+        "value": "baa2b163-b221-47f4-9c37-c9ad7d0e7ee6"
       },
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\fb1bf2be-5b9a-4454-af0a-764a8b308f6e"
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\baa2b163-b221-47f4-9c37-c9ad7d0e7ee6"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -97,7 +755,42 @@
       {
         "id": "__workflow_builtin_browser_uuid",
         "key": "browser_uuid",
-        "value": "fb1bf2be-5b9a-4454-af0a-764a8b308f6e"
+        "value": "baa2b163-b221-47f4-9c37-c9ad7d0e7ee6"
+      },
+      {
+        "id": "c9074296-708e-441c-bf3f-f6e5b9f8f85e",
+        "key": "cur_url",
+        "value": "https://www.youtube.com/results?search_query=c%C3%B4ng+th%E1%BB%A9c+n%E1%BA%A5u+%C4%83n+gia+%C4%91%C3%ACnh"
+      },
+      {
+        "id": "6df323ec-9794-4c1b-857e-70c81e7f385c",
+        "key": "cur_url2",
+        "value": "https://www.youtube.com/watch?v=2VbChCea51g"
+      },
+      {
+        "id": "d9822b9a-5ee2-4c7b-bb8d-09e9134f72fd",
+        "key": "keyword",
+        "value": "công thức nấu ăn gia đình"
+      },
+      {
+        "id": "f169d5c1-30a5-4219-b90e-9d858c82554b",
+        "key": "keyword_url",
+        "value": "c%C3%B4ng%20th%E1%BB%A9c%20n%E1%BA%A5u%20%C4%83n%20gia%20%C4%91%C3%ACnh"
+      },
+      {
+        "id": "46a9fc01-729c-4d03-889d-5694435ae39b",
+        "key": "kw_index",
+        "value": "2"
+      },
+      {
+        "id": "bd925cfe-b472-49a4-b4a3-46c471981539",
+        "key": "play_state",
+        "value": "dang-phat"
+      },
+      {
+        "id": "1755a3aa-0d08-4d4a-ba31-303aa4ce2e07",
+        "key": "video_index",
+        "value": "5"
       }
     ]
   }

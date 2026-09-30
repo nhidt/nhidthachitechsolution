@@ -1,7 +1,5 @@
 {
-  "id": "c51abb04-05d0-48f3-89e8-979a0715ea11",
-  "filePath": "C:\\Users\\Hachitech\\.hideflow\\workflows\\c51abb04-05d0-48f3-89e8-979a0715ea11.hideflow",
-  "updatedAt": "2026-08-06T03:12:01.114Z",
+  "schemaVersion": 1,
   "data": {
     "nodes": [
       {
@@ -14,13 +12,7 @@
         "data": {
           "code": "start",
           "label": "Start"
-        },
-        "measured": {
-          "width": 96,
-          "height": 44
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-open-connect",
@@ -32,13 +24,7 @@
         "data": {
           "code": "openConnect",
           "label": "Open & Connect"
-        },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+        }
       },
       {
         "id": "n-b83916b1-9513-482a-ab47-76908d2844cf",
@@ -62,19 +48,14 @@
           "hotmailSendBcc": "nhicoii1399@gmail.com",
           "hotmailSendSubject": "User Verification",
           "hotmailSendBody": "<!DOCTYPE html>\n<html lang=\"vi\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Email Thông Báo</title>\n    <style>\n        /* Reset CSS cơ bản cho email */\n        body, table, td, a {\n            -webkit-text-size-adjust: 100%;\n            -ms-text-size-adjust: 100%;\n        }\n        table, td {\n            mso-table-lspace: 0pt;\n            mso-table-rspace: 0pt;\n        }\n        img {\n            -ms-interpolation-mode: bicubic;\n            border: 0;\n            height: auto;\n            line-height: 100%;\n            outline: none;\n            text-decoration: none;\n        }\n        body {\n            height: 100% !important;\n            margin: 0 !important;\n            padding: 0 !important;\n            width: 100% !important;\n            background-color: #f4f6f9;\n            font-family: Arial, Helvetica, sans-serif;\n        }\n\n        /* Responsive Style */\n        @media screen and (max-width: 600px) {\n            .email-container {\n                width: 100% !important;\n                padding: 10px !important;\n            }\n            .content-cell {\n                padding: 20px !important;\n            }\n            .button {\n                width: 100% !important;\n                text-align: center !important;\n            }\n        }\n    </style>\n</head>\n<body style=\"margin: 0; padding: 0; background-color: #f4f6f9;\">\n\n    <!-- Wrapper chính -->\n    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n        <tr>\n            <td align=\"center\" style=\"padding: 20px 0;\">\n                \n                <!-- Email Container (Rộng tối đa 600px) -->\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" class=\"email-container\" style=\"background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);\">\n                    \n                    <!-- Header / Logo -->\n                    <tr>\n                        <td align=\"center\" style=\"background-color: #4F46E5; padding: 30px 20px;\">\n                            <h1 style=\"color: #ffffff; margin: 0; font-size: 24px; font-weight: bold; letter-spacing: 1px;\">\n                                THƯƠNG HIỆU CỦA BẠN\n                            </h1>\n                        </td>\n                    </tr>\n\n                    <!-- Nội dung chính -->\n                    <tr>\n                        <td class=\"content-cell\" style=\"padding: 40px 30px; color: #333333; font-size: 16px; line-height: 1.6;\">\n                            \n                            <h2 style=\"color: #111827; font-size: 20px; margin-top: 0; margin-bottom: 16px;\">\n                                Xin chào, [Tên Khách Hàng]!\n                            </h2>\n                            \n                            <p style=\"margin-top: 0; margin-bottom: 20px;\">\n                                Cảm ơn bạn đã đồng hành cùng chúng tôi. Chúng tôi rất vui được thông báo rằng tài khoản/đơn hàng của bạn đã được cập nhật thành công.\n                            </p>\n\n                            <p style=\"margin-top: 0; margin-bottom: 24px;\">\n                                Dưới đây là thông tin chi tiết hoặc hành động tiếp theo bạn cần thực hiện:\n                            </p>\n\n                            <!-- Hộp thông tin nổi bật -->\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"background-color: #F3F4F6; border-left: 4px solid #4F46E5; border-radius: 4px; margin-bottom: 24px;\">\n                                <tr>\n                                    <td style=\"padding: 15px; font-size: 14px; color: #4B5563;\">\n                                        <strong>Lưu ý quan trọng:</strong> Ưu đãi đặc biệt dành cho bạn sẽ hết hạn vào ngày <strong>31/12/2026</strong>. Đừng bỏ lỡ!\n                                    </td>\n                                </tr>\n                            </table>\n\n                            <!-- Nút kêu gọi hành động (Call to Action - CTA) -->\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n                                <tr>\n                                    <td align=\"center\" style=\"padding: 10px 0 20px 0;\">\n                                        <a href=\"https://example.com\" target=\"_blank\" class=\"button\" style=\"background-color: #4F46E5; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: bold; display: inline-block; font-size: 16px;\">\n                                            Khám Phá Ngay\n                                        </a>\n                                    </td>\n                                </tr>\n                            </table>\n\n                            <p style=\"margin-top: 20px; margin-bottom: 0;\">\n                                Trân trọng,<br>\n                                <strong>Đội ngũ Hỗ trợ Khách hàng</strong>\n                            </p>\n\n                        </td>\n                    </tr>\n\n                    <!-- Footer -->\n                    <tr>\n                        <td style=\"background-color: #F9FAFB; padding: 20px 30px; text-align: center; border-top: 1px solid #E5E7EB; font-size: 12px; color: #9CA3AF;\">\n                            <p style=\"margin: 0 0 10px 0;\">\n                                Bạn nhận được email này vì đã đăng ký tài khoản tại Website của chúng tôi.\n                            </p>\n                            <p style=\"margin: 0 0 10px 0;\">\n                                Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh\n                            </p>\n                            <p style=\"margin: 0;\">\n                                <a href=\"#\" style=\"color: #6B7280; text-decoration: underline;\">Hủy đăng ký nhận thư</a> | \n                                <a href=\"#\" style=\"color: #6B7280; text-decoration: underline;\">Chính sách bảo mật</a>\n                            </p>\n                        </td>\n                    </tr>\n\n                </table>\n                <!-- End Email Container -->\n\n            </td>\n        </tr>\n    </table>\n\n</body>\n</html>",
-          "hotmailSendAttachments": "C:\\Users\\Hachitech\\Desktop\\get cookie.hideflow",
+          "hotmailSendAttachments": "",
           "hotmailSendSaveTo": "bien",
-          "lastConfiguredAt": "2026-08-06T03:05:35.286Z",
+          "lastConfiguredAt": "2026-09-29T10:02:03.493Z",
           "hotmailSendEmail": "BroersmaEric7346@outlook.com",
           "hotmailSendRefreshToken": "M.C520_BAY.0.U.MsaArtifacts.-Cqy3FX*jSnk5qsHQ50Ny!not2b6cHvfWiwxc!DUxZxXpjDPH4p5AdWau8Wv6DpSgHUDWWYf9m0z1clbZGIXeLKxQji8k7JTWr8uvynGcWZtjryxr6cWwh2NoM4kG1wLS4T6oCVwEL8FpeBSZTa7zW7hyqowSavd28*NyajI1LnSm46fYYtxrYTD04PSRDxOK!!PhpZu!zofCNv7rpmvxrUyrFuf8ImrUnwpWN07CjTHr8QvosGKO89RgjQKvM7anZbAZHxVqkPzXBSxA!BaQo86vPfKCwD7hge8u3pjom!gpL5f9yjZeBXMcrK3E9qXbh!7Qb7CKqU6FX9zt*Fi5ageWzuMuX2kgebG0xuLaIpgzJtfQ99QZ4JdHIsX1h*JzE2LfSZa3VkcqGI4UW7nl4vY$",
-          "hotmailSendClientId": "9e5f94bc-e8a4-4e73-b8be-63364c29d753"
-        },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+          "hotmailSendClientId": "9e5f94bc-e8a4-4e73-b8be-63364c29d753",
+          "canConfigure": true
+        }
       },
       {
         "id": "n-1d923608-9dcf-4753-a7e6-9f6a3bed091b",
@@ -86,7 +67,7 @@
         "data": {
           "code": "readHotmailAuth",
           "label": "Read Hotmail Auth",
-          "hotmailMode": "filter",
+          "hotmailMode": "all",
           "hotmailCredentialSource": "line",
           "hotmailAccountLine": "BroersmaEric7346@outlook.com|KP5t1FkCbx6j|M.C520_BAY.0.U.MsaArtifacts.-Cqy3FX*jSnk5qsHQ50Ny!not2b6cHvfWiwxc!DUxZxXpjDPH4p5AdWau8Wv6DpSgHUDWWYf9m0z1clbZGIXeLKxQji8k7JTWr8uvynGcWZtjryxr6cWwh2NoM4kG1wLS4T6oCVwEL8FpeBSZTa7zW7hyqowSavd28*NyajI1LnSm46fYYtxrYTD04PSRDxOK!!PhpZu!zofCNv7rpmvxrUyrFuf8ImrUnwpWN07CjTHr8QvosGKO89RgjQKvM7anZbAZHxVqkPzXBSxA!BaQo86vPfKCwD7hge8u3pjom!gpL5f9yjZeBXMcrK3E9qXbh!7Qb7CKqU6FX9zt*Fi5ageWzuMuX2kgebG0xuLaIpgzJtfQ99QZ4JdHIsX1h*JzE2LfSZa3VkcqGI4UW7nl4vY$|9e5f94bc-e8a4-4e73-b8be-63364c29d753|broersmaeric7346ozl@fviainboxes.com",
           "hotmailFolder": "INBOX",
@@ -100,18 +81,47 @@
           "isRunning": false,
           "isDone": false,
           "isDimmed": false,
-          "hotmailSubjectFilter": "tesst email",
+          "hotmailSubjectFilter": "",
           "hotmailFromFilter": "",
           "hotmailSaveCodeTo": "",
-          "lastConfiguredAt": "2026-08-06T01:40:39.246Z",
-          "hotmailSaveBodyTo": "email"
+          "lastConfiguredAt": "2026-09-29T10:09:12.329Z",
+          "hotmailSaveBodyTo": "email",
+          "canConfigure": true,
+          "hotmailSaveListTo": "email"
+        }
+      },
+      {
+        "id": "n-2a12d24f-0c61-4e48-a55f-adc144c715d3",
+        "type": "basic",
+        "position": {
+          "x": 269.73907715213204,
+          "y": -17.313235813430104
         },
-        "measured": {
-          "width": 216,
-          "height": 58
-        },
-        "selected": false,
-        "dragging": false
+        "data": {
+          "code": "readHotmailAuth",
+          "label": "Read Hotmail Auth",
+          "hotmailMode": "all",
+          "hotmailCredentialSource": "line",
+          "hotmailAccountLine": "deborah946296page@outlook.com|*J72l4gNlSe2|M.C505_SN1.0.U.MsaArtifacts.-CswXpovGdQoY9veKnv0UokUwuJtoLLtX4eV5RbpsHrGqnfolnJVDDaKafIxnrDwZpRLXiZQKZKAMxpakxn5xTBc4irqBcQ2ICcycvFkKhg6etx8IModzqeQqpj8txSzD4Div0KmQbZ23tL0FuybaqmRfPDbzQZOvqWP9neCFbGXAbT6HJEEKEM70RaDTV7fxN506UMxuhU1Ehll9FNPKts561oXaE1DU0XJJ3Z!Rh6yzyIv4vRxJ3sJbQlM7ANFbIDISw9TijuQxja8RhPPqrWoSc6RnzYUlvpqKxBj5AYRxXiKdB2LQALxeMka8fdUhAcu4ALi20ADVpeHujQv03Cp32xvUqaiZU0aN1zG2Yfjn6M6nOQ90qDhyOrjUC1OlRg$$|9e5f94bc-e8a4-4e73-b8be-63364c29d753",
+          "hotmailFolder": "INBOX",
+          "hotmailIncludeJunk": true,
+          "hotmailOnlyUnread": false,
+          "hotmailWithinMinutes": 0,
+          "hotmailWaitSeconds": 60,
+          "hotmailCodePattern": "",
+          "hotmailMarkSeen": true,
+          "hotmailMaxMails": 10,
+          "hotmailSubjectFilter": "",
+          "hotmailFromFilter": "",
+          "hotmailSaveCodeTo": "",
+          "lastConfiguredAt": "2026-09-29T10:21:29.982Z",
+          "hotmailSaveBodyTo": "email",
+          "canConfigure": true,
+          "hotmailSaveListTo": "email",
+          "isRunning": false,
+          "isDone": false,
+          "isDimmed": false
+        }
       }
     ],
     "edges": [
@@ -138,9 +148,9 @@
       }
     ],
     "viewport": {
-      "x": 106.71289886314315,
-      "y": -6.309869214415244,
-      "zoom": 1.6
+      "x": 331.64566505578415,
+      "y": 176.84801597324133,
+      "zoom": 0.6964404506368992
     },
     "variables": [
       {
@@ -151,7 +161,7 @@
       {
         "id": "__workflow_builtin_profile_path",
         "key": "profile_path",
-        "value": "C:\\Users\\Hachitech\\.hideflow\\profiles\\default-profile"
+        "value": "C:\\Users\\Nhi\\.hideauto\\users\\28768fa1-1cdd-4c6b-befe-5b04854f5f13\\profiles\\default-profile"
       },
       {
         "id": "__workflow_builtin_remote_port",
@@ -171,12 +181,12 @@
       {
         "id": "9bd8b4b6-afd5-491e-9ebf-5972ade9ae64",
         "key": "bien",
-        "value": "<79035943-6d75-bfee-41ae-341500992170@outlook.com>"
+        "value": "<c7fc2523-47de-e312-577f-4a7e693edf02@outlook.com>"
       },
       {
         "id": "1ab919f3-3a0d-4dc7-b07c-7132901df504",
         "key": "email",
-        "value": ""
+        "value": "[{\"from\":\"\\\"Xuân Trần Điền\\\" <xtrandien@gmail.com>\",\"date\":\"2026-07-30T07:45:22.000Z\",\"subject\":\"hellllllxcx\",\"body\":\"test aloaloa mã otp: 899997\\n\",\"code\":\"899997\"},{\"from\":\"\\\"Microsoft account team\\\" <account-security-noreply@accountprotection.microsoft.com>\",\"date\":\"2026-07-19T12:29:34.000Z\",\"subject\":\"New app(s) connected to your Microsoft account\",\"body\":\"Thunderbird connected to the Microsoft account Br**6@outlook.com.\\n\\nIf you didn't grant this access, please remove the app(s) from your account.\\n\\nManage your apps https://account.live.com/consent/Manage?fn=email.\\n\\nYou can also opt out https://account.live.com/SecurityNotifications/Update or change where you receive security notifications.\\n\\nThanks,\\nThe Microsoft account team \\nPrivacy Statement: https://go.microsoft.com/fwlink/?LinkId=521839\\nMicrosoft Corporation, One Microsoft Way, Redmond, WA 98052\\n\",\"code\":\"521839\"},{\"from\":\"\\\"Microsoft account team\\\" <account-security-noreply@accountprotection.microsoft.com>\",\"date\":\"2026-07-19T12:29:09.000Z\",\"subject\":\"Microsoft account security info verification\",\"body\":\"Recently, you verified the security info on the Microsoft account Br**6@outlook.com. This was a periodic security check which only happens if you haven't used a security code recently. You won't need to provide a code every time you sign in.\\n\\nIt's important to keep the security info associated with your account correct and up-to-date. We'll never use this info to spam you or for any marketing purposes — it's only to verify your identity if there's ever a problem with your account.\\n\\nTo learn more or contact support, click here http://go.microsoft.com/fwlink/?LinkID=281822.\\n\\nTo opt out or change where you receive security notifications, click here https://account.live.com/SecurityNotifications/Update.\\n\\nThanks,\\nThe Microsoft account team \\nPrivacy Statement: https://go.microsoft.com/fwlink/?LinkId=521839\\nMicrosoft Corporation, One Microsoft Way, Redmond, WA 98052\\n\",\"code\":\"281822\"},{\"from\":\"\\\"Microsoft account team\\\" <account-security-noreply@accountprotection.microsoft.com>\",\"date\":\"2026-07-19T12:29:08.000Z\",\"subject\":\"Microsoft account security info was added\",\"body\":\"The following security info was recently added to the Microsoft account Br**6@outlook.com:\\n\\nbroersmaeric7346ozl@fviainboxes.com\\n\\nIf this was you, then you can safely ignore this email.\\n\\nIf this wasn't you, a malicious user has access to your account. Please review your recent activity and we'll help you secure your account.\\n\\nReview recent activity https://account.microsoft.com/activity.\\n\\nTo opt out or change where you receive security notifications, click here https://account.live.com/SecurityNotifications/Update.\\n\\nThanks,\\nThe Microsoft account team \\nPrivacy Statement: https://go.microsoft.com/fwlink/?LinkId=521839\\nMicrosoft Corporation, One Microsoft Way, Redmond, WA 98052\\n\",\"code\":\"521839\"},{\"from\":\"\\\"Microsoft account team\\\" <account-security-noreply@accountprotection.microsoft.com>\",\"date\":\"2026-04-08T15:28:24.000Z\",\"subject\":\"New app(s) connected to your Microsoft account\",\"body\":\"Thunderbird connected to the Microsoft account Br**6@outlook.com.\\n\\nIf you didn't grant this access, please remove the app(s) from your account.\\n\\nManage your apps https://account.live.com/consent/Manage?fn=email.\\n\\nYou can also opt out https://account.live.com/SecurityNotifications/Update or change where you receive security notifications.\\n\\nThanks,\\nThe Microsoft account team \\nPrivacy Statement: https://go.microsoft.com/fwlink/?LinkId=521839\\nMicrosoft Corporation, One Microsoft Way, Redmond, WA 98052\\n\",\"code\":\"521839\"},{\"from\":\"\\\"Outlook 团队\\\" <no-reply@microsoft.com>\",\"date\":\"2026-04-08T15:28:14.000Z\",\"subject\":\"欢迎使用你的新 Outlook.com 帐户\",\"body\":\"\",\"code\":\"\"},{\"from\":\"\\\"Nguyễn Văn Hiếu\\\" <hieunv@hachitechsolution.com>\",\"date\":\"2026-07-29T09:40:19.000Z\",\"subject\":\"Re: ***UNCHECKED*** xin chào\",\"body\":\"\\n\\n----- Thư gốc -----\\nTừ: \\\"RunelsDeluz3749\\\" <RunelsDeluz3749@hotmail.com>\\nTới: \\\"n van hieucntt\\\" <n.van.hieucntt@gmail.com>\\nCc: hieunv@hachitechsolution.com\\nĐã gửi: Thứ Tư, 22 Tháng Bảy, 2026 8:00:58 SA\\nChủ đề: ***UNCHECKED*** xin chào\\n\\nxin chào\\n\",\"code\":\"2026\"}]"
       }
     ]
   }
